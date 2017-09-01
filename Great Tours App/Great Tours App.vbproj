@@ -82,10 +82,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB.vb" />
+    <Compile Include="Direction\addDirection.designer.vb">
+      <DependentUpon>addDirection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Direction\addDirection.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Direction\Direction.designer.vb">
       <DependentUpon>Direction.vb</DependentUpon>
     </Compile>
     <Compile Include="Direction\Direction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Direction\editDirection.designer.vb">
+      <DependentUpon>editDirection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Direction\editDirection.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main Menu.Designer.vb">
@@ -112,8 +124,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Direction\addDirection.resx">
+      <DependentUpon>addDirection.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Direction\Direction.resx">
       <DependentUpon>Direction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Direction\editDirection.resx">
+      <DependentUpon>editDirection.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main Menu.resx">
       <DependentUpon>Main Menu.vb</DependentUpon>

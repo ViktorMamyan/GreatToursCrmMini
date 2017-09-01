@@ -1,4 +1,5 @@
-﻿Imports DevExpress.XtraGrid
+﻿Imports System.Data.SqlClient
+Imports DevExpress.XtraGrid
 Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraGrid.Views.Grid.ViewInfo
 
@@ -50,141 +51,58 @@ Public Class Direction
         Call LoadData()
     End Sub
     Sub NewItem()
-        'Dim f As New BuyerAdd With {.RefForm = DirectCast(Me, Direction)}
-        'f.ShowDialog()
-        'f.Dispose()
+        Dim f As New addDirection With {.RefForm = DirectCast(Me, Direction)}
+        f.ShowDialog()
+        f.Dispose()
     End Sub
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Call NewItem()
         GridView1.Focus()
     End Sub
     Sub EditItem()
-        'Try
-        '    If GridView1.SelectedRowsCount = 0 Then Throw New Exception("Նշված տողեր չկան")
-        '    If GridView1.SelectedRowsCount > 1 Then Throw New Exception("Հարկավոր է նշել միայն մեկ տող")
+        Try
+            If GridView1.SelectedRowsCount = 0 Then Throw New Exception("Նշված տողեր չկան")
+            If GridView1.SelectedRowsCount > 1 Then Throw New Exception("Հարկավոր է նշել միայն մեկ տող")
 
-        '    Dim ID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("ID")
-        '    Dim Code As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Code")
-        '    Dim DocDate As Date = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("DocDate")
-        '    Dim GroupID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("GroupID")
-        '    Dim GroupCode As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("GroupCode")
-        '    Dim GroupName As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("GroupName")
-        '    Dim IsLegalPerson As Boolean = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("IsLegalPerson")
+            Dim ID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("DirectionID")
+            Dim DirectionName As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("DirectionName")
+            Dim SinlgeDirection As Boolean = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("SinlgeDirection")
+            Dim VisaDetails As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("VisaDetails")
 
-        '    Dim hvhh As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("hvhh")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("hvhh") <> String.Empty Then
-        '        hvhh = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("hvhh")
-        '    End If
-        '    Dim CompanyName As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CompanyName")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CompanyName") <> String.Empty Then
-        '        CompanyName = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CompanyName")
-        '    End If
-        '    Dim CompanyFullName As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CompanyFullName")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CompanyFullName") <> String.Empty Then
-        '        CompanyFullName = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CompanyFullName")
-        '    End If
-        '    Dim LegalAddress As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("LegalAddress")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("LegalAddress") <> String.Empty Then
-        '        LegalAddress = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("LegalAddress")
-        '    End If
-        '    Dim WorkAddress As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("WorkAddress")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("WorkAddress") <> String.Empty Then
-        '        WorkAddress = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("WorkAddress")
-        '    End If
-        '    Dim Director As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Director")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Director") <> String.Empty Then
-        '        Director = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Director")
-        '    End If
-        '    Dim CompanyTelephone As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CompanyTelephone")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CompanyTelephone") <> String.Empty Then
-        '        CompanyTelephone = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CompanyTelephone")
-        '    End If
-        '    Dim CompanyEmail As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CompanyEmail")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CompanyEmail") <> String.Empty Then
-        '        CompanyEmail = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CompanyEmail")
-        '    End If
-        '    Dim BuyerName As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerName")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerName") <> String.Empty Then
-        '        BuyerName = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerName")
-        '    End If
-        '    Dim BuyerLastName As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerLastName")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerLastName") <> String.Empty Then
-        '        BuyerLastName = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerLastName")
-        '    End If
-        '    Dim BuyerMiddleName As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerMiddleName")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerMiddleName") <> String.Empty Then
-        '        BuyerMiddleName = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerMiddleName")
-        '    End If
-        '    Dim BuyerGender As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerGender")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerGender") <> String.Empty Then
-        '        BuyerGender = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerGender")
-        '    End If
-        '    Dim BuyerBirtDate As Date
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerBirtDate")) Then
-        '        BuyerBirtDate = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerBirtDate")
-        '    End If
-        '    Dim strBuyerBirtDate As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("strBuyerBirtDate")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("strBuyerBirtDate") <> String.Empty Then
-        '        strBuyerBirtDate = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("strBuyerBirtDate")
-        '    End If
-        '    Dim BuyerAddress As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerAddress")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerAddress") <> String.Empty Then
-        '        BuyerAddress = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerAddress")
-        '    End If
-        '    Dim BuyerTel As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerTel")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerTel") <> String.Empty Then
-        '        BuyerTel = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerTel")
-        '    End If
-        '    Dim BuyerEmail As String = String.Empty
-        '    If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerEmail")) AndAlso GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerEmail") <> String.Empty Then
-        '        BuyerEmail = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BuyerEmail")
-        '    End If
+            Dim EE As New editDirection With {.RefForm = DirectCast(Me, Direction), .ID = ID,
+                .DirectionName = DirectionName, .SinlgeDirection = SinlgeDirection, .VisaDetails = VisaDetails}
 
-        '    Dim EE As New BuyerEdit With {.RefForm = DirectCast(Me, Direction), .ID = ID, .Code = Code, .DocDate = DocDate, .GroupID = GroupID, .GroupCode = GroupCode,
-        '                                  .GroupName = GroupName, .IsLegalPerson = IsLegalPerson, .hvhh = hvhh, .strCompanyName = CompanyName, .CompanyFullName = CompanyFullName,
-        '                                  .LegalAddress = LegalAddress, .WorkAddress = WorkAddress, .Director = Director, .CompanyTelephone = CompanyTelephone,
-        '                                  .CompanyEmail = CompanyEmail, .BuyerName = BuyerName, .BuyerLastName = BuyerLastName, .BuyerMiddleName = BuyerMiddleName,
-        '                                  .BuyerGender = BuyerGender, .BuyerBirtDate = BuyerBirtDate, .strBuyerBirtDate = strBuyerBirtDate,
-        '                                  .BuyerAddress = BuyerAddress, .BuyerTel = BuyerTel, .BuyerEmail = BuyerEmail}
-        '    EE.ShowDialog()
-        '    EE.Dispose()
+            EE.ShowDialog()
+            EE.Dispose()
 
-        'Catch enf As ServiceModel.EndpointNotFoundException
-        '    OKOnly("Սերվիսը անհասանելի է", iMessageImage.IsError, AppTitle)
-        'Catch ex As Exception
-        '    OKOnly(ex.Message, iMessageImage.IsError, AppTitle)
-        'End Try
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
+        End Try
     End Sub
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         Call EditItem()
         GridView1.Focus()
     End Sub
     Sub DeleteItem()
-        'Dim c As New bsManager.IbsServiceClient
-        'Try
-        '    If GridView1.SelectedRowsCount = 0 Then Throw New Exception("Նշված տողեր չկան")
-        '    If Question("Ցանկանու՞մ եք ջնջել գրանցումը", iMessageImage.IsQuestion, AppTitle) <> DialogResult.OK Then Exit Sub
+        Try
+            If GridView1.SelectedRowsCount = 0 Then Throw New Exception("Նշված տողեր չկան")
+            If MsgBox("Ցանկանու՞մ եք ջնջել գրանցումը", MsgBoxStyle.Question + MsgBoxStyle.YesNo, My.Application.Info.Title) <> DialogResult.Yes Then Exit Sub
 
-        '    c.Open()
+            For i As Integer = 0 To GridView1.SelectedRowsCount - 1
 
-        '    Dim errCount As Integer = 0
-        '    For i As Integer = 0 To GridView1.SelectedRowsCount - 1
-        '        If c.DeleteBuyer(GridView1.GetDataRow(GridView1.GetSelectedRows()(i)).Item("ID")) = False Then errCount += 1
-        '    Next
+                Dim Parameters As New List(Of SqlParameter)
+                With Parameters
+                    .Add(New SqlParameter("@DirectionID", GridView1.GetDataRow(GridView1.GetSelectedRows()(i)).Item("DirectionID")))
+                End With
+                ExecToSql("DirectionDelete", CommandType.StoredProcedure, Parameters.ToArray)
 
-        '    c.Close()
+            Next
 
-        '    If errCount > 0 Then OKOnly("Գործողության կատարման ժամանակ սխալներ են եղել:" & vbCrLf & vbCrLf & "Հնարավոր է առկա են փոխկապակցված տվյալներ", iMessageImage.IsExclamation, AppTitle)
+            Call LoadData()
 
-        '    Call LoadData()
-
-        'Catch enf As ServiceModel.EndpointNotFoundException
-        '    OKOnly("Սերվիսը անհասանելի է", iMessageImage.IsError, AppTitle)
-        'Catch ex As Exception
-        '    OKOnly(ex.Message, iMessageImage.IsError, AppTitle)
-        'Finally
-        '    If Not IsNothing(c) Then c = Nothing
-        'End Try
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
+        End Try
     End Sub
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         Call DeleteItem()
@@ -211,23 +129,23 @@ Public Class Direction
         DoRowDoubleClick(view, pt)
     End Sub
     Private Sub DoRowDoubleClick(ByVal view As GridView, ByVal pt As Point)
-        'Try
-        '    Dim info As GridHitInfo = view.CalcHitInfo(pt)
-        '    If info.InRow OrElse info.InRowCell Then
-        '        If info.Column Is Nothing Then
-        '            'N/A
-        '        Else
-        '            If IsDBNull(view.GetRowCellValue(info.RowHandle, "ID")) OrElse view.GetRowCellValue(info.RowHandle, "ID") <= 0 Then Exit Sub
+        Try
+            Dim info As GridHitInfo = view.CalcHitInfo(pt)
+            If info.InRow OrElse info.InRowCell Then
+                If info.Column Is Nothing Then
+                    'N/A
+                Else
+                    If IsDBNull(view.GetRowCellValue(info.RowHandle, "DirectionID")) OrElse view.GetRowCellValue(info.RowHandle, "DirectionID") <= 0 Then Exit Sub
 
-        '            GridView1.ClearSelection()
-        '            GridView1.SelectRows(info.RowHandle, info.RowHandle)
-        '            Call EditItem()
+                    GridView1.ClearSelection()
+                    GridView1.SelectRows(info.RowHandle, info.RowHandle)
+                    Call EditItem()
 
-        '        End If
-        '    End If
-        'Catch ex As Exception
-        '    OKOnly(ex.Message, iMessageImage.IsError, AppTitle)
-        'End Try
+                End If
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
+        End Try
     End Sub
 
     Private Sub Direction_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
