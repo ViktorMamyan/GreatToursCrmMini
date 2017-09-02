@@ -4,23 +4,45 @@ C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\Great Tours App.pdb
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\Great Tours App.xml
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.BonusSkins.v16.1.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Data.v16.1.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Printing.v16.1.Core.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Sparkline.v16.1.Core.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Utils.v16.1.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraBars.v16.1.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraEditors.v16.1.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Printing.v16.1.Core.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Sparkline.v16.1.Core.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraGrid.v16.1.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraLayout.v16.1.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraPrinting.v16.1.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraTreeList.v16.1.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Office.v16.1.Core.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Pdf.v16.1.Drawing.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Data.v16.1.xml
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Printing.v16.1.Core.xml
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Sparkline.v16.1.Core.xml
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Utils.v16.1.xml
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraBars.v16.1.xml
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraEditors.v16.1.xml
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Printing.v16.1.Core.xml
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Sparkline.v16.1.Core.xml
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraGrid.v16.1.xml
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraLayout.v16.1.xml
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraPrinting.v16.1.xml
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraTreeList.v16.1.xml
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Office.v16.1.Core.xml
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Pdf.v16.1.Drawing.xml
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\de\DevExpress.Data.v16.1.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.Data.v16.1.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.Data.v16.1.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\de\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\de\DevExpress.Utils.v16.1.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.Utils.v16.1.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.Utils.v16.1.resources.dll
@@ -33,41 +55,6 @@ C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\de\DevExpress.XtraEd
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.XtraEditors.v16.1.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.XtraEditors.v16.1.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ru\DevExpress.XtraEditors.v16.1.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\de\DevExpress.Printing.v16.1.Core.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.Printing.v16.1.Core.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.Printing.v16.1.Core.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ru\DevExpress.Printing.v16.1.Core.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\de\DevExpress.Sparkline.v16.1.Core.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.Sparkline.v16.1.Core.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\de\DevExpress.Pdf.v16.1.Core.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.Pdf.v16.1.Core.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.Pdf.v16.1.Core.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.vbprojResolveAssemblyReference.cache
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.Resources.resources
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.vbproj.GenerateResource.Cache
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.exe.licenses
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.exe
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.xml
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.pdb
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.MainMenu.resources
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.direction.resources
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraGrid.v16.1.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraLayout.v16.1.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraPrinting.v16.1.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.RichEdit.v16.1.Core.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraTreeList.v16.1.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Office.v16.1.Core.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Pdf.v16.1.Drawing.dll
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraGrid.v16.1.xml
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraLayout.v16.1.xml
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraPrinting.v16.1.xml
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.RichEdit.v16.1.Core.xml
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.XtraTreeList.v16.1.xml
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Office.v16.1.Core.xml
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\DevExpress.Pdf.v16.1.Drawing.xml
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\de\DevExpress.XtraGrid.v16.1.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.XtraGrid.v16.1.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.XtraGrid.v16.1.resources.dll
@@ -80,6 +67,10 @@ C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\de\DevExpress.XtraPr
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.XtraPrinting.v16.1.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.XtraPrinting.v16.1.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ru\DevExpress.XtraPrinting.v16.1.resources.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\de\DevExpress.RichEdit.v16.1.Core.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.RichEdit.v16.1.Core.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
@@ -93,7 +84,15 @@ C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\es\DevExpress.Office
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.Office.v16.1.Core.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ru\DevExpress.Office.v16.1.Core.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.addDirection.resources
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.Direction.resources
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.editDirection.resources
-C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.TourOperator.resources
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.MainMenu.resources
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.Resources.resources
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.addTourOperator.resources
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.editTourOperator.resources
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.TourOperator.resources
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.vbproj.GenerateResource.Cache
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.exe.licenses
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.exe
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.xml
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.pdb
