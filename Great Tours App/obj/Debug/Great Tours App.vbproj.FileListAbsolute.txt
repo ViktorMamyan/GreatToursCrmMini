@@ -94,3 +94,6 @@ C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ja\DevExpress.Office
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\bin\Debug\ru\DevExpress.Office.v16.1.Core.resources.dll
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.addDirection.resources
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.editDirection.resources
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.TourOperator.resources
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.addTourOperator.resources
+C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.editTourOperator.resources

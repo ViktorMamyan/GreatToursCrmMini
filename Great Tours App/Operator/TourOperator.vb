@@ -3,11 +3,11 @@ Imports DevExpress.XtraGrid
 Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraGrid.Views.Grid.ViewInfo
 
-Public Class Direction
+Public Class TourOperator
 
     Friend Sub LoadData()
         Try
-            Dim dt As DataTable = QueryToSqlServer("SELECT * FROM GetDirection()", CommandType.Text)
+            Dim dt As DataTable = QueryToSqlServer("SELECT * FROM GetTourOperator()", CommandType.Text)
 
             GridControl1.BeginUpdate()
             GridControl1.DataSource = Nothing
@@ -21,11 +21,18 @@ Public Class Direction
                 .OptionsSelection.EnableAppearanceFocusedCell = False
                 .OptionsSelection.EnableAppearanceFocusedRow = False
 
-                .Columns("DirectionID").Visible = False
+                .Columns("TourOperatorID").Visible = False
 
-                .Columns("DirectionName").Caption = "Ուղղություն"
-                .Columns("SinlgeDirection").Caption = "Մեկ Ուղղությամբ"
-                .Columns("VisaDetails").Caption = "Վիզայի Պարամետրեր"
+                .Columns("OperatorName").Caption = "Օպերատոր"
+                .Columns("Director").Caption = "Տնօրեն"
+                .Columns("OperatorLocation").Caption = "Հասցե"
+                .Columns("RequestByURL").Caption = "Հարցումը Հղումով"
+                .Columns("RequestURL").Caption = "Հարցման Հղում"
+                .Columns("website").Caption = "Կայք"
+                .Columns("Tel").Caption = "Հեռախոս"
+                .Columns("skype").Caption = "Skype"
+                .Columns("facebook").Caption = "Facebook"
+
 
                 For i As Integer = 0 To GridView1.Columns.Count - 1
                     .Columns(i).OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList
@@ -34,9 +41,9 @@ Public Class Direction
             End With
 
             If GridView1.RowCount > 0 Then
-                If GridView1.Columns("DirectionName").Summary.ActiveCount = 0 Then
-                    Dim item As GridColumnSummaryItem = New GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "DirectionName", "{0}")
-                    GridView1.Columns("DirectionName").Summary.Add(item)
+                If GridView1.Columns("OperatorName").Summary.ActiveCount = 0 Then
+                    Dim item As GridColumnSummaryItem = New GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "OperatorName", "{0}")
+                    GridView1.Columns("OperatorName").Summary.Add(item)
                 End If
             End If
 
@@ -47,11 +54,11 @@ Public Class Direction
             MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
         End Try
     End Sub
-    Private Sub Direction_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+    Private Sub TourOperator_Shown(sender As Object, e As EventArgs) Handles Me.Shown
         Call LoadData()
     End Sub
     Sub NewItem()
-        Dim f As New addDirection With {.RefForm = DirectCast(Me, Direction)}
+        Dim f As New addTourOperator With {.RefForm = DirectCast(Me, TourOperator)}
         f.ShowDialog()
         f.Dispose()
     End Sub
@@ -64,13 +71,20 @@ Public Class Direction
             If GridView1.SelectedRowsCount = 0 Then Throw New Exception("Նշված տողեր չկան")
             If GridView1.SelectedRowsCount > 1 Then Throw New Exception("Հարկավոր է նշել միայն մեկ տող")
 
-            Dim ID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("DirectionID")
-            Dim DirectionName As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("DirectionName")
-            Dim SinlgeDirection As Boolean = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("SinlgeDirection")
-            Dim VisaDetails As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("VisaDetails")
+            Dim ID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("TourOperatorID")
+            Dim OperatorName As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("OperatorName")
+            Dim Director As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Director")
+            Dim OperatorLocation As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("OperatorLocation")
+            Dim RequestByURL As Boolean = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("RequestByURL")
+            Dim RequestURL As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("RequestURL")
+            Dim website As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("website")
+            Dim Tel As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Tel")
+            Dim skype As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("skype")
+            Dim facebook As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("facebook")
 
-            Dim EE As New editDirection With {.RefForm = DirectCast(Me, Direction), .ID = ID,
-                .DirectionName = DirectionName, .SinlgeDirection = SinlgeDirection, .VisaDetails = VisaDetails}
+            Dim EE As New editTourOperator With {.RefForm = DirectCast(Me, TourOperator), .ID = ID,
+                .OperatorName = OperatorName, .Director = Director, .OperatorLocation = OperatorLocation, .RequestByURL = RequestByURL,
+                .RequestURL = RequestURL, .website = website, .Tel = Tel, .skype = skype, .facebook = facebook}
 
             EE.ShowDialog()
             EE.Dispose()
@@ -92,9 +106,9 @@ Public Class Direction
 
                 Dim Parameters As New List(Of SqlParameter)
                 With Parameters
-                    .Add(New SqlParameter("@DirectionID", GridView1.GetDataRow(GridView1.GetSelectedRows()(i)).Item("DirectionID")))
+                    .Add(New SqlParameter("@TourOperatorID", GridView1.GetDataRow(GridView1.GetSelectedRows()(i)).Item("TourOperatorID")))
                 End With
-                ExecToSql("DirectionDelete", CommandType.StoredProcedure, Parameters.ToArray)
+                ExecToSql("TourOperatorDelete", CommandType.StoredProcedure, Parameters.ToArray)
 
             Next
 
@@ -135,7 +149,7 @@ Public Class Direction
                 If info.Column Is Nothing Then
                     'N/A
                 Else
-                    If IsDBNull(view.GetRowCellValue(info.RowHandle, "DirectionID")) OrElse view.GetRowCellValue(info.RowHandle, "DirectionID") <= 0 Then Exit Sub
+                    If IsDBNull(view.GetRowCellValue(info.RowHandle, "TourOperatorID")) OrElse view.GetRowCellValue(info.RowHandle, "TourOperatorID") <= 0 Then Exit Sub
 
                     GridView1.ClearSelection()
                     GridView1.SelectRows(info.RowHandle, info.RowHandle)
@@ -148,11 +162,11 @@ Public Class Direction
         End Try
     End Sub
 
-    Private Sub Direction_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+    Private Sub TourOperator_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         MainMenu.Show()
     End Sub
 
-    Private Sub Direction_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub TourOperator_Load(sender As Object, e As EventArgs) Handles Me.Load
         Me.WindowState = FormWindowState.Maximized
     End Sub
 

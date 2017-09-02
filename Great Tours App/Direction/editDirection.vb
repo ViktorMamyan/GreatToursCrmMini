@@ -6,13 +6,14 @@ Public Class editDirection
 
     Friend RefForm As New Direction
 
-    Friend ID As Int32 = -1
+    Friend ID As Int32 = 0
     Friend DirectionName As String = String.Empty
     Friend SinlgeDirection As Boolean
     Friend VisaDetails As String = String.Empty
 
-    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         Try
+            If ID = 0 Then Throw New Exception("Օպերատորի իդենտիֆիկատորը անորոշ է")
             If txtDirection.Text.Trim = String.Empty Then Throw New Exception("Ուղղությունը գրված չէ")
             If txtViza.Text.Trim = String.Empty Then Throw New Exception("Վիզայի պարամետրերը նշված չէ")
 

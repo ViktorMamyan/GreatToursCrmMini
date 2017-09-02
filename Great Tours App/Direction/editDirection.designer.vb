@@ -45,7 +45,6 @@ Partial Class editDirection
         Me.btnEdit.Size = New System.Drawing.Size(170, 42)
         Me.btnEdit.TabIndex = 3
         Me.btnEdit.Text = "Խմբագրել"
-        Me.btnEdit.ToolTip = "Ավելացնել"
         '
         'LabelControl2
         '

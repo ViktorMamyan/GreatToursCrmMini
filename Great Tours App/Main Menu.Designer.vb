@@ -27,6 +27,7 @@ Partial Class MainMenu
         Me.FormAssistant1 = New DevExpress.XtraBars.FormAssistant()
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
         Me.btnDirection = New DevExpress.XtraEditors.SimpleButton()
+        Me.btnTourOperator = New DevExpress.XtraEditors.SimpleButton()
         Me.SuspendLayout()
         '
         'DefaultLookAndFeel1
@@ -44,12 +45,24 @@ Partial Class MainMenu
         Me.btnDirection.TabIndex = 0
         Me.btnDirection.Text = "Ուղղություն"
         '
+        'btnTourOperator
+        '
+        Me.btnTourOperator.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.btnTourOperator.Appearance.Options.UseFont = True
+        Me.btnTourOperator.Image = CType(resources.GetObject("btnTourOperator.Image"), System.Drawing.Image)
+        Me.btnTourOperator.Location = New System.Drawing.Point(32, 75)
+        Me.btnTourOperator.Name = "btnTourOperator"
+        Me.btnTourOperator.Size = New System.Drawing.Size(303, 42)
+        Me.btnTourOperator.TabIndex = 1
+        Me.btnTourOperator.Text = "Տուր Օպերատոր"
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(375, 360)
+        Me.Controls.Add(Me.btnTourOperator)
         Me.Controls.Add(Me.btnDirection)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
@@ -64,4 +77,5 @@ Partial Class MainMenu
     Friend WithEvents FormAssistant1 As DevExpress.XtraBars.FormAssistant
     Friend WithEvents DefaultLookAndFeel1 As DevExpress.LookAndFeel.DefaultLookAndFeel
     Friend WithEvents btnDirection As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents btnTourOperator As DevExpress.XtraEditors.SimpleButton
 End Class

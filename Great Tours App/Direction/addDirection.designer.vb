@@ -45,7 +45,6 @@ Partial Class addDirection
         Me.btnAdd.Size = New System.Drawing.Size(170, 42)
         Me.btnAdd.TabIndex = 3
         Me.btnAdd.Text = "Ավելացնել"
-        Me.btnAdd.ToolTip = "Ավելացնել"
         '
         'LabelControl2
         '
