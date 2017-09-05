@@ -28,6 +28,9 @@ Partial Class MainMenu
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
         Me.btnDirection = New DevExpress.XtraEditors.SimpleButton()
         Me.btnTourOperator = New DevExpress.XtraEditors.SimpleButton()
+        Me.btnDirOpCombination = New DevExpress.XtraEditors.SimpleButton()
+        Me.ckLocalDB = New DevExpress.XtraEditors.CheckEdit()
+        CType(Me.ckLocalDB.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DefaultLookAndFeel1
@@ -39,9 +42,10 @@ Partial Class MainMenu
         Me.btnDirection.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.btnDirection.Appearance.Options.UseFont = True
         Me.btnDirection.Image = CType(resources.GetObject("btnDirection.Image"), System.Drawing.Image)
-        Me.btnDirection.Location = New System.Drawing.Point(32, 27)
+        Me.btnDirection.Location = New System.Drawing.Point(40, 34)
+        Me.btnDirection.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDirection.Name = "btnDirection"
-        Me.btnDirection.Size = New System.Drawing.Size(303, 42)
+        Me.btnDirection.Size = New System.Drawing.Size(379, 52)
         Me.btnDirection.TabIndex = 0
         Me.btnDirection.Text = "Ուղղություն"
         '
@@ -50,26 +54,50 @@ Partial Class MainMenu
         Me.btnTourOperator.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
         Me.btnTourOperator.Appearance.Options.UseFont = True
         Me.btnTourOperator.Image = CType(resources.GetObject("btnTourOperator.Image"), System.Drawing.Image)
-        Me.btnTourOperator.Location = New System.Drawing.Point(32, 75)
+        Me.btnTourOperator.Location = New System.Drawing.Point(40, 94)
+        Me.btnTourOperator.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTourOperator.Name = "btnTourOperator"
-        Me.btnTourOperator.Size = New System.Drawing.Size(303, 42)
+        Me.btnTourOperator.Size = New System.Drawing.Size(379, 52)
         Me.btnTourOperator.TabIndex = 1
         Me.btnTourOperator.Text = "Տուր Օպերատոր"
         '
+        'btnDirOpCombination
+        '
+        Me.btnDirOpCombination.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.btnDirOpCombination.Appearance.Options.UseFont = True
+        Me.btnDirOpCombination.Image = CType(resources.GetObject("btnDirOpCombination.Image"), System.Drawing.Image)
+        Me.btnDirOpCombination.Location = New System.Drawing.Point(40, 153)
+        Me.btnDirOpCombination.Name = "btnDirOpCombination"
+        Me.btnDirOpCombination.Size = New System.Drawing.Size(379, 52)
+        Me.btnDirOpCombination.TabIndex = 2
+        Me.btnDirOpCombination.Text = "Ողղություն - Օպերատոր"
+        '
+        'ckLocalDB
+        '
+        Me.ckLocalDB.Location = New System.Drawing.Point(27, 418)
+        Me.ckLocalDB.Name = "ckLocalDB"
+        Me.ckLocalDB.Properties.Caption = "Օգտագործել լոկալ բազա"
+        Me.ckLocalDB.Size = New System.Drawing.Size(202, 20)
+        Me.ckLocalDB.TabIndex = 3
+        '
         'MainMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(375, 360)
+        Me.ClientSize = New System.Drawing.Size(469, 450)
+        Me.Controls.Add(Me.ckLocalDB)
+        Me.Controls.Add(Me.btnDirOpCombination)
         Me.Controls.Add(Me.btnTourOperator)
         Me.Controls.Add(Me.btnDirection)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "MainMenu"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu - Great Tours"
+        CType(Me.ckLocalDB.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -78,4 +106,6 @@ Partial Class MainMenu
     Friend WithEvents DefaultLookAndFeel1 As DevExpress.LookAndFeel.DefaultLookAndFeel
     Friend WithEvents btnDirection As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnTourOperator As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents btnDirOpCombination As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents ckLocalDB As DevExpress.XtraEditors.CheckEdit
 End Class

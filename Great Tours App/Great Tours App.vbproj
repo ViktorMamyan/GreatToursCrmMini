@@ -56,10 +56,16 @@
     <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -98,6 +104,24 @@
       <DependentUpon>editDirection.vb</DependentUpon>
     </Compile>
     <Compile Include="Direction\editDirection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirOpCombination\addDirectionOperatorCombination.designer.vb">
+      <DependentUpon>addDirectionOperatorCombination.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DirOpCombination\addDirectionOperatorCombination.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirOpCombination\DirectionOperatorCombination.designer.vb">
+      <DependentUpon>DirectionOperatorCombination.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DirOpCombination\DirectionOperatorCombination.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirOpCombination\editDirectionOperatorCombination.designer.vb">
+      <DependentUpon>editDirectionOperatorCombination.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DirOpCombination\editDirectionOperatorCombination.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main Menu.Designer.vb">
@@ -151,6 +175,15 @@
     <EmbeddedResource Include="Direction\editDirection.resx">
       <DependentUpon>editDirection.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DirOpCombination\addDirectionOperatorCombination.resx">
+      <DependentUpon>addDirectionOperatorCombination.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirOpCombination\DirectionOperatorCombination.resx">
+      <DependentUpon>DirectionOperatorCombination.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirOpCombination\editDirectionOperatorCombination.resx">
+      <DependentUpon>editDirectionOperatorCombination.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main Menu.resx">
       <DependentUpon>Main Menu.vb</DependentUpon>
     </EmbeddedResource>
@@ -182,8 +215,10 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="dll\" />
     <Folder Include="icons\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

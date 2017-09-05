@@ -96,3 +96,25 @@ C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.exe.
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.exe
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.xml
 C:\Users\Vitya.CyberPC\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.pdb
+C:\Users\Vitya\Desktop\GT\Great Tours App\bin\Debug\Great Tours App.exe.config
+C:\Users\Vitya\Desktop\GT\Great Tours App\bin\Debug\Great Tours App.exe
+C:\Users\Vitya\Desktop\GT\Great Tours App\bin\Debug\Great Tours App.pdb
+C:\Users\Vitya\Desktop\GT\Great Tours App\bin\Debug\Great Tours App.xml
+C:\Users\Vitya\Desktop\GT\Great Tours App\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.vbprojResolveAssemblyReference.cache
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.addDirection.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.Direction.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.editDirection.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.addDirectionOperatorCombination.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.DirectionOperatorCombination.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.editDirectionOperatorCombination.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.MainMenu.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.Resources.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.addTourOperator.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.editTourOperator.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.TourOperator.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.vbproj.GenerateResource.Cache
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.exe.licenses
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.exe
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.xml
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.pdb

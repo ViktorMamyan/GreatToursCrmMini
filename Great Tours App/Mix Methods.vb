@@ -1,4 +1,6 @@
-﻿Module Mix_Methods
+﻿Imports Newtonsoft.Json
+
+Module Mix_Methods
 
     Friend Sub ExportTo(ByVal iGrid As DevExpress.XtraGrid.GridControl, strFormText As String)
         Try
@@ -17,5 +19,10 @@
             MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
         End Try
     End Sub
+
+    Friend Function ToJson(O As Object) As String
+        Dim json As String = JsonConvert.SerializeObject(O, Formatting.Indented)
+        Return json
+    End Function
 
 End Module
