@@ -26,4 +26,16 @@
         End If
     End Sub
 
+    Private Sub btnCustomer_Click(sender As Object, e As EventArgs) Handles btnCustomer.Click
+        Dim f As New Customer
+        f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnCustomerDetails_Click(sender As Object, e As EventArgs) Handles btnCustomerDetails.Click
+        Dim f As New CustomerDetails
+        f.Show()
+        Me.Hide()
+    End Sub
+
 End Class

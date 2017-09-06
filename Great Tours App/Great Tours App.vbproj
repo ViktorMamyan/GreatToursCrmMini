@@ -87,6 +87,54 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerDetails\addCustomerDetails.designer.vb">
+      <DependentUpon>addCustomerDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetails\addCustomerDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDetails\CustomerDetails.designer.vb">
+      <DependentUpon>CustomerDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetails\CustomerDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDetails\editCustomerDetails.designer.vb">
+      <DependentUpon>editCustomerDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetails\editCustomerDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDetails\selectCustomer.designer.vb">
+      <DependentUpon>selectCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetails\selectCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDetails\showIMG.designer.vb">
+      <DependentUpon>showIMG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetails\showIMG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\addCustomer.designer.vb">
+      <DependentUpon>addCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\addCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\Customer.designer.vb">
+      <DependentUpon>Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\editCustomer.designer.vb">
+      <DependentUpon>editCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\editCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DB.vb" />
     <Compile Include="Direction\addDirection.designer.vb">
       <DependentUpon>addDirection.vb</DependentUpon>
@@ -166,6 +214,30 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CustomerDetails\addCustomerDetails.resx">
+      <DependentUpon>addCustomerDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDetails\CustomerDetails.resx">
+      <DependentUpon>CustomerDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDetails\editCustomerDetails.resx">
+      <DependentUpon>editCustomerDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDetails\selectCustomer.resx">
+      <DependentUpon>selectCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDetails\showIMG.resx">
+      <DependentUpon>showIMG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\addCustomer.resx">
+      <DependentUpon>addCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\Customer.resx">
+      <DependentUpon>Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\editCustomer.resx">
+      <DependentUpon>editCustomer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Direction\addDirection.resx">
       <DependentUpon>addDirection.vb</DependentUpon>
     </EmbeddedResource>
