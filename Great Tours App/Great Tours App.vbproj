@@ -230,6 +230,24 @@
     <Compile Include="Operator\TourOperator.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TourCustomerDetails\addTourCustomer.designer.vb">
+      <DependentUpon>addTourCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TourCustomerDetails\addTourCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourCustomerDetails\editTourCustomer.designer.vb">
+      <DependentUpon>editTourCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TourCustomerDetails\editTourCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourCustomerDetails\TourCustomer.designer.vb">
+      <DependentUpon>TourCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TourCustomerDetails\TourCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Tour\addTour.designer.vb">
       <DependentUpon>addTour.vb</DependentUpon>
     </Compile>
@@ -332,6 +350,15 @@
     <EmbeddedResource Include="Operator\TourOperator.resx">
       <DependentUpon>TourOperator.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TourCustomerDetails\addTourCustomer.resx">
+      <DependentUpon>addTourCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourCustomerDetails\editTourCustomer.resx">
+      <DependentUpon>editTourCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourCustomerDetails\TourCustomer.resx">
+      <DependentUpon>TourCustomer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tour\addTour.resx">
       <DependentUpon>addTour.vb</DependentUpon>
     </EmbeddedResource>
@@ -359,7 +386,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dll\" />

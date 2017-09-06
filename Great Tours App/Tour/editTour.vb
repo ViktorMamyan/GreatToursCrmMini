@@ -6,7 +6,18 @@ Public Class editTour
 
     Friend RefForm As New Tour
 
-    Dim TourID As Int32 = 0
+    Friend TourID As Int32 = 0
+    Friend TourName As String = String.Empty
+    Friend TourStartDate As Date
+    Friend TourEndDate As Date
+    Friend DirectionID As Integer = 0
+    Friend DirectionName As String = String.Empty
+    Friend OperatorID As Integer = 0
+    Friend OperatorName As String = String.Empty
+    Friend CustomerID As Integer = 0
+    Friend Customer As String = String.Empty
+    Friend TotalPrice As Decimal = 0
+    Friend ApproximateIncome As Decimal = 0
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         Try
@@ -26,6 +37,7 @@ Public Class editTour
 
             Dim Parameters As New List(Of SqlParameter)
             With Parameters
+                .Add(New SqlParameter("@TourID", TourID))
                 .Add(New SqlParameter("@TourName", txtTour.Text.Trim))
                 .Add(New SqlParameter("@TourStartDate", sDate.DateTime))
                 .Add(New SqlParameter("@TourEndDate", eDate.DateTime))
@@ -42,27 +54,9 @@ Public Class editTour
                 .Add(New SqlParameter("@ByAnotherCustomer", IIf(ckUseBonusCard.Checked = True AndAlso rMinus.Checked = True, ckMinusByOtherCustomer.Checked, DBNull.Value)))
             End With
 
-            ExecToSql("TourAdd", CommandType.StoredProcedure, Parameters.ToArray)
+            ExecToSql("TourEdit", CommandType.StoredProcedure, Parameters.ToArray)
 
-            TourID = Query_Scalar("SELECT dbo.GetLasTourID()")
-
-            txtTour.Text = String.Empty
-            sDate.DateTime = Now
-            eDate.DateTime = Now
-            txtDirection.Text = String.Empty
-            txtDirection.Tag = String.Empty
-            txtOperator.Text = String.Empty
-            txtOperator.Tag = String.Empty
-            txtCustomer.Text = String.Empty
-            txtCustomer.Tag = String.Empty
-            txtTotalPrice.Text = 0
-            txtApproximateIncome.Text = 0
-
-            txtCard.Text = String.Empty
-            txtPoint.Text = 0
-            ckMinusByOtherCustomer.Checked = False
-            rPlus.Checked = True
-            ckUseBonusCard.Checked = False
+            btnEdit.Enabled = False
 
             RefForm.LoadData()
             If TourID <> 0 Then
@@ -72,8 +66,7 @@ Public Class editTour
                 End If
             End If
 
-            TourID = 0
-            txtTour.Select()
+            Me.Close()
 
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
@@ -200,8 +193,55 @@ Public Class editTour
     End Sub
 
     Private Sub addTour_Load(sender As Object, e As EventArgs) Handles Me.Load
-        sDate.DateTime = Now
-        eDate.DateTime = Now
+        If TourID > 0 Then
+            txtTour.Text = TourName
+            sDate.DateTime = TourStartDate
+            eDate.DateTime = TourEndDate
+            txtDirection.Tag = DirectionID
+            txtDirection.Text = DirectionName
+            txtOperator.Tag = OperatorID
+            txtOperator.Text = OperatorName
+            txtCustomer.Tag = CustomerID
+            txtCustomer.Text = Customer
+            txtTotalPrice.Text = TotalPrice
+            txtApproximateIncome.Text = ApproximateIncome
+
+            Call GetBonusByTourID()
+
+        Else
+            btnEdit.Enabled = False
+        End If
+    End Sub
+
+    Sub GetBonusByTourID()
+        Try
+            Dim Parameters As New List(Of SqlParameter)
+            With Parameters
+                .Add(New SqlParameter("@TourID", TourID))
+            End With
+
+            Dim dt As DataTable = QueryToSqlServer("SELECT * FROM GetBonusByTourID(@TourID)", CommandType.Text, Parameters.ToArray)
+
+            If dt.Rows.Count > 0 Then
+                ckUseBonusCard.Checked = True
+                txtCard.Text = dt.Rows(0)("Card")
+
+                If dt.Rows(0)("Direction") = "IN" Then
+                    rPlus.Checked = True
+                    txtPoint.Text = dt.Rows(0)("Points")
+                Else
+                    rMinus.Checked = True
+                    txtPoint.Text = dt.Rows(0)("Points") * (-1)
+
+                    If dt.Rows(0)("IsDiffCustomer") = True Then ckMinusByOtherCustomer.Checked = True
+                End If
+
+            End If
+
+        Catch ex As Exception
+            btnEdit.Enabled = False
+            MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
+        End Try
     End Sub
 
 End Class

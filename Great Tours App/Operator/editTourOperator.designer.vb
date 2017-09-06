@@ -42,6 +42,8 @@ Partial Class editTourOperator
         Me.LabelControl7 = New DevExpress.XtraEditors.LabelControl()
         Me.txtFacebook = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl8 = New DevExpress.XtraEditors.LabelControl()
+        Me.txtEmail = New DevExpress.XtraEditors.TextEdit()
+        Me.LabelControl9 = New DevExpress.XtraEditors.LabelControl()
         CType(Me.txtOperator.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ckByURL.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCeo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,178 +53,210 @@ Partial Class editTourOperator
         CType(Me.txtTel.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtSkype.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtFacebook.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtEmail.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnEdit
         '
         Me.btnEdit.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnEdit.Image = CType(resources.GetObject("btnEdit.Image"), System.Drawing.Image)
-        Me.btnEdit.Location = New System.Drawing.Point(253, 278)
+        Me.btnEdit.Location = New System.Drawing.Point(317, 377)
+        Me.btnEdit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.[False]
-        Me.btnEdit.Size = New System.Drawing.Size(170, 42)
-        Me.btnEdit.TabIndex = 9
+        Me.btnEdit.Size = New System.Drawing.Size(212, 52)
+        Me.btnEdit.TabIndex = 10
         Me.btnEdit.Text = "Խմբագրել"
         '
         'LabelControl2
         '
-        Me.LabelControl2.Location = New System.Drawing.Point(12, 32)
-        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl2.Location = New System.Drawing.Point(15, 40)
+        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.LabelControl2.Name = "LabelControl2"
-        Me.LabelControl2.Size = New System.Drawing.Size(82, 13)
+        Me.LabelControl2.Size = New System.Drawing.Size(101, 16)
         Me.LabelControl2.TabIndex = 16
         Me.LabelControl2.Text = "Տուր Օպերատոր"
         '
         'txtOperator
         '
-        Me.txtOperator.Location = New System.Drawing.Point(126, 29)
+        Me.txtOperator.Location = New System.Drawing.Point(158, 36)
+        Me.txtOperator.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtOperator.Name = "txtOperator"
         Me.txtOperator.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtOperator.Properties.Appearance.Options.UseBackColor = True
-        Me.txtOperator.Size = New System.Drawing.Size(297, 20)
+        Me.txtOperator.Size = New System.Drawing.Size(371, 22)
         Me.txtOperator.TabIndex = 0
         '
         'ckByURL
         '
-        Me.ckByURL.Location = New System.Drawing.Point(126, 107)
+        Me.ckByURL.Location = New System.Drawing.Point(158, 134)
+        Me.ckByURL.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ckByURL.Name = "ckByURL"
         Me.ckByURL.Properties.Caption = "Հարցումը URL-ով"
-        Me.ckByURL.Size = New System.Drawing.Size(133, 19)
+        Me.ckByURL.Size = New System.Drawing.Size(166, 20)
         Me.ckByURL.TabIndex = 3
         '
         'txtCeo
         '
-        Me.txtCeo.Location = New System.Drawing.Point(126, 55)
+        Me.txtCeo.Location = New System.Drawing.Point(158, 69)
+        Me.txtCeo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCeo.Name = "txtCeo"
         Me.txtCeo.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtCeo.Properties.Appearance.Options.UseBackColor = True
-        Me.txtCeo.Size = New System.Drawing.Size(297, 20)
+        Me.txtCeo.Size = New System.Drawing.Size(371, 22)
         Me.txtCeo.TabIndex = 1
         '
         'LabelControl3
         '
-        Me.LabelControl3.Location = New System.Drawing.Point(12, 58)
-        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl3.Location = New System.Drawing.Point(15, 72)
+        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.LabelControl3.Name = "LabelControl3"
-        Me.LabelControl3.Size = New System.Drawing.Size(39, 13)
+        Me.LabelControl3.Size = New System.Drawing.Size(45, 16)
         Me.LabelControl3.TabIndex = 25
         Me.LabelControl3.Text = "Տնօրեն"
         '
         'txtLocation
         '
-        Me.txtLocation.Location = New System.Drawing.Point(126, 81)
+        Me.txtLocation.Location = New System.Drawing.Point(158, 101)
+        Me.txtLocation.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtLocation.Name = "txtLocation"
         Me.txtLocation.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtLocation.Properties.Appearance.Options.UseBackColor = True
-        Me.txtLocation.Size = New System.Drawing.Size(297, 20)
+        Me.txtLocation.Size = New System.Drawing.Size(371, 22)
         Me.txtLocation.TabIndex = 2
         '
         'LabelControl4
         '
-        Me.LabelControl4.Location = New System.Drawing.Point(12, 84)
-        Me.LabelControl4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl4.Location = New System.Drawing.Point(15, 105)
+        Me.LabelControl4.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.LabelControl4.Name = "LabelControl4"
-        Me.LabelControl4.Size = New System.Drawing.Size(32, 13)
+        Me.LabelControl4.Size = New System.Drawing.Size(39, 16)
         Me.LabelControl4.TabIndex = 27
         Me.LabelControl4.Text = "Հասցե"
         '
         'txtByURL
         '
-        Me.txtByURL.Location = New System.Drawing.Point(126, 132)
+        Me.txtByURL.Location = New System.Drawing.Point(158, 165)
+        Me.txtByURL.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtByURL.Name = "txtByURL"
         Me.txtByURL.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtByURL.Properties.Appearance.Options.UseBackColor = True
-        Me.txtByURL.Size = New System.Drawing.Size(297, 20)
+        Me.txtByURL.Size = New System.Drawing.Size(371, 22)
         Me.txtByURL.TabIndex = 4
         '
         'LabelControl5
         '
-        Me.LabelControl5.Location = New System.Drawing.Point(12, 135)
-        Me.LabelControl5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl5.Location = New System.Drawing.Point(15, 169)
+        Me.LabelControl5.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.LabelControl5.Name = "LabelControl5"
-        Me.LabelControl5.Size = New System.Drawing.Size(69, 13)
+        Me.LabelControl5.Size = New System.Drawing.Size(85, 16)
         Me.LabelControl5.TabIndex = 29
         Me.LabelControl5.Text = "Հարցման URL"
         '
         'txtWebsite
         '
-        Me.txtWebsite.Location = New System.Drawing.Point(126, 158)
+        Me.txtWebsite.Location = New System.Drawing.Point(158, 198)
+        Me.txtWebsite.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtWebsite.Name = "txtWebsite"
         Me.txtWebsite.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtWebsite.Properties.Appearance.Options.UseBackColor = True
-        Me.txtWebsite.Size = New System.Drawing.Size(297, 20)
+        Me.txtWebsite.Size = New System.Drawing.Size(371, 22)
         Me.txtWebsite.TabIndex = 5
         '
         'LabelControl6
         '
-        Me.LabelControl6.Location = New System.Drawing.Point(12, 161)
-        Me.LabelControl6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl6.Location = New System.Drawing.Point(15, 201)
+        Me.LabelControl6.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.LabelControl6.Name = "LabelControl6"
-        Me.LabelControl6.Size = New System.Drawing.Size(26, 13)
+        Me.LabelControl6.Size = New System.Drawing.Size(32, 16)
         Me.LabelControl6.TabIndex = 31
         Me.LabelControl6.Text = "Կայք"
         '
         'txtTel
         '
-        Me.txtTel.Location = New System.Drawing.Point(126, 184)
+        Me.txtTel.Location = New System.Drawing.Point(158, 230)
+        Me.txtTel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTel.Name = "txtTel"
         Me.txtTel.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtTel.Properties.Appearance.Options.UseBackColor = True
-        Me.txtTel.Size = New System.Drawing.Size(297, 20)
+        Me.txtTel.Size = New System.Drawing.Size(371, 22)
         Me.txtTel.TabIndex = 6
         '
         'LabelControl1
         '
-        Me.LabelControl1.Location = New System.Drawing.Point(12, 187)
-        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl1.Location = New System.Drawing.Point(15, 234)
+        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.LabelControl1.Name = "LabelControl1"
-        Me.LabelControl1.Size = New System.Drawing.Size(48, 13)
+        Me.LabelControl1.Size = New System.Drawing.Size(57, 16)
         Me.LabelControl1.TabIndex = 33
         Me.LabelControl1.Text = "Հեռախոս"
         '
         'txtSkype
         '
-        Me.txtSkype.Location = New System.Drawing.Point(126, 210)
+        Me.txtSkype.Location = New System.Drawing.Point(158, 262)
+        Me.txtSkype.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSkype.Name = "txtSkype"
         Me.txtSkype.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtSkype.Properties.Appearance.Options.UseBackColor = True
-        Me.txtSkype.Size = New System.Drawing.Size(297, 20)
+        Me.txtSkype.Size = New System.Drawing.Size(371, 22)
         Me.txtSkype.TabIndex = 7
         '
         'LabelControl7
         '
-        Me.LabelControl7.Location = New System.Drawing.Point(12, 213)
-        Me.LabelControl7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl7.Location = New System.Drawing.Point(15, 266)
+        Me.LabelControl7.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.LabelControl7.Name = "LabelControl7"
-        Me.LabelControl7.Size = New System.Drawing.Size(29, 13)
+        Me.LabelControl7.Size = New System.Drawing.Size(34, 16)
         Me.LabelControl7.TabIndex = 35
         Me.LabelControl7.Text = "Skype"
         '
         'txtFacebook
         '
-        Me.txtFacebook.Location = New System.Drawing.Point(126, 236)
+        Me.txtFacebook.Location = New System.Drawing.Point(158, 295)
+        Me.txtFacebook.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtFacebook.Name = "txtFacebook"
         Me.txtFacebook.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtFacebook.Properties.Appearance.Options.UseBackColor = True
-        Me.txtFacebook.Size = New System.Drawing.Size(297, 20)
+        Me.txtFacebook.Size = New System.Drawing.Size(371, 22)
         Me.txtFacebook.TabIndex = 8
         '
         'LabelControl8
         '
-        Me.LabelControl8.Location = New System.Drawing.Point(12, 239)
-        Me.LabelControl8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl8.Location = New System.Drawing.Point(15, 299)
+        Me.LabelControl8.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
         Me.LabelControl8.Name = "LabelControl8"
-        Me.LabelControl8.Size = New System.Drawing.Size(46, 13)
+        Me.LabelControl8.Size = New System.Drawing.Size(55, 16)
         Me.LabelControl8.TabIndex = 37
         Me.LabelControl8.Text = "Facebook"
+        '
+        'txtEmail
+        '
+        Me.txtEmail.Location = New System.Drawing.Point(158, 325)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Properties.Appearance.BackColor = System.Drawing.Color.White
+        Me.txtEmail.Properties.Appearance.Options.UseBackColor = True
+        Me.txtEmail.Size = New System.Drawing.Size(371, 22)
+        Me.txtEmail.TabIndex = 9
+        '
+        'LabelControl9
+        '
+        Me.LabelControl9.Location = New System.Drawing.Point(15, 329)
+        Me.LabelControl9.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl9.Name = "LabelControl9"
+        Me.LabelControl9.Size = New System.Drawing.Size(31, 16)
+        Me.LabelControl9.TabIndex = 41
+        Me.LabelControl9.Text = "Email"
         '
         'editTourOperator
         '
         Me.AcceptButton = Me.btnEdit
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(458, 349)
+        Me.ClientSize = New System.Drawing.Size(572, 460)
+        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.LabelControl9)
         Me.Controls.Add(Me.txtFacebook)
         Me.Controls.Add(Me.LabelControl8)
         Me.Controls.Add(Me.txtSkype)
@@ -242,6 +276,7 @@ Partial Class editTourOperator
         Me.Controls.Add(Me.LabelControl2)
         Me.Controls.Add(Me.btnEdit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "editTourOperator"
@@ -257,6 +292,7 @@ Partial Class editTourOperator
         CType(Me.txtTel.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtSkype.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtFacebook.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtEmail.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -281,4 +317,6 @@ Partial Class editTourOperator
     Friend WithEvents LabelControl7 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents txtFacebook As DevExpress.XtraEditors.TextEdit
     Friend WithEvents LabelControl8 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents txtEmail As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents LabelControl9 As DevExpress.XtraEditors.LabelControl
 End Class

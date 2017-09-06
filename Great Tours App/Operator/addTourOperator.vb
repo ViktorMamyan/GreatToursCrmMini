@@ -24,6 +24,7 @@ Public Class addTourOperator
                 .Add(New SqlParameter("@Tel", IIf(txtTel.Text.Trim = String.Empty, DBNull.Value, txtTel.Text.Trim)))
                 .Add(New SqlParameter("@skype", IIf(txtSkype.Text.Trim = String.Empty, DBNull.Value, txtSkype.Text.Trim)))
                 .Add(New SqlParameter("@facebook", IIf(txtFacebook.Text.Trim = String.Empty, DBNull.Value, txtFacebook.Text.Trim)))
+                .Add(New SqlParameter("@email", IIf(txtEmail.Text.Trim = String.Empty, DBNull.Value, txtEmail.Text.Trim)))
             End With
             ExecToSql("TourOperatorAdd", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -38,6 +39,7 @@ Public Class addTourOperator
             txtTel.Text = String.Empty
             txtSkype.Text = String.Empty
             txtFacebook.Text = String.Empty
+            txtEmail.Text = String.Empty
 
             RefForm.LoadData()
             If TourOperatorID <> 0 Then

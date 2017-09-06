@@ -16,6 +16,7 @@ Public Class editTourOperator
     Friend Tel As String = String.Empty
     Friend skype As String = String.Empty
     Friend facebook As String = String.Empty
+    Friend email As String = String.Empty
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         Try
@@ -36,6 +37,7 @@ Public Class editTourOperator
                 .Add(New SqlParameter("@Tel", IIf(txtTel.Text.Trim = String.Empty, DBNull.Value, txtTel.Text.Trim)))
                 .Add(New SqlParameter("@skype", IIf(txtSkype.Text.Trim = String.Empty, DBNull.Value, txtSkype.Text.Trim)))
                 .Add(New SqlParameter("@facebook", IIf(txtFacebook.Text.Trim = String.Empty, DBNull.Value, txtFacebook.Text.Trim)))
+                .Add(New SqlParameter("@email", IIf(txtEmail.Text.Trim = String.Empty, DBNull.Value, txtEmail.Text.Trim)))
             End With
             ExecToSql("TourOperatorEdit", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -67,6 +69,7 @@ Public Class editTourOperator
             txtTel.Text = Tel
             txtSkype.Text = skype
             txtFacebook.Text = facebook
+            txtEmail.Text = email
         End If
     End Sub
 

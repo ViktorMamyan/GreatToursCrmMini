@@ -42,6 +42,8 @@ Partial Class addTourOperator
         Me.LabelControl7 = New DevExpress.XtraEditors.LabelControl()
         Me.txtFacebook = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl8 = New DevExpress.XtraEditors.LabelControl()
+        Me.txtEmail = New DevExpress.XtraEditors.TextEdit()
+        Me.LabelControl9 = New DevExpress.XtraEditors.LabelControl()
         CType(Me.txtOperator.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ckByURL.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCeo.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,18 +53,19 @@ Partial Class addTourOperator
         CType(Me.txtTel.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtSkype.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtFacebook.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtEmail.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnAdd
         '
         Me.btnAdd.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
-        Me.btnAdd.Location = New System.Drawing.Point(316, 348)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAdd.Location = New System.Drawing.Point(317, 372)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.[False]
         Me.btnAdd.Size = New System.Drawing.Size(212, 52)
-        Me.btnAdd.TabIndex = 9
+        Me.btnAdd.TabIndex = 10
         Me.btnAdd.Text = "Ավելացնել"
         '
         'LabelControl2
@@ -77,7 +80,7 @@ Partial Class addTourOperator
         'txtOperator
         '
         Me.txtOperator.Location = New System.Drawing.Point(158, 36)
-        Me.txtOperator.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtOperator.Margin = New System.Windows.Forms.Padding(4)
         Me.txtOperator.Name = "txtOperator"
         Me.txtOperator.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtOperator.Properties.Appearance.Options.UseBackColor = True
@@ -87,7 +90,7 @@ Partial Class addTourOperator
         'ckByURL
         '
         Me.ckByURL.Location = New System.Drawing.Point(158, 134)
-        Me.ckByURL.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ckByURL.Margin = New System.Windows.Forms.Padding(4)
         Me.ckByURL.Name = "ckByURL"
         Me.ckByURL.Properties.Caption = "Հարցումը URL-ով"
         Me.ckByURL.Size = New System.Drawing.Size(166, 20)
@@ -96,7 +99,7 @@ Partial Class addTourOperator
         'txtCeo
         '
         Me.txtCeo.Location = New System.Drawing.Point(158, 69)
-        Me.txtCeo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCeo.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCeo.Name = "txtCeo"
         Me.txtCeo.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtCeo.Properties.Appearance.Options.UseBackColor = True
@@ -115,7 +118,7 @@ Partial Class addTourOperator
         'txtLocation
         '
         Me.txtLocation.Location = New System.Drawing.Point(158, 101)
-        Me.txtLocation.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtLocation.Margin = New System.Windows.Forms.Padding(4)
         Me.txtLocation.Name = "txtLocation"
         Me.txtLocation.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtLocation.Properties.Appearance.Options.UseBackColor = True
@@ -134,7 +137,7 @@ Partial Class addTourOperator
         'txtByURL
         '
         Me.txtByURL.Location = New System.Drawing.Point(158, 165)
-        Me.txtByURL.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtByURL.Margin = New System.Windows.Forms.Padding(4)
         Me.txtByURL.Name = "txtByURL"
         Me.txtByURL.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtByURL.Properties.Appearance.Options.UseBackColor = True
@@ -153,7 +156,7 @@ Partial Class addTourOperator
         'txtWebsite
         '
         Me.txtWebsite.Location = New System.Drawing.Point(158, 198)
-        Me.txtWebsite.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtWebsite.Margin = New System.Windows.Forms.Padding(4)
         Me.txtWebsite.Name = "txtWebsite"
         Me.txtWebsite.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtWebsite.Properties.Appearance.Options.UseBackColor = True
@@ -172,7 +175,7 @@ Partial Class addTourOperator
         'txtTel
         '
         Me.txtTel.Location = New System.Drawing.Point(158, 230)
-        Me.txtTel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTel.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTel.Name = "txtTel"
         Me.txtTel.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtTel.Properties.Appearance.Options.UseBackColor = True
@@ -191,7 +194,7 @@ Partial Class addTourOperator
         'txtSkype
         '
         Me.txtSkype.Location = New System.Drawing.Point(158, 262)
-        Me.txtSkype.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtSkype.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSkype.Name = "txtSkype"
         Me.txtSkype.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtSkype.Properties.Appearance.Options.UseBackColor = True
@@ -210,7 +213,7 @@ Partial Class addTourOperator
         'txtFacebook
         '
         Me.txtFacebook.Location = New System.Drawing.Point(158, 295)
-        Me.txtFacebook.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtFacebook.Margin = New System.Windows.Forms.Padding(4)
         Me.txtFacebook.Name = "txtFacebook"
         Me.txtFacebook.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtFacebook.Properties.Appearance.Options.UseBackColor = True
@@ -226,13 +229,34 @@ Partial Class addTourOperator
         Me.LabelControl8.TabIndex = 37
         Me.LabelControl8.Text = "Facebook"
         '
+        'txtEmail
+        '
+        Me.txtEmail.Location = New System.Drawing.Point(158, 325)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Properties.Appearance.BackColor = System.Drawing.Color.White
+        Me.txtEmail.Properties.Appearance.Options.UseBackColor = True
+        Me.txtEmail.Size = New System.Drawing.Size(371, 22)
+        Me.txtEmail.TabIndex = 9
+        '
+        'LabelControl9
+        '
+        Me.LabelControl9.Location = New System.Drawing.Point(15, 329)
+        Me.LabelControl9.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl9.Name = "LabelControl9"
+        Me.LabelControl9.Size = New System.Drawing.Size(31, 16)
+        Me.LabelControl9.TabIndex = 39
+        Me.LabelControl9.Text = "Email"
+        '
         'addTourOperator
         '
         Me.AcceptButton = Me.btnAdd
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(572, 436)
+        Me.ClientSize = New System.Drawing.Size(572, 448)
+        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.LabelControl9)
         Me.Controls.Add(Me.txtFacebook)
         Me.Controls.Add(Me.LabelControl8)
         Me.Controls.Add(Me.txtSkype)
@@ -252,7 +276,7 @@ Partial Class addTourOperator
         Me.Controls.Add(Me.LabelControl2)
         Me.Controls.Add(Me.btnAdd)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "addTourOperator"
@@ -268,6 +292,7 @@ Partial Class addTourOperator
         CType(Me.txtTel.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtSkype.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtFacebook.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtEmail.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -292,4 +317,6 @@ Partial Class addTourOperator
     Friend WithEvents LabelControl7 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents txtFacebook As DevExpress.XtraEditors.TextEdit
     Friend WithEvents LabelControl8 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents txtEmail As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents LabelControl9 As DevExpress.XtraEditors.LabelControl
 End Class

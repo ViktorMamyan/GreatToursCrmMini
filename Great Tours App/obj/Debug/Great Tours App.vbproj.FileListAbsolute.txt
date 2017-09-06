@@ -123,6 +123,9 @@ C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.Resources.re
 C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.addTourOperator.resources
 C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.editTourOperator.resources
 C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.TourOperator.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.addTourCustomer.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.editTourCustomer.resources
+C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.TourCustomer.resources
 C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.addTour.resources
 C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.editTour.resources
 C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great_Tours_App.selectDirection.resources
