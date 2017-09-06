@@ -87,6 +87,24 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Card\addCard.designer.vb">
+      <DependentUpon>addCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Card\addCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Card\Card.designer.vb">
+      <DependentUpon>Card.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Card\Card.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Card\editCard.designer.vb">
+      <DependentUpon>editCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Card\editCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CustomerDetails\addCustomerDetails.designer.vb">
       <DependentUpon>addCustomerDetails.vb</DependentUpon>
     </Compile>
@@ -212,8 +230,47 @@
     <Compile Include="Operator\TourOperator.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Tour\addTour.designer.vb">
+      <DependentUpon>addTour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tour\addTour.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour\editTour.designer.vb">
+      <DependentUpon>editTour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tour\editTour.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour\selectDirection.designer.vb">
+      <DependentUpon>selectDirection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tour\selectDirection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour\selectOperator.designer.vb">
+      <DependentUpon>selectOperator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tour\selectOperator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour\Tour.designer.vb">
+      <DependentUpon>Tour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tour\Tour.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Card\addCard.resx">
+      <DependentUpon>addCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Card\Card.resx">
+      <DependentUpon>Card.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Card\editCard.resx">
+      <DependentUpon>editCard.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerDetails\addCustomerDetails.resx">
       <DependentUpon>addCustomerDetails.vb</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +331,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Operator\TourOperator.resx">
       <DependentUpon>TourOperator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour\addTour.resx">
+      <DependentUpon>addTour.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour\editTour.resx">
+      <DependentUpon>editTour.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour\selectDirection.resx">
+      <DependentUpon>selectDirection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour\selectOperator.resx">
+      <DependentUpon>selectOperator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour\Tour.resx">
+      <DependentUpon>Tour.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

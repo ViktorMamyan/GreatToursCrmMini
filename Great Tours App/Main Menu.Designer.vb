@@ -32,6 +32,8 @@ Partial Class MainMenu
         Me.ckLocalDB = New DevExpress.XtraEditors.CheckEdit()
         Me.btnCustomer = New DevExpress.XtraEditors.SimpleButton()
         Me.btnCustomerDetails = New DevExpress.XtraEditors.SimpleButton()
+        Me.btnTour = New DevExpress.XtraEditors.SimpleButton()
+        Me.btnBonusCard = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.ckLocalDB.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -85,7 +87,7 @@ Partial Class MainMenu
         '
         'ckLocalDB
         '
-        Me.ckLocalDB.Location = New System.Drawing.Point(27, 418)
+        Me.ckLocalDB.Location = New System.Drawing.Point(12, 579)
         Me.ckLocalDB.Name = "ckLocalDB"
         Me.ckLocalDB.Properties.Caption = "Օգտագործել լոկալ բազա"
         Me.ckLocalDB.Size = New System.Drawing.Size(202, 20)
@@ -119,12 +121,42 @@ Partial Class MainMenu
         Me.btnCustomerDetails.TabIndex = 5
         Me.btnCustomerDetails.Text = "Հաճախորդի Պարամետրեր"
         '
+        'btnTour
+        '
+        Me.btnTour.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.btnTour.Appearance.Options.UseFont = True
+        Me.btnTour.Appearance.Options.UseTextOptions = True
+        Me.btnTour.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.btnTour.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
+        Me.btnTour.Image = CType(resources.GetObject("btnTour.Image"), System.Drawing.Image)
+        Me.btnTour.Location = New System.Drawing.Point(40, 449)
+        Me.btnTour.Name = "btnTour"
+        Me.btnTour.Size = New System.Drawing.Size(379, 52)
+        Me.btnTour.TabIndex = 7
+        Me.btnTour.Text = "Տուր"
+        '
+        'btnBonusCard
+        '
+        Me.btnBonusCard.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.btnBonusCard.Appearance.Options.UseFont = True
+        Me.btnBonusCard.Appearance.Options.UseTextOptions = True
+        Me.btnBonusCard.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.btnBonusCard.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
+        Me.btnBonusCard.Image = CType(resources.GetObject("btnBonusCard.Image"), System.Drawing.Image)
+        Me.btnBonusCard.Location = New System.Drawing.Point(40, 362)
+        Me.btnBonusCard.Name = "btnBonusCard"
+        Me.btnBonusCard.Size = New System.Drawing.Size(379, 52)
+        Me.btnBonusCard.TabIndex = 6
+        Me.btnBonusCard.Text = "Բոնուսային Քարտ"
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(469, 450)
+        Me.ClientSize = New System.Drawing.Size(469, 611)
+        Me.Controls.Add(Me.btnBonusCard)
+        Me.Controls.Add(Me.btnTour)
         Me.Controls.Add(Me.btnCustomerDetails)
         Me.Controls.Add(Me.btnCustomer)
         Me.Controls.Add(Me.ckLocalDB)
@@ -151,4 +183,6 @@ Partial Class MainMenu
     Friend WithEvents ckLocalDB As DevExpress.XtraEditors.CheckEdit
     Friend WithEvents btnCustomer As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnCustomerDetails As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents btnTour As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents btnBonusCard As DevExpress.XtraEditors.SimpleButton
 End Class

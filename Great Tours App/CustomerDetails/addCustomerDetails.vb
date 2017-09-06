@@ -82,6 +82,7 @@ Public Class addCustomerDetails
             CustomerDetailsID = Query_Scalar("SELECT dbo.GetLasCustomerDetailsID()")
 
             txtCustomer.Text = String.Empty
+            txtCustomer.Tag = String.Empty
             txtFirstName.Text = String.Empty
             txtLastName.Text = String.Empty
             txtPassport.Text = String.Empty

@@ -38,4 +38,16 @@
         Me.Hide()
     End Sub
 
+    Private Sub btnTour_Click(sender As Object, e As EventArgs) Handles btnTour.Click
+        Dim f As New Tour
+        f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnBonusCard_Click(sender As Object, e As EventArgs) Handles btnBonusCard.Click
+        Dim f As New Card
+        f.Show()
+        Me.Hide()
+    End Sub
+
 End Class
