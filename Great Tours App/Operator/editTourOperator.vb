@@ -17,6 +17,9 @@ Public Class editTourOperator
     Friend skype As String = String.Empty
     Friend facebook As String = String.Empty
     Friend email As String = String.Empty
+    Friend Login As String = String.Empty
+    Friend Password As String = String.Empty
+    Friend AgentID As String = String.Empty
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         Try
@@ -38,6 +41,9 @@ Public Class editTourOperator
                 .Add(New SqlParameter("@skype", IIf(txtSkype.Text.Trim = String.Empty, DBNull.Value, txtSkype.Text.Trim)))
                 .Add(New SqlParameter("@facebook", IIf(txtFacebook.Text.Trim = String.Empty, DBNull.Value, txtFacebook.Text.Trim)))
                 .Add(New SqlParameter("@email", IIf(txtEmail.Text.Trim = String.Empty, DBNull.Value, txtEmail.Text.Trim)))
+                .Add(New SqlParameter("@Login", IIf(txtLogin.Text.Trim = String.Empty, DBNull.Value, txtLogin.Text.Trim)))
+                .Add(New SqlParameter("@Password", IIf(txtPassword.Text.Trim = String.Empty, DBNull.Value, txtPassword.Text.Trim)))
+                .Add(New SqlParameter("@AgentID", IIf(txtAgentID.Text.Trim = String.Empty, DBNull.Value, txtAgentID.Text.Trim)))
             End With
             ExecToSql("TourOperatorEdit", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -70,6 +76,9 @@ Public Class editTourOperator
             txtSkype.Text = skype
             txtFacebook.Text = facebook
             txtEmail.Text = email
+            txtLogin.Text = Login
+            txtPassword.Text = Password
+            txtAgentID.Text = AgentID
         End If
     End Sub
 

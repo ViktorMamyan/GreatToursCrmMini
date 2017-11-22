@@ -136,3 +136,47 @@ C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.exe.licenses
 C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.exe
 C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.xml
 C:\Users\Vitya\Desktop\GT\Great Tours App\obj\Debug\Great Tours App.pdb
+C:\Vitya\Projects\CP\Great Tours App\bin\Debug\Great Tours App.exe.config
+C:\Vitya\Projects\CP\Great Tours App\obj\Debug\Great Tours App.exe
+C:\Vitya\Projects\CP\Great Tours App\obj\Debug\Great Tours App.xml
+C:\Vitya\Projects\CP\Great Tours App\obj\Debug\Great Tours App.pdb
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Great Tours App.exe.config
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Great Tours App.exe
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Great Tours App.pdb
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Great Tours App.xml
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Newtonsoft.Json.dll
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addCard.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Card.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editCard.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addCustomerDetails.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.CustomerDetails.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editCustomerDetails.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.selectCustomer.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.showIMG.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addCustomer.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Customer.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editCustomer.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addDirection.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Direction.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editDirection.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addDirectionOperatorCombination.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.DirectionOperatorCombination.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editDirectionOperatorCombination.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.MainMenu.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Resources.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addTourOperator.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editTourOperator.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.TourOperator.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addTourCustomer.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editTourCustomer.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.TourCustomer.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addTour.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editTour.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.selectDirection.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.selectOperator.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Tour.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.vbproj.GenerateResource.Cache
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.exe.licenses
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.exe
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.xml
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.pdb

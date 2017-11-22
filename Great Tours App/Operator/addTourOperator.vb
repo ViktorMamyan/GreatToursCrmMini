@@ -25,6 +25,9 @@ Public Class addTourOperator
                 .Add(New SqlParameter("@skype", IIf(txtSkype.Text.Trim = String.Empty, DBNull.Value, txtSkype.Text.Trim)))
                 .Add(New SqlParameter("@facebook", IIf(txtFacebook.Text.Trim = String.Empty, DBNull.Value, txtFacebook.Text.Trim)))
                 .Add(New SqlParameter("@email", IIf(txtEmail.Text.Trim = String.Empty, DBNull.Value, txtEmail.Text.Trim)))
+                .Add(New SqlParameter("@Login", IIf(txtLogin.Text.Trim = String.Empty, DBNull.Value, txtLogin.Text.Trim)))
+                .Add(New SqlParameter("@Password", IIf(txtPassword.Text.Trim = String.Empty, DBNull.Value, txtPassword.Text.Trim)))
+                .Add(New SqlParameter("@AgentID", IIf(txtAgentID.Text.Trim = String.Empty, DBNull.Value, txtAgentID.Text.Trim)))
             End With
             ExecToSql("TourOperatorAdd", CommandType.StoredProcedure, Parameters.ToArray)
 

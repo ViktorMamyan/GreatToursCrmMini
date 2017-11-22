@@ -83,9 +83,14 @@ Public Class TourOperator
             Dim facebook As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("facebook")
             Dim email As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("email")
 
+            Dim Login As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Login")
+            Dim Password As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Password")
+            Dim AgentID As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("AgentID")
+
             Dim EE As New editTourOperator With {.RefForm = DirectCast(Me, TourOperator), .ID = ID,
                 .OperatorName = OperatorName, .Director = Director, .OperatorLocation = OperatorLocation, .RequestByURL = RequestByURL,
-                .RequestURL = RequestURL, .website = website, .Tel = Tel, .skype = skype, .facebook = facebook, .email = email}
+                .RequestURL = RequestURL, .website = website, .Tel = Tel, .skype = skype, .facebook = facebook, .email = email,
+                .Login = Login, .Password = Password, .AgentID = AgentID}
 
             EE.ShowDialog()
             EE.Dispose()
