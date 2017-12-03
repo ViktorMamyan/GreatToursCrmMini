@@ -87,6 +87,24 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AirOperator\addAirOperator.designer.vb">
+      <DependentUpon>addAirOperator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AirOperator\addAirOperator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AirOperator\AirOperator.designer.vb">
+      <DependentUpon>AirOperator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AirOperator\AirOperator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AirOperator\editAirOperator.designer.vb">
+      <DependentUpon>editAirOperator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AirOperator\editAirOperator.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Card\addCard.designer.vb">
       <DependentUpon>addCard.vb</DependentUpon>
     </Compile>
@@ -280,6 +298,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AirOperator\addAirOperator.resx">
+      <DependentUpon>addAirOperator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AirOperator\AirOperator.resx">
+      <DependentUpon>AirOperator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AirOperator\editAirOperator.resx">
+      <DependentUpon>editAirOperator.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Card\addCard.resx">
       <DependentUpon>addCard.vb</DependentUpon>
     </EmbeddedResource>

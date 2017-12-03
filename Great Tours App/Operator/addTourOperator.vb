@@ -43,6 +43,9 @@ Public Class addTourOperator
             txtSkype.Text = String.Empty
             txtFacebook.Text = String.Empty
             txtEmail.Text = String.Empty
+            txtLogin.Text = String.Empty
+            txtPassword.Text = String.Empty
+            txtAgentID.Text = String.Empty
 
             RefForm.LoadData()
             If TourOperatorID <> 0 Then

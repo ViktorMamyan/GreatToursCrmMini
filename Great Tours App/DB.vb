@@ -4,7 +4,7 @@ Module DB
 
     Friend SQLString As String = "Server=127.0.0.1;Initial Catalog=GT;Integrated Security=True;"
 
-    'Friend SQLString As String = "Data Source=192.168.1.102\GT,9999;Initial Catalog=GT;User ID=gtUser;Password=abcgtuserpass"
+    'Friend SQLString As String = "Data Source=LAPTOP\GT,9999;Initial Catalog=GT;User ID=gtUser;Password=abcgtuserpass"
 
     Friend Function QueryToSqlServer(ByVal CommandText As String, ByVal SqlCommandType As CommandType, Optional ByVal Timeout As Integer = 30) As DataTable
         Dim dt As DataTable
