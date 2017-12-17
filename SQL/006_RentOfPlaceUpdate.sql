@@ -1,0 +1,19 @@
+USE [GT]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[RentOfPlaceUpdate]
+	@RentID INT, @Fee DECIMAL(12,0), @ForYear SMALLINT, @ForMonth TINYINT
+AS
+BEGIN
+	SET NOCOUNT ON;
+	
+	UPDATE RentOfPlace
+	SET Fee = @Fee
+	,ForYear = @ForYear
+	,ForMonth = @ForMonth
+	WHERE RentID = @RentID
+END

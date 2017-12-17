@@ -87,6 +87,90 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrative.designer.vb">
+      <DependentUpon>Administrative.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Աշխատավարձ\addSalary.designer.vb">
+      <DependentUpon>addSalary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Աշխատավարձ\addSalary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Աշխատավարձ\changeEmployee.designer.vb">
+      <DependentUpon>changeEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Աշխատավարձ\changeEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Աշխատավարձ\editSalary.designer.vb">
+      <DependentUpon>editSalary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Աշխատավարձ\editSalary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Աշխատավարձ\newEmployee.designer.vb">
+      <DependentUpon>newEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Աշխատավարձ\newEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Աշխատավարձ\Salary.designer.vb">
+      <DependentUpon>Salary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Աշխատավարձ\Salary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Հարկեր\addTax.designer.vb">
+      <DependentUpon>addTax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Հարկեր\addTax.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Հարկեր\changeTaxType.designer.vb">
+      <DependentUpon>changeTaxType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Հարկեր\changeTaxType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Հարկեր\editTax.designer.vb">
+      <DependentUpon>editTax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Հարկեր\editTax.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Հարկեր\newTaxType.designer.vb">
+      <DependentUpon>newTaxType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Հարկեր\newTaxType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Հարկեր\Taxes.designer.vb">
+      <DependentUpon>Taxes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Հարկեր\Taxes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Տարածքի Վարձակալություն\addRentOfPlace.designer.vb">
+      <DependentUpon>addRentOfPlace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Տարածքի Վարձակալություն\addRentOfPlace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Տարածքի Վարձակալություն\editRentOfPlace.designer.vb">
+      <DependentUpon>editRentOfPlace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Տարածքի Վարձակալություն\editRentOfPlace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Տարածքի Վարձակալություն\PlacePay.designer.vb">
+      <DependentUpon>PlacePay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Տարածքի Վարձակալություն\PlacePay.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AirOperator\addAirOperator.designer.vb">
       <DependentUpon>addAirOperator.vb</DependentUpon>
     </Compile>
@@ -298,6 +382,48 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Administrative.resx">
+      <DependentUpon>Administrative.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Աշխատավարձ\addSalary.resx">
+      <DependentUpon>addSalary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Աշխատավարձ\changeEmployee.resx">
+      <DependentUpon>changeEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Աշխատավարձ\editSalary.resx">
+      <DependentUpon>editSalary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Աշխատավարձ\newEmployee.resx">
+      <DependentUpon>newEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Աշխատավարձ\Salary.resx">
+      <DependentUpon>Salary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Հարկեր\addTax.resx">
+      <DependentUpon>addTax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Հարկեր\changeTaxType.resx">
+      <DependentUpon>changeTaxType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Հարկեր\editTax.resx">
+      <DependentUpon>editTax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Հարկեր\newTaxType.resx">
+      <DependentUpon>newTaxType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Հարկեր\Taxes.resx">
+      <DependentUpon>Taxes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Տարածքի Վարձակալություն\addRentOfPlace.resx">
+      <DependentUpon>addRentOfPlace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Տարածքի Վարձակալություն\editRentOfPlace.resx">
+      <DependentUpon>editRentOfPlace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Տարածքի Վարձակալություն\PlacePay.resx">
+      <DependentUpon>PlacePay.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AirOperator\addAirOperator.resx">
       <DependentUpon>addAirOperator.vb</DependentUpon>
     </EmbeddedResource>

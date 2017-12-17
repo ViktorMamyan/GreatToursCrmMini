@@ -48,4 +48,10 @@
         Me.Hide()
     End Sub
 
+    Private Sub txtAdministrativ_Click(sender As Object, e As EventArgs) Handles txtAdministrativ.Click
+        Dim f As New Administrative
+        f.Show()
+        Me.Hide()
+    End Sub
+
 End Class

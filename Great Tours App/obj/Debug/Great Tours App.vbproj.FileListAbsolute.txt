@@ -145,6 +145,20 @@ C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Great Tours App.exe
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Great Tours App.pdb
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Great Tours App.xml
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Newtonsoft.Json.dll
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Administrative.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addSalary.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeEmployee.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editSalary.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.newEmployee.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Salary.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addTax.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeTaxType.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editTax.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.newTaxType.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Taxes.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addRentOfPlace.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editRentOfPlace.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.PlacePay.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addAirOperator.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.AirOperator.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editAirOperator.resources

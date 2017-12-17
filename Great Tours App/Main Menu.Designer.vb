@@ -34,6 +34,7 @@ Partial Class MainMenu
         Me.btnTour = New DevExpress.XtraEditors.SimpleButton()
         Me.btnBonusCard = New DevExpress.XtraEditors.SimpleButton()
         Me.btnAirOperator = New DevExpress.XtraEditors.SimpleButton()
+        Me.txtAdministrativ = New DevExpress.XtraEditors.SimpleButton()
         Me.SuspendLayout()
         '
         'DefaultLookAndFeel1
@@ -77,7 +78,7 @@ Partial Class MainMenu
         Me.btnDirOpCombination.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnDirOpCombination.Image = CType(resources.GetObject("btnDirOpCombination.Image"), System.Drawing.Image)
         Me.btnDirOpCombination.Location = New System.Drawing.Point(32, 122)
-        Me.btnDirOpCombination.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnDirOpCombination.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDirOpCombination.Name = "btnDirOpCombination"
         Me.btnDirOpCombination.Size = New System.Drawing.Size(303, 42)
         Me.btnDirOpCombination.TabIndex = 3
@@ -92,7 +93,7 @@ Partial Class MainMenu
         Me.btnCustomer.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnCustomer.Image = CType(resources.GetObject("btnCustomer.Image"), System.Drawing.Image)
         Me.btnCustomer.Location = New System.Drawing.Point(32, 243)
-        Me.btnCustomer.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCustomer.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCustomer.Name = "btnCustomer"
         Me.btnCustomer.Size = New System.Drawing.Size(303, 42)
         Me.btnCustomer.TabIndex = 5
@@ -107,7 +108,7 @@ Partial Class MainMenu
         Me.btnCustomerDetails.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnCustomerDetails.Image = CType(resources.GetObject("btnCustomerDetails.Image"), System.Drawing.Image)
         Me.btnCustomerDetails.Location = New System.Drawing.Point(32, 289)
-        Me.btnCustomerDetails.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCustomerDetails.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCustomerDetails.Name = "btnCustomerDetails"
         Me.btnCustomerDetails.Size = New System.Drawing.Size(303, 42)
         Me.btnCustomerDetails.TabIndex = 6
@@ -122,7 +123,7 @@ Partial Class MainMenu
         Me.btnTour.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnTour.Image = CType(resources.GetObject("btnTour.Image"), System.Drawing.Image)
         Me.btnTour.Location = New System.Drawing.Point(32, 405)
-        Me.btnTour.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnTour.Margin = New System.Windows.Forms.Padding(2)
         Me.btnTour.Name = "btnTour"
         Me.btnTour.Size = New System.Drawing.Size(303, 42)
         Me.btnTour.TabIndex = 8
@@ -137,7 +138,7 @@ Partial Class MainMenu
         Me.btnBonusCard.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnBonusCard.Image = CType(resources.GetObject("btnBonusCard.Image"), System.Drawing.Image)
         Me.btnBonusCard.Location = New System.Drawing.Point(32, 336)
-        Me.btnBonusCard.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnBonusCard.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBonusCard.Name = "btnBonusCard"
         Me.btnBonusCard.Size = New System.Drawing.Size(303, 42)
         Me.btnBonusCard.TabIndex = 7
@@ -158,12 +159,28 @@ Partial Class MainMenu
         Me.btnAirOperator.TabIndex = 4
         Me.btnAirOperator.Text = "Ավիափոխադրող"
         '
+        'txtAdministrativ
+        '
+        Me.txtAdministrativ.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!)
+        Me.txtAdministrativ.Appearance.Options.UseFont = True
+        Me.txtAdministrativ.Appearance.Options.UseTextOptions = True
+        Me.txtAdministrativ.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.txtAdministrativ.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
+        Me.txtAdministrativ.Image = CType(resources.GetObject("txtAdministrativ.Image"), System.Drawing.Image)
+        Me.txtAdministrativ.Location = New System.Drawing.Point(32, 470)
+        Me.txtAdministrativ.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtAdministrativ.Name = "txtAdministrativ"
+        Me.txtAdministrativ.Size = New System.Drawing.Size(303, 42)
+        Me.txtAdministrativ.TabIndex = 9
+        Me.txtAdministrativ.Text = "Ադմինիստրատիվ"
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(375, 489)
+        Me.ClientSize = New System.Drawing.Size(375, 537)
+        Me.Controls.Add(Me.txtAdministrativ)
         Me.Controls.Add(Me.btnAirOperator)
         Me.Controls.Add(Me.btnBonusCard)
         Me.Controls.Add(Me.btnTour)
@@ -192,4 +209,5 @@ Partial Class MainMenu
     Friend WithEvents btnTour As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnBonusCard As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnAirOperator As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents txtAdministrativ As DevExpress.XtraEditors.SimpleButton
 End Class
