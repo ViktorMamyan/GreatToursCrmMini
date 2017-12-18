@@ -1,0 +1,19 @@
+USE GT
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE FUNCTION GetOfficeExponseType
+(	
+
+)
+RETURNS TABLE 
+AS
+RETURN 
+(
+	SELECT OfficeExponseTypeID,OfficeExpType FROM OfficeExponseType
+)
+GO

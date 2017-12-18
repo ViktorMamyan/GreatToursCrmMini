@@ -1,0 +1,17 @@
+USE GT
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE OfficeExponseDelete
+	@OfficeExponseID INT
+AS
+BEGIN
+
+	SET NOCOUNT ON;
+	DELETE FROM OfficeExponse WHERE OfficeExponseID = @OfficeExponseID
+END
+GO

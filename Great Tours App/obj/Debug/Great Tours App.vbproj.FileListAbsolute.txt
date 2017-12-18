@@ -145,17 +145,31 @@ C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Great Tours App.exe
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Great Tours App.pdb
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Great Tours App.xml
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Newtonsoft.Json.dll
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.vbprojResolveAssemblyReference.cache
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Administrative.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addSalary.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeEmployee.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editSalary.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.newEmployee.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Salary.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addOfficeExp.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeOfficeExp.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editOfficeExp.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.newOfficeExpType.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.OfficeExp.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addUtility.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeUtilityType.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editUtility.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.newUtilityType.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Utility.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addTax.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeTaxType.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editTax.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.newTaxType.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Taxes.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addTelExp.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editTelExp.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.TelephonePay.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addRentOfPlace.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editRentOfPlace.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.PlacePay.resources

@@ -1,0 +1,17 @@
+USE GT
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE UtilityTypeUpdate
+	@UtilityTypeID INT, @Utility NVARCHAR(50)
+AS
+BEGIN
+
+	SET NOCOUNT ON;
+	UPDATE UtilityType SET Utility = @Utility WHERE UtilityTypeID = @UtilityTypeID
+END
+GO

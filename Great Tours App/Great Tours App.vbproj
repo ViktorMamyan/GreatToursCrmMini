@@ -123,6 +123,66 @@
     <Compile Include="Administrative\Աշխատավարձ\Salary.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Administrative\Գրասենյակ\addOfficeExp.designer.vb">
+      <DependentUpon>addOfficeExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գրասենյակ\addOfficeExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գրասենյակ\changeOfficeExp.designer.vb">
+      <DependentUpon>changeOfficeExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գրասենյակ\changeOfficeExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գրասենյակ\editOfficeExp.designer.vb">
+      <DependentUpon>editOfficeExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գրասենյակ\editOfficeExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գրասենյակ\newOfficeExpType.designer.vb">
+      <DependentUpon>newOfficeExpType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գրասենյակ\newOfficeExpType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գրասենյակ\OfficeExp.designer.vb">
+      <DependentUpon>OfficeExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գրասենյակ\OfficeExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Կոմունալ\addUtility.designer.vb">
+      <DependentUpon>addUtility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Կոմունալ\addUtility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Կոմունալ\changeUtilityType.designer.vb">
+      <DependentUpon>changeUtilityType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Կոմունալ\changeUtilityType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Կոմունալ\editUtility.designer.vb">
+      <DependentUpon>editUtility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Կոմունալ\editUtility.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Կոմունալ\newUtilityType.designer.vb">
+      <DependentUpon>newUtilityType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Կոմունալ\newUtilityType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Կոմունալ\Utility.designer.vb">
+      <DependentUpon>Utility.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Կոմունալ\Utility.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Administrative\Հարկեր\addTax.designer.vb">
       <DependentUpon>addTax.vb</DependentUpon>
     </Compile>
@@ -151,6 +211,24 @@
       <DependentUpon>Taxes.vb</DependentUpon>
     </Compile>
     <Compile Include="Administrative\Հարկեր\Taxes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Հեռախոս\addTelExp.designer.vb">
+      <DependentUpon>addTelExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Հեռախոս\addTelExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Հեռախոս\editTelExp.designer.vb">
+      <DependentUpon>editTelExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Հեռախոս\editTelExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Հեռախոս\TelephonePay.designer.vb">
+      <DependentUpon>TelephonePay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Հեռախոս\TelephonePay.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Administrative\Տարածքի Վարձակալություն\addRentOfPlace.designer.vb">
@@ -400,6 +478,36 @@
     <EmbeddedResource Include="Administrative\Աշխատավարձ\Salary.resx">
       <DependentUpon>Salary.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գրասենյակ\addOfficeExp.resx">
+      <DependentUpon>addOfficeExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գրասենյակ\changeOfficeExp.resx">
+      <DependentUpon>changeOfficeExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գրասենյակ\editOfficeExp.resx">
+      <DependentUpon>editOfficeExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գրասենյակ\newOfficeExpType.resx">
+      <DependentUpon>newOfficeExpType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գրասենյակ\OfficeExp.resx">
+      <DependentUpon>OfficeExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Կոմունալ\addUtility.resx">
+      <DependentUpon>addUtility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Կոմունալ\changeUtilityType.resx">
+      <DependentUpon>changeUtilityType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Կոմունալ\editUtility.resx">
+      <DependentUpon>editUtility.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Կոմունալ\newUtilityType.resx">
+      <DependentUpon>newUtilityType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Կոմունալ\Utility.resx">
+      <DependentUpon>Utility.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Հարկեր\addTax.resx">
       <DependentUpon>addTax.vb</DependentUpon>
     </EmbeddedResource>
@@ -414,6 +522,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Հարկեր\Taxes.resx">
       <DependentUpon>Taxes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Հեռախոս\addTelExp.resx">
+      <DependentUpon>addTelExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Հեռախոս\editTelExp.resx">
+      <DependentUpon>editTelExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Հեռախոս\TelephonePay.resx">
+      <DependentUpon>TelephonePay.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Տարածքի Վարձակալություն\addRentOfPlace.resx">
       <DependentUpon>addRentOfPlace.vb</DependentUpon>

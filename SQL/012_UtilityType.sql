@@ -1,0 +1,19 @@
+USE GT
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE FUNCTION GetUtilityType
+(	
+
+)
+RETURNS TABLE 
+AS
+RETURN 
+(
+	SELECT UtilityTypeID, Utility FROM UtilityType
+)
+GO

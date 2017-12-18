@@ -33,7 +33,7 @@ Public Class editSalary
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         Try
-            If txtFee.Text.Trim = String.Empty OrElse txtFee.EditValue <= 0 Then Throw New Exception("Գումարը պետք է 0-ից մեծ լինի")
+            If txtFee.EditValue = String.Empty OrElse txtFee.EditValue <= 0 Then Throw New Exception("Գումարը պետք է 0-ից մեծ լինի")
 
             Dim Parameters As New List(Of SqlParameter)
             With Parameters

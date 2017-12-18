@@ -22,4 +22,22 @@
         Me.Hide()
     End Sub
 
+    Private Sub btnTel_Click(sender As Object, e As EventArgs) Handles btnTel.Click
+        Dim f As New TelephonePay
+        f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnServices_Click(sender As Object, e As EventArgs) Handles btnServices.Click
+        Dim f As New Utility
+        f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnOffice_Click(sender As Object, e As EventArgs) Handles btnOffice.Click
+        Dim f As New OfficeExp
+        f.Show()
+        Me.Hide()
+    End Sub
+
 End Class

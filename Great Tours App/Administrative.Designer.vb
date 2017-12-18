@@ -124,7 +124,6 @@ Partial Class Administrative
         Me.btnOffice.Appearance.Options.UseTextOptions = True
         Me.btnOffice.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.btnOffice.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
-        Me.btnOffice.Enabled = False
         Me.btnOffice.Image = CType(resources.GetObject("btnOffice.Image"), System.Drawing.Image)
         Me.btnOffice.Location = New System.Drawing.Point(24, 274)
         Me.btnOffice.Name = "btnOffice"
@@ -139,7 +138,6 @@ Partial Class Administrative
         Me.btnServices.Appearance.Options.UseTextOptions = True
         Me.btnServices.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.btnServices.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
-        Me.btnServices.Enabled = False
         Me.btnServices.Image = CType(resources.GetObject("btnServices.Image"), System.Drawing.Image)
         Me.btnServices.Location = New System.Drawing.Point(24, 226)
         Me.btnServices.Name = "btnServices"
@@ -154,7 +152,6 @@ Partial Class Administrative
         Me.btnTel.Appearance.Options.UseTextOptions = True
         Me.btnTel.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.btnTel.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
-        Me.btnTel.Enabled = False
         Me.btnTel.Image = CType(resources.GetObject("btnTel.Image"), System.Drawing.Image)
         Me.btnTel.Location = New System.Drawing.Point(24, 178)
         Me.btnTel.Name = "btnTel"
