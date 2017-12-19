@@ -147,11 +147,26 @@ C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Great Tours App.xml
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Newtonsoft.Json.dll
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.vbprojResolveAssemblyReference.cache
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Administrative.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addOtherExpense.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeOtherExp.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editOtherExp.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.newOtherTypes.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.OtherExpense.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addSalary.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeEmployee.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editSalary.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.newEmployee.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Salary.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addBankExponse.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.BankExpense.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeBankExp.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editBankExponse.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.newBankExpType.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addAdvertise.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Advertise.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeAdvType.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editAdvertise.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.newAdvType.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addOfficeExp.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeOfficeExp.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editOfficeExp.resources

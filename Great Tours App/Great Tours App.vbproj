@@ -93,6 +93,36 @@
     <Compile Include="Administrative.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Administrative\Այլ\addOtherExpense.designer.vb">
+      <DependentUpon>addOtherExpense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Այլ\addOtherExpense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Այլ\changeOtherExp.designer.vb">
+      <DependentUpon>changeOtherExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Այլ\changeOtherExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Այլ\editOtherExp.designer.vb">
+      <DependentUpon>editOtherExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Այլ\editOtherExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Այլ\newOtherTypes.designer.vb">
+      <DependentUpon>newOtherTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Այլ\newOtherTypes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Այլ\OtherExpense.designer.vb">
+      <DependentUpon>OtherExpense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Այլ\OtherExpense.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Administrative\Աշխատավարձ\addSalary.designer.vb">
       <DependentUpon>addSalary.vb</DependentUpon>
     </Compile>
@@ -121,6 +151,66 @@
       <DependentUpon>Salary.vb</DependentUpon>
     </Compile>
     <Compile Include="Administrative\Աշխատավարձ\Salary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Բանկ\addBankExponse.designer.vb">
+      <DependentUpon>addBankExponse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Բանկ\addBankExponse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Բանկ\BankExpense.designer.vb">
+      <DependentUpon>BankExpense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Բանկ\BankExpense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Բանկ\changeBankExp.designer.vb">
+      <DependentUpon>changeBankExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Բանկ\changeBankExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Բանկ\editBankExponse.designer.vb">
+      <DependentUpon>editBankExponse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Բանկ\editBankExponse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Բանկ\newBankExpType.designer.vb">
+      <DependentUpon>newBankExpType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Բանկ\newBankExpType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գովազդ\addAdvertise.designer.vb">
+      <DependentUpon>addAdvertise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գովազդ\addAdvertise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գովազդ\Advertise.designer.vb">
+      <DependentUpon>Advertise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գովազդ\Advertise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գովազդ\changeAdvType.designer.vb">
+      <DependentUpon>changeAdvType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գովազդ\changeAdvType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գովազդ\editAdvertise.designer.vb">
+      <DependentUpon>editAdvertise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գովազդ\editAdvertise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գովազդ\newAdvType.designer.vb">
+      <DependentUpon>newAdvType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գովազդ\newAdvType.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Administrative\Գրասենյակ\addOfficeExp.designer.vb">
@@ -463,6 +553,21 @@
     <EmbeddedResource Include="Administrative.resx">
       <DependentUpon>Administrative.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Այլ\addOtherExpense.resx">
+      <DependentUpon>addOtherExpense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Այլ\changeOtherExp.resx">
+      <DependentUpon>changeOtherExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Այլ\editOtherExp.resx">
+      <DependentUpon>editOtherExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Այլ\newOtherTypes.resx">
+      <DependentUpon>newOtherTypes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Այլ\OtherExpense.resx">
+      <DependentUpon>OtherExpense.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Աշխատավարձ\addSalary.resx">
       <DependentUpon>addSalary.vb</DependentUpon>
     </EmbeddedResource>
@@ -477,6 +582,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Աշխատավարձ\Salary.resx">
       <DependentUpon>Salary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Բանկ\addBankExponse.resx">
+      <DependentUpon>addBankExponse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Բանկ\BankExpense.resx">
+      <DependentUpon>BankExpense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Բանկ\changeBankExp.resx">
+      <DependentUpon>changeBankExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Բանկ\editBankExponse.resx">
+      <DependentUpon>editBankExponse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Բանկ\newBankExpType.resx">
+      <DependentUpon>newBankExpType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գովազդ\addAdvertise.resx">
+      <DependentUpon>addAdvertise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գովազդ\Advertise.resx">
+      <DependentUpon>Advertise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գովազդ\changeAdvType.resx">
+      <DependentUpon>changeAdvType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գովազդ\editAdvertise.resx">
+      <DependentUpon>editAdvertise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գովազդ\newAdvType.resx">
+      <DependentUpon>newAdvType.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Գրասենյակ\addOfficeExp.resx">
       <DependentUpon>addOfficeExp.vb</DependentUpon>

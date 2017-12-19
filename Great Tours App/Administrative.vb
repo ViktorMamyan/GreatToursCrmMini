@@ -40,4 +40,22 @@
         Me.Hide()
     End Sub
 
+    Private Sub btnAdds_Click(sender As Object, e As EventArgs) Handles btnAdds.Click
+        Dim f As New Advertise
+        f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnBankFee_Click(sender As Object, e As EventArgs) Handles btnBankFee.Click
+        Dim f As New BankExpense
+        f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnOtherPayments_Click(sender As Object, e As EventArgs) Handles btnOtherPayments.Click
+        Dim f As New OtherExpense
+        f.Show()
+        Me.Hide()
+    End Sub
+
 End Class

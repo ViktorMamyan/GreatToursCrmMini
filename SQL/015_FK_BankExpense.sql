@@ -1,0 +1,6 @@
+USE GT
+GO
+
+ALTER TABLE BankExpense
+ADD CONSTRAINT FK_TypeIDX FOREIGN KEY (TypeID)     
+    REFERENCES BankExpType (TypeID);

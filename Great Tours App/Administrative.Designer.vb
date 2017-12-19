@@ -79,7 +79,6 @@ Partial Class Administrative
         Me.btnOtherPayments.Appearance.Options.UseTextOptions = True
         Me.btnOtherPayments.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.btnOtherPayments.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
-        Me.btnOtherPayments.Enabled = False
         Me.btnOtherPayments.Image = CType(resources.GetObject("btnOtherPayments.Image"), System.Drawing.Image)
         Me.btnOtherPayments.Location = New System.Drawing.Point(24, 418)
         Me.btnOtherPayments.Name = "btnOtherPayments"
@@ -94,7 +93,6 @@ Partial Class Administrative
         Me.btnBankFee.Appearance.Options.UseTextOptions = True
         Me.btnBankFee.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.btnBankFee.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
-        Me.btnBankFee.Enabled = False
         Me.btnBankFee.Image = CType(resources.GetObject("btnBankFee.Image"), System.Drawing.Image)
         Me.btnBankFee.Location = New System.Drawing.Point(24, 370)
         Me.btnBankFee.Name = "btnBankFee"
@@ -109,7 +107,6 @@ Partial Class Administrative
         Me.btnAdds.Appearance.Options.UseTextOptions = True
         Me.btnAdds.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.btnAdds.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
-        Me.btnAdds.Enabled = False
         Me.btnAdds.Image = CType(resources.GetObject("btnAdds.Image"), System.Drawing.Image)
         Me.btnAdds.Location = New System.Drawing.Point(24, 322)
         Me.btnAdds.Name = "btnAdds"
