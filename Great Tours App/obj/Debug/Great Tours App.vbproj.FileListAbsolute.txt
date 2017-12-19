@@ -226,3 +226,8 @@ C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.exe.l
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.exe
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.xml
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.pdb
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.InsuranceW.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addInsurance.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeClient.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.newClient.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editInsurance.resources

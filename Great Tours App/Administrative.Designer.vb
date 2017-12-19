@@ -248,7 +248,6 @@ Partial Class Administrative
         Me.btnInsurance.Appearance.Options.UseTextOptions = True
         Me.btnInsurance.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.btnInsurance.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
-        Me.btnInsurance.Enabled = False
         Me.btnInsurance.Image = CType(resources.GetObject("btnInsurance.Image"), System.Drawing.Image)
         Me.btnInsurance.Location = New System.Drawing.Point(19, 130)
         Me.btnInsurance.Name = "btnInsurance"

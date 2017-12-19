@@ -1,6 +1,0 @@
-USE GT
-GO
-
-ALTER TABLE OtherExpense
-ADD CONSTRAINT FK_TypeIDS FOREIGN KEY (TypeID)     
-    REFERENCES OtherExpenseType (TypeID);

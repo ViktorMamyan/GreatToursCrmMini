@@ -93,250 +93,280 @@
     <Compile Include="Administrative.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Այլ\addOtherExpense.designer.vb">
+    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\addInsurance.designer.vb">
+      <DependentUpon>addInsurance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\addInsurance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\changeClient.designer.vb">
+      <DependentUpon>changeClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\changeClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\editInsurance.designer.vb">
+      <DependentUpon>editInsurance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\editInsurance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\InsuranceW.designer.vb">
+      <DependentUpon>InsuranceW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\InsuranceW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\newClient.designer.vb">
+      <DependentUpon>newClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\newClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Ծախսեր\Այլ\addOtherExpense.designer.vb">
       <DependentUpon>addOtherExpense.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Այլ\addOtherExpense.vb">
+    <Compile Include="Administrative\Ծախսեր\Այլ\addOtherExpense.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Այլ\changeOtherExp.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Այլ\changeOtherExp.designer.vb">
       <DependentUpon>changeOtherExp.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Այլ\changeOtherExp.vb">
+    <Compile Include="Administrative\Ծախսեր\Այլ\changeOtherExp.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Այլ\editOtherExp.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Այլ\editOtherExp.designer.vb">
       <DependentUpon>editOtherExp.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Այլ\editOtherExp.vb">
+    <Compile Include="Administrative\Ծախսեր\Այլ\editOtherExp.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Այլ\newOtherTypes.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Այլ\newOtherTypes.designer.vb">
       <DependentUpon>newOtherTypes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Այլ\newOtherTypes.vb">
+    <Compile Include="Administrative\Ծախսեր\Այլ\newOtherTypes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Այլ\OtherExpense.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Այլ\OtherExpense.designer.vb">
       <DependentUpon>OtherExpense.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Այլ\OtherExpense.vb">
+    <Compile Include="Administrative\Ծախսեր\Այլ\OtherExpense.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Աշխատավարձ\addSalary.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Աշխատավարձ\addSalary.designer.vb">
       <DependentUpon>addSalary.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Աշխատավարձ\addSalary.vb">
+    <Compile Include="Administrative\Ծախսեր\Աշխատավարձ\addSalary.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Աշխատավարձ\changeEmployee.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Աշխատավարձ\changeEmployee.designer.vb">
       <DependentUpon>changeEmployee.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Աշխատավարձ\changeEmployee.vb">
+    <Compile Include="Administrative\Ծախսեր\Աշխատավարձ\changeEmployee.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Աշխատավարձ\editSalary.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Աշխատավարձ\editSalary.designer.vb">
       <DependentUpon>editSalary.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Աշխատավարձ\editSalary.vb">
+    <Compile Include="Administrative\Ծախսեր\Աշխատավարձ\editSalary.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Աշխատավարձ\newEmployee.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Աշխատավարձ\newEmployee.designer.vb">
       <DependentUpon>newEmployee.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Աշխատավարձ\newEmployee.vb">
+    <Compile Include="Administrative\Ծախսեր\Աշխատավարձ\newEmployee.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Աշխատավարձ\Salary.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Աշխատավարձ\Salary.designer.vb">
       <DependentUpon>Salary.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Աշխատավարձ\Salary.vb">
+    <Compile Include="Administrative\Ծախսեր\Աշխատավարձ\Salary.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Բանկ\addBankExponse.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Բանկ\addBankExponse.designer.vb">
       <DependentUpon>addBankExponse.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Բանկ\addBankExponse.vb">
+    <Compile Include="Administrative\Ծախսեր\Բանկ\addBankExponse.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Բանկ\BankExpense.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Բանկ\BankExpense.designer.vb">
       <DependentUpon>BankExpense.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Բանկ\BankExpense.vb">
+    <Compile Include="Administrative\Ծախսեր\Բանկ\BankExpense.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Բանկ\changeBankExp.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Բանկ\changeBankExp.designer.vb">
       <DependentUpon>changeBankExp.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Բանկ\changeBankExp.vb">
+    <Compile Include="Administrative\Ծախսեր\Բանկ\changeBankExp.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Բանկ\editBankExponse.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Բանկ\editBankExponse.designer.vb">
       <DependentUpon>editBankExponse.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Բանկ\editBankExponse.vb">
+    <Compile Include="Administrative\Ծախսեր\Բանկ\editBankExponse.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Բանկ\newBankExpType.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Բանկ\newBankExpType.designer.vb">
       <DependentUpon>newBankExpType.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Բանկ\newBankExpType.vb">
+    <Compile Include="Administrative\Ծախսեր\Բանկ\newBankExpType.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Գովազդ\addAdvertise.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Գովազդ\addAdvertise.designer.vb">
       <DependentUpon>addAdvertise.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Գովազդ\addAdvertise.vb">
+    <Compile Include="Administrative\Ծախսեր\Գովազդ\addAdvertise.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Գովազդ\Advertise.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Գովազդ\Advertise.designer.vb">
       <DependentUpon>Advertise.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Գովազդ\Advertise.vb">
+    <Compile Include="Administrative\Ծախսեր\Գովազդ\Advertise.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Գովազդ\changeAdvType.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Գովազդ\changeAdvType.designer.vb">
       <DependentUpon>changeAdvType.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Գովազդ\changeAdvType.vb">
+    <Compile Include="Administrative\Ծախսեր\Գովազդ\changeAdvType.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Գովազդ\editAdvertise.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Գովազդ\editAdvertise.designer.vb">
       <DependentUpon>editAdvertise.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Գովազդ\editAdvertise.vb">
+    <Compile Include="Administrative\Ծախսեր\Գովազդ\editAdvertise.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Գովազդ\newAdvType.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Գովազդ\newAdvType.designer.vb">
       <DependentUpon>newAdvType.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Գովազդ\newAdvType.vb">
+    <Compile Include="Administrative\Ծախսեր\Գովազդ\newAdvType.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Գրասենյակ\addOfficeExp.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Գրասենյակ\addOfficeExp.designer.vb">
       <DependentUpon>addOfficeExp.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Գրասենյակ\addOfficeExp.vb">
+    <Compile Include="Administrative\Ծախսեր\Գրասենյակ\addOfficeExp.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Գրասենյակ\changeOfficeExp.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Գրասենյակ\changeOfficeExp.designer.vb">
       <DependentUpon>changeOfficeExp.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Գրասենյակ\changeOfficeExp.vb">
+    <Compile Include="Administrative\Ծախսեր\Գրասենյակ\changeOfficeExp.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Գրասենյակ\editOfficeExp.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Գրասենյակ\editOfficeExp.designer.vb">
       <DependentUpon>editOfficeExp.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Գրասենյակ\editOfficeExp.vb">
+    <Compile Include="Administrative\Ծախսեր\Գրասենյակ\editOfficeExp.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Գրասենյակ\newOfficeExpType.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Գրասենյակ\newOfficeExpType.designer.vb">
       <DependentUpon>newOfficeExpType.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Գրասենյակ\newOfficeExpType.vb">
+    <Compile Include="Administrative\Ծախսեր\Գրասենյակ\newOfficeExpType.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Գրասենյակ\OfficeExp.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Գրասենյակ\OfficeExp.designer.vb">
       <DependentUpon>OfficeExp.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Գրասենյակ\OfficeExp.vb">
+    <Compile Include="Administrative\Ծախսեր\Գրասենյակ\OfficeExp.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Կոմունալ\addUtility.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Կոմունալ\addUtility.designer.vb">
       <DependentUpon>addUtility.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Կոմունալ\addUtility.vb">
+    <Compile Include="Administrative\Ծախսեր\Կոմունալ\addUtility.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Կոմունալ\changeUtilityType.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Կոմունալ\changeUtilityType.designer.vb">
       <DependentUpon>changeUtilityType.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Կոմունալ\changeUtilityType.vb">
+    <Compile Include="Administrative\Ծախսեր\Կոմունալ\changeUtilityType.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Կոմունալ\editUtility.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Կոմունալ\editUtility.designer.vb">
       <DependentUpon>editUtility.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Կոմունալ\editUtility.vb">
+    <Compile Include="Administrative\Ծախսեր\Կոմունալ\editUtility.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Կոմունալ\newUtilityType.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Կոմունալ\newUtilityType.designer.vb">
       <DependentUpon>newUtilityType.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Կոմունալ\newUtilityType.vb">
+    <Compile Include="Administrative\Ծախսեր\Կոմունալ\newUtilityType.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Կոմունալ\Utility.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Կոմունալ\Utility.designer.vb">
       <DependentUpon>Utility.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Կոմունալ\Utility.vb">
+    <Compile Include="Administrative\Ծախսեր\Կոմունալ\Utility.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Հարկեր\addTax.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Հարկեր\addTax.designer.vb">
       <DependentUpon>addTax.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Հարկեր\addTax.vb">
+    <Compile Include="Administrative\Ծախսեր\Հարկեր\addTax.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Հարկեր\changeTaxType.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Հարկեր\changeTaxType.designer.vb">
       <DependentUpon>changeTaxType.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Հարկեր\changeTaxType.vb">
+    <Compile Include="Administrative\Ծախսեր\Հարկեր\changeTaxType.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Հարկեր\editTax.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Հարկեր\editTax.designer.vb">
       <DependentUpon>editTax.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Հարկեր\editTax.vb">
+    <Compile Include="Administrative\Ծախսեր\Հարկեր\editTax.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Հարկեր\newTaxType.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Հարկեր\newTaxType.designer.vb">
       <DependentUpon>newTaxType.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Հարկեր\newTaxType.vb">
+    <Compile Include="Administrative\Ծախսեր\Հարկեր\newTaxType.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Հարկեր\Taxes.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Հարկեր\Taxes.designer.vb">
       <DependentUpon>Taxes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Հարկեր\Taxes.vb">
+    <Compile Include="Administrative\Ծախսեր\Հարկեր\Taxes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Հեռախոս\addTelExp.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Հեռախոս\addTelExp.designer.vb">
       <DependentUpon>addTelExp.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Հեռախոս\addTelExp.vb">
+    <Compile Include="Administrative\Ծախսեր\Հեռախոս\addTelExp.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Հեռախոս\editTelExp.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Հեռախոս\editTelExp.designer.vb">
       <DependentUpon>editTelExp.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Հեռախոս\editTelExp.vb">
+    <Compile Include="Administrative\Ծախսեր\Հեռախոս\editTelExp.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Հեռախոս\TelephonePay.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Հեռախոս\TelephonePay.designer.vb">
       <DependentUpon>TelephonePay.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Հեռախոս\TelephonePay.vb">
+    <Compile Include="Administrative\Ծախսեր\Հեռախոս\TelephonePay.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Տարածքի Վարձակալություն\addRentOfPlace.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Տարածքի Վարձակալություն\addRentOfPlace.designer.vb">
       <DependentUpon>addRentOfPlace.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Տարածքի Վարձակալություն\addRentOfPlace.vb">
+    <Compile Include="Administrative\Ծախսեր\Տարածքի Վարձակալություն\addRentOfPlace.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Տարածքի Վարձակալություն\editRentOfPlace.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Տարածքի Վարձակալություն\editRentOfPlace.designer.vb">
       <DependentUpon>editRentOfPlace.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Տարածքի Վարձակալություն\editRentOfPlace.vb">
+    <Compile Include="Administrative\Ծախսեր\Տարածքի Վարձակալություն\editRentOfPlace.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Տարածքի Վարձակալություն\PlacePay.designer.vb">
+    <Compile Include="Administrative\Ծախսեր\Տարածքի Վարձակալություն\PlacePay.designer.vb">
       <DependentUpon>PlacePay.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Տարածքի Վարձակալություն\PlacePay.vb">
+    <Compile Include="Administrative\Ծախսեր\Տարածքի Վարձակալություն\PlacePay.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AirOperator\addAirOperator.designer.vb">
@@ -553,127 +583,142 @@
     <EmbeddedResource Include="Administrative.resx">
       <DependentUpon>Administrative.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Այլ\addOtherExpense.resx">
+    <EmbeddedResource Include="Administrative\Գործարքներ\Ապահովագրություն\addInsurance.resx">
+      <DependentUpon>addInsurance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Ապահովագրություն\changeClient.resx">
+      <DependentUpon>changeClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Ապահովագրություն\editInsurance.resx">
+      <DependentUpon>editInsurance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Ապահովագրություն\InsuranceW.resx">
+      <DependentUpon>InsuranceW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Ապահովագրություն\newClient.resx">
+      <DependentUpon>newClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Ծախսեր\Այլ\addOtherExpense.resx">
       <DependentUpon>addOtherExpense.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Այլ\changeOtherExp.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Այլ\changeOtherExp.resx">
       <DependentUpon>changeOtherExp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Այլ\editOtherExp.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Այլ\editOtherExp.resx">
       <DependentUpon>editOtherExp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Այլ\newOtherTypes.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Այլ\newOtherTypes.resx">
       <DependentUpon>newOtherTypes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Այլ\OtherExpense.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Այլ\OtherExpense.resx">
       <DependentUpon>OtherExpense.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Աշխատավարձ\addSalary.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Աշխատավարձ\addSalary.resx">
       <DependentUpon>addSalary.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Աշխատավարձ\changeEmployee.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Աշխատավարձ\changeEmployee.resx">
       <DependentUpon>changeEmployee.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Աշխատավարձ\editSalary.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Աշխատավարձ\editSalary.resx">
       <DependentUpon>editSalary.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Աշխատավարձ\newEmployee.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Աշխատավարձ\newEmployee.resx">
       <DependentUpon>newEmployee.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Աշխատավարձ\Salary.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Աշխատավարձ\Salary.resx">
       <DependentUpon>Salary.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Բանկ\addBankExponse.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Բանկ\addBankExponse.resx">
       <DependentUpon>addBankExponse.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Բանկ\BankExpense.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Բանկ\BankExpense.resx">
       <DependentUpon>BankExpense.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Բանկ\changeBankExp.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Բանկ\changeBankExp.resx">
       <DependentUpon>changeBankExp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Բանկ\editBankExponse.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Բանկ\editBankExponse.resx">
       <DependentUpon>editBankExponse.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Բանկ\newBankExpType.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Բանկ\newBankExpType.resx">
       <DependentUpon>newBankExpType.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Գովազդ\addAdvertise.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Գովազդ\addAdvertise.resx">
       <DependentUpon>addAdvertise.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Գովազդ\Advertise.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Գովազդ\Advertise.resx">
       <DependentUpon>Advertise.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Գովազդ\changeAdvType.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Գովազդ\changeAdvType.resx">
       <DependentUpon>changeAdvType.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Գովազդ\editAdvertise.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Գովազդ\editAdvertise.resx">
       <DependentUpon>editAdvertise.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Գովազդ\newAdvType.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Գովազդ\newAdvType.resx">
       <DependentUpon>newAdvType.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Գրասենյակ\addOfficeExp.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Գրասենյակ\addOfficeExp.resx">
       <DependentUpon>addOfficeExp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Գրասենյակ\changeOfficeExp.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Գրասենյակ\changeOfficeExp.resx">
       <DependentUpon>changeOfficeExp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Գրասենյակ\editOfficeExp.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Գրասենյակ\editOfficeExp.resx">
       <DependentUpon>editOfficeExp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Գրասենյակ\newOfficeExpType.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Գրասենյակ\newOfficeExpType.resx">
       <DependentUpon>newOfficeExpType.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Գրասենյակ\OfficeExp.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Գրասենյակ\OfficeExp.resx">
       <DependentUpon>OfficeExp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Կոմունալ\addUtility.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Կոմունալ\addUtility.resx">
       <DependentUpon>addUtility.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Կոմունալ\changeUtilityType.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Կոմունալ\changeUtilityType.resx">
       <DependentUpon>changeUtilityType.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Կոմունալ\editUtility.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Կոմունալ\editUtility.resx">
       <DependentUpon>editUtility.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Կոմունալ\newUtilityType.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Կոմունալ\newUtilityType.resx">
       <DependentUpon>newUtilityType.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Կոմունալ\Utility.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Կոմունալ\Utility.resx">
       <DependentUpon>Utility.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Հարկեր\addTax.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Հարկեր\addTax.resx">
       <DependentUpon>addTax.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Հարկեր\changeTaxType.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Հարկեր\changeTaxType.resx">
       <DependentUpon>changeTaxType.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Հարկեր\editTax.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Հարկեր\editTax.resx">
       <DependentUpon>editTax.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Հարկեր\newTaxType.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Հարկեր\newTaxType.resx">
       <DependentUpon>newTaxType.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Հարկեր\Taxes.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Հարկեր\Taxes.resx">
       <DependentUpon>Taxes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Հեռախոս\addTelExp.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Հեռախոս\addTelExp.resx">
       <DependentUpon>addTelExp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Հեռախոս\editTelExp.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Հեռախոս\editTelExp.resx">
       <DependentUpon>editTelExp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Հեռախոս\TelephonePay.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Հեռախոս\TelephonePay.resx">
       <DependentUpon>TelephonePay.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Տարածքի Վարձակալություն\addRentOfPlace.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Տարածքի Վարձակալություն\addRentOfPlace.resx">
       <DependentUpon>addRentOfPlace.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Տարածքի Վարձակալություն\editRentOfPlace.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Տարածքի Վարձակալություն\editRentOfPlace.resx">
       <DependentUpon>editRentOfPlace.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Տարածքի Վարձակալություն\PlacePay.resx">
+    <EmbeddedResource Include="Administrative\Ծախսեր\Տարածքի Վարձակալություն\PlacePay.resx">
       <DependentUpon>PlacePay.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AirOperator\addAirOperator.resx">

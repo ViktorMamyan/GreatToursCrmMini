@@ -4,6 +4,8 @@
         MainMenu.Show()
     End Sub
 
+#Region "Ծախսեր"
+
     Private Sub btnPlacePayment_Click(sender As Object, e As EventArgs) Handles btnPlacePayment.Click
         Dim f As New PlacePay
         f.Show()
@@ -57,5 +59,17 @@
         f.Show()
         Me.Hide()
     End Sub
+
+#End Region
+
+#Region "Գործարքներ"
+
+    Private Sub btnInsurance_Click(sender As Object, e As EventArgs) Handles btnInsurance.Click
+        Dim f As New InsuranceW
+        f.Show()
+        Me.Hide()
+    End Sub
+
+#End Region
 
 End Class
