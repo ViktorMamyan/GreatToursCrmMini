@@ -126,16 +126,16 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnEdit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAH/SURBVFhH7VehUsNAFDyBRCAQCAQSgUAgoE1mIiFNZmrwfAKfgEMgEAhkPwDBByAQCAQCiUDU
-        lFynCEQFsry97HUyTWiTTC9UsDM77b3c3G7evbxLVBJ6x8PIf9eRN3FMnXTa52oWqbh/KxMCl/yIvAv5
-        /e53gw1Kp5DgJIn9LofOAGFoDcLWPkMpVsKA7rR7SJFLDmP/2mgdH+5QOgWCw8h7ld9Hx3wWFhv4r4G/
-        L0J5TjlUmKDD1hnIkLLjqkxiz+MSCntvtIpqIGsA3Uqeij7IkLLjyoz9Ky4x38BKbQGdmvbJEObkWmsZ
-        JvHRLpconwE0DTNRCNeI2XFVSn+5N4sKSmfATITbjFM7rsokDja5hJoEwZro3I1Og3WGUsBAEzXwK2Yz
-        kN0ChmpvgTwJPS5hMOy09hCTaxpnwygMtnIGTPpYRAxhTq7AyjBbhOgJEhsLpwalRh5yBlzAiuOup6ci
-        mc8AuhhPMIYwZ/Zkm0uTWiIrzpDKmHjLG5D/9gxnyNRFFdrHt0gcoIFxErYPnG3BQnG5bgIuDJQWB5Zt
-        oJI4sEwDlcUBuaBpog41l6knDgxOgm2ZUNhIFhGdDWvUFl8GcMhIR/uSL6wbhgwaEQeYDWzHkz3pGhMH
-        5O4vacCYQCYaEwd07L1kDIDNiQMi+Gm+rOQFFJ/6uReOuVDqB7YFwSl+frizAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAf9JREFUWEft
+        V6FSw0AUPIFEIBAIBBKBQCCgTWYiIU1mavB8Ap+AQyAQCGQ/AMEHIBAIBAKJQNSUXKcIRAWyvL3sdTJN
+        aJNML1SwMzvtvdzcbt69vEtUEnrHw8h/15E3cUyddNrnahapuH8rEwKX/Ii8C/n97neDDUqnkOAkif0u
+        h84AYWgNwtY+QylWwoDutHtIkUsOY//aaB0f7lA6BYLDyHuV30fHfBYWG/ivgb8vQnlOOVSYoMPWGciQ
+        suOqTGLP4xIKe2+0imogawDdSp6KPsiQsuPKjP0rLjHfwEptAZ2a9skQ5uRaaxkm8dEulyifATQNM1EI
+        14jZcVVKf7k3iwpKZ8BMhNuMUzuuyiQONrmEmgTBmujcjU6DdYZSwEATNfArZjOQ3QKGam+BPAk9LmEw
+        7LT2EJNrGmfDKAy2cgZM+lhEDGFOrsDKMFuE6AkSGwunBqVGHnIGXMCK466npyKZzwC6GE8whjBn9mSb
+        S5NaIivOkMqYeMsbkP/2DGfI1EUV2se3SByggXEStg+cbcFCcbluAi4MlBYHlm2gkjiwTAOVxQG5oGmi
+        DjWXqScODE6CbZlQ2EgWEZ0Na9QWXwZwyEhH+5IvrBuGDBoRB5gNbMeTPekaEwfk7i9pwJhAJhoTB3Ts
+        vWQMgM2JAyL4ab6s5AUUn/q5F465UOoHtgXBKX5+uLMAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="LabelControl2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -151,15 +151,6 @@
     <value>True</value>
   </metadata>
   <metadata name="LabelControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="cbClient.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="btnNewTaxType.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="btnEditTaxType.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="eDate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -178,6 +169,9 @@
     <value>True</value>
   </metadata>
   <metadata name="rDate.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="txtCustomer.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

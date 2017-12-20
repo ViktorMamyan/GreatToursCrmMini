@@ -100,7 +100,7 @@ Partial Class changeEmployee
         Me.Name = "changeEmployee"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Աշխատակցի Փոփոխում"
+        Me.Text = "Աշխատակցի Տվյալների Փոփոխում"
         CType(Me.txtLastName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

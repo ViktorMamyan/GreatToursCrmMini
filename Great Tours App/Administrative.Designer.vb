@@ -277,13 +277,12 @@ Partial Class Administrative
         Me.btnHotels.Appearance.Options.UseTextOptions = True
         Me.btnHotels.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.btnHotels.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
-        Me.btnHotels.Enabled = False
         Me.btnHotels.Image = CType(resources.GetObject("btnHotels.Image"), System.Drawing.Image)
         Me.btnHotels.Location = New System.Drawing.Point(19, 34)
         Me.btnHotels.Name = "btnHotels"
         Me.btnHotels.Size = New System.Drawing.Size(303, 42)
         Me.btnHotels.TabIndex = 0
-        Me.btnHotels.Text = "Հյուրանոցներ"
+        Me.btnHotels.Text = "Հյուրանոցի Ամրագրում"
         '
         'Administrative
         '

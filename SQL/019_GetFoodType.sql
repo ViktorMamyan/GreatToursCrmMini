@@ -6,7 +6,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE FUNCTION GetClient
+CREATE FUNCTION GetFoodType
 (	
 
 )
@@ -14,6 +14,6 @@ RETURNS TABLE
 AS
 RETURN 
 (
-	SELECT ClientID,ClientFullName,ClientContacts FROM Client
+	SELECT FoodTypeID, FoodName FROM FoodType
 )
 GO

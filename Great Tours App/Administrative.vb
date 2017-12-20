@@ -70,6 +70,12 @@
         Me.Hide()
     End Sub
 
+    Private Sub btnHotels_Click(sender As Object, e As EventArgs) Handles btnHotels.Click
+        Dim f As New HotelBooking
+        f.Show()
+        Me.Hide()
+    End Sub
+
 #End Region
 
 End Class

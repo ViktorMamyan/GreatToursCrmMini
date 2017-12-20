@@ -54,9 +54,9 @@ Partial Class addUtility
         Me.LabelControl2.Location = New System.Drawing.Point(12, 32)
         Me.LabelControl2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl2.Name = "LabelControl2"
-        Me.LabelControl2.Size = New System.Drawing.Size(59, 13)
+        Me.LabelControl2.Size = New System.Drawing.Size(37, 13)
         Me.LabelControl2.TabIndex = 16
-        Me.LabelControl2.Text = "Վարձավճար"
+        Me.LabelControl2.Text = "Գումար"
         '
         'txtFee
         '

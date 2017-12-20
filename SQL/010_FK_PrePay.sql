@@ -1,0 +1,6 @@
+USE GT
+GO
+
+ALTER TABLE HotelBooking
+ADD CONSTRAINT FK_PrePay FOREIGN KEY (PrePayID)     
+    REFERENCES PrePayment (PrePeyID)

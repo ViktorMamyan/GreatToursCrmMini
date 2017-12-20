@@ -1,0 +1,5 @@
+USE GT
+GO
+
+DROP TABLE PrePayment;
+GO

@@ -99,12 +99,6 @@
     <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\addInsurance.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\changeClient.designer.vb">
-      <DependentUpon>changeClient.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\changeClient.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\editInsurance.designer.vb">
       <DependentUpon>editInsurance.vb</DependentUpon>
     </Compile>
@@ -117,10 +111,34 @@
     <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\InsuranceW.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\newClient.designer.vb">
-      <DependentUpon>newClient.vb</DependentUpon>
+    <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\addFoodType.designer.vb">
+      <DependentUpon>addFoodType.vb</DependentUpon>
     </Compile>
-    <Compile Include="Administrative\Գործարքներ\Ապահովագրություն\newClient.vb">
+    <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\addFoodType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\addHotelBooking.designer.vb">
+      <DependentUpon>addHotelBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\addHotelBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\editHotelBooking.designer.vb">
+      <DependentUpon>editHotelBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\editHotelBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\HotelBooking.designer.vb">
+      <DependentUpon>HotelBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\HotelBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\selectFood.designer.vb">
+      <DependentUpon>selectFood.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\selectFood.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Administrative\Ծախսեր\Այլ\addOtherExpense.designer.vb">
@@ -586,17 +604,26 @@
     <EmbeddedResource Include="Administrative\Գործարքներ\Ապահովագրություն\addInsurance.resx">
       <DependentUpon>addInsurance.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Գործարքներ\Ապահովագրություն\changeClient.resx">
-      <DependentUpon>changeClient.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Գործարքներ\Ապահովագրություն\editInsurance.resx">
       <DependentUpon>editInsurance.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Գործարքներ\Ապահովագրություն\InsuranceW.resx">
       <DependentUpon>InsuranceW.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administrative\Գործարքներ\Ապահովագրություն\newClient.resx">
-      <DependentUpon>newClient.vb</DependentUpon>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Հյուրանոցներ\addFoodType.resx">
+      <DependentUpon>addFoodType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Հյուրանոցներ\addHotelBooking.resx">
+      <DependentUpon>addHotelBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Հյուրանոցներ\editHotelBooking.resx">
+      <DependentUpon>editHotelBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Հյուրանոցներ\HotelBooking.resx">
+      <DependentUpon>HotelBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Հյուրանոցներ\selectFood.resx">
+      <DependentUpon>selectFood.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Ծախսեր\Այլ\addOtherExpense.resx">
       <DependentUpon>addOtherExpense.vb</DependentUpon>

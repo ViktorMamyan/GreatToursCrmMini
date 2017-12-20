@@ -23,6 +23,8 @@ Partial Class addInsurance
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(addInsurance))
+        Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.FormAssistant1 = New DevExpress.XtraBars.FormAssistant()
         Me.btnAdd = New DevExpress.XtraEditors.SimpleButton()
         Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
@@ -30,15 +32,13 @@ Partial Class addInsurance
         Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
         Me.sDate = New DevExpress.XtraEditors.DateEdit()
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
-        Me.cbClient = New System.Windows.Forms.ComboBox()
-        Me.btnNewTaxType = New DevExpress.XtraEditors.SimpleButton()
-        Me.btnEditTaxType = New DevExpress.XtraEditors.SimpleButton()
         Me.eDate = New DevExpress.XtraEditors.DateEdit()
         Me.LabelControl4 = New DevExpress.XtraEditors.LabelControl()
         Me.txtCost = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl5 = New DevExpress.XtraEditors.LabelControl()
         Me.cRet = New DevExpress.XtraEditors.CheckEdit()
         Me.rDate = New DevExpress.XtraEditors.DateEdit()
+        Me.txtCustomer = New DevExpress.XtraEditors.ButtonEdit()
         CType(Me.txPrice.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.sDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.sDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,6 +48,7 @@ Partial Class addInsurance
         CType(Me.cRet.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtCustomer.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnAdd
@@ -119,34 +120,6 @@ Partial Class addInsurance
         Me.LabelControl1.Size = New System.Drawing.Size(55, 13)
         Me.LabelControl1.TabIndex = 27
         Me.LabelControl1.Text = "Հաճախորդ"
-        '
-        'cbClient
-        '
-        Me.cbClient.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.cbClient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbClient.FormattingEnabled = True
-        Me.cbClient.Location = New System.Drawing.Point(142, 103)
-        Me.cbClient.Name = "cbClient"
-        Me.cbClient.Size = New System.Drawing.Size(227, 21)
-        Me.cbClient.TabIndex = 3
-        '
-        'btnNewTaxType
-        '
-        Me.btnNewTaxType.Location = New System.Drawing.Point(402, 101)
-        Me.btnNewTaxType.Name = "btnNewTaxType"
-        Me.btnNewTaxType.Size = New System.Drawing.Size(21, 23)
-        Me.btnNewTaxType.TabIndex = 28
-        Me.btnNewTaxType.TabStop = False
-        Me.btnNewTaxType.Text = "+"
-        '
-        'btnEditTaxType
-        '
-        Me.btnEditTaxType.Location = New System.Drawing.Point(375, 101)
-        Me.btnEditTaxType.Name = "btnEditTaxType"
-        Me.btnEditTaxType.Size = New System.Drawing.Size(21, 23)
-        Me.btnEditTaxType.TabIndex = 29
-        Me.btnEditTaxType.TabStop = False
-        Me.btnEditTaxType.Text = "..."
         '
         'eDate
         '
@@ -224,6 +197,18 @@ Partial Class addInsurance
         Me.rDate.Size = New System.Drawing.Size(281, 20)
         Me.rDate.TabIndex = 6
         '
+        'txtCustomer
+        '
+        Me.txtCustomer.Location = New System.Drawing.Point(142, 102)
+        Me.txtCustomer.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtCustomer.Name = "txtCustomer"
+        Me.txtCustomer.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txtCustomer.Properties.Appearance.Options.UseBackColor = True
+        Me.txtCustomer.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, "Ընտրել", Nothing, Nothing, True), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject2, "Նոր", Nothing, Nothing, True)})
+        Me.txtCustomer.Properties.ReadOnly = True
+        Me.txtCustomer.Size = New System.Drawing.Size(281, 20)
+        Me.txtCustomer.TabIndex = 3
+        '
         'addInsurance
         '
         Me.AcceptButton = Me.btnAdd
@@ -231,15 +216,13 @@ Partial Class addInsurance
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(458, 262)
+        Me.Controls.Add(Me.txtCustomer)
         Me.Controls.Add(Me.rDate)
         Me.Controls.Add(Me.cRet)
         Me.Controls.Add(Me.txtCost)
         Me.Controls.Add(Me.LabelControl5)
         Me.Controls.Add(Me.eDate)
         Me.Controls.Add(Me.LabelControl4)
-        Me.Controls.Add(Me.btnEditTaxType)
-        Me.Controls.Add(Me.btnNewTaxType)
-        Me.Controls.Add(Me.cbClient)
         Me.Controls.Add(Me.LabelControl1)
         Me.Controls.Add(Me.sDate)
         Me.Controls.Add(Me.LabelControl3)
@@ -262,6 +245,7 @@ Partial Class addInsurance
         CType(Me.cRet.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtCustomer.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -274,13 +258,11 @@ Partial Class addInsurance
     Friend WithEvents LabelControl3 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents sDate As DevExpress.XtraEditors.DateEdit
     Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents cbClient As System.Windows.Forms.ComboBox
-    Friend WithEvents btnNewTaxType As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents btnEditTaxType As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents eDate As DevExpress.XtraEditors.DateEdit
     Friend WithEvents LabelControl4 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents txtCost As DevExpress.XtraEditors.TextEdit
     Friend WithEvents LabelControl5 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents cRet As DevExpress.XtraEditors.CheckEdit
     Friend WithEvents rDate As DevExpress.XtraEditors.DateEdit
+    Friend WithEvents txtCustomer As DevExpress.XtraEditors.ButtonEdit
 End Class

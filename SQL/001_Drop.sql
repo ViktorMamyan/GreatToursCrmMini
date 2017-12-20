@@ -1,0 +1,17 @@
+USE GT
+GO
+
+DROP PROCEDURE ClientAdd;
+GO
+
+DROP FUNCTION GetClient;
+GO
+
+DROP PROCEDURE ClientUpdate;
+GO
+
+ALTER TABLE insurance DROP CONSTRAINT FK_Insurance_Client;
+GO
+
+DROP TABLE Client;
+GO

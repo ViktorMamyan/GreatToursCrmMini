@@ -147,6 +147,14 @@ C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Great Tours App.xml
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\bin\Debug\Newtonsoft.Json.dll
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.vbprojResolveAssemblyReference.cache
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.Administrative.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addInsurance.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editInsurance.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.InsuranceW.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addFoodType.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addHotelBooking.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editHotelBooking.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.HotelBooking.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.selectFood.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addOtherExpense.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeOtherExp.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editOtherExp.resources
@@ -226,8 +234,3 @@ C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.exe.l
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.exe
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.xml
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great Tours App.pdb
-C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.InsuranceW.resources
-C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addInsurance.resources
-C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.changeClient.resources
-C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.newClient.resources
-C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editInsurance.resources

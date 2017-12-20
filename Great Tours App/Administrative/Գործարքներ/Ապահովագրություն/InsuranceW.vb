@@ -27,7 +27,6 @@ Public Class InsuranceW
                 .Columns("CreationDate").Caption = "Ավելացման Ամսաթիվ"
 
                 .Columns("ClientFullName").Caption = "Հաճախորդ"
-                .Columns("ClientContacts").Caption = "Հաճախորդի Կոնտակտներ"
                 .Columns("StartDate").Caption = "Սկիզբ"
                 .Columns("EndDate").Caption = "Ավարտ"
                 .Columns("Price").Caption = "Գումար"
@@ -82,6 +81,7 @@ Public Class InsuranceW
             Dim ClientID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("ClientID")
             Dim StartDate As Date = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("StartDate")
             Dim EndDate As Date = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("EndDate")
+            Dim ClientName As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("ClientFullName")
 
             Dim Cost As Nullable(Of Decimal)
 
@@ -96,7 +96,8 @@ Public Class InsuranceW
             End If
 
             Dim EE As New editInsurance With {.RefForm = DirectCast(Me, InsuranceW), .InsuranceID = InsuranceID,
-                .ClientID = ClientID, .StartDate = StartDate, .EndDate = EndDate, .Price = Price, .Cost = Cost, .ReturnableDate = ReturnableDate}
+                .ClientID = ClientID, .StartDate = StartDate, .EndDate = EndDate, .Price = Price, .Cost = Cost,
+                .ReturnableDate = ReturnableDate, .ClientName = ClientName}
 
             EE.ShowDialog()
             EE.Dispose()
