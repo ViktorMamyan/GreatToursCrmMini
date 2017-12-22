@@ -76,7 +76,7 @@ Partial Class newTaxType
         Me.Name = "newTaxType"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Նոր Հարկատեսակ"
+        Me.Text = "(Նոր) Հարկատեսակ"
         CType(Me.txtTax.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

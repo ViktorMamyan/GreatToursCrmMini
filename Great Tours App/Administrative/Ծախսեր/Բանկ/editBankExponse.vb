@@ -12,6 +12,7 @@ Public Class editBankExponse
     Friend ForMonth As Byte = 0
     Friend TypeID As Integer = 0
     Friend TypeName As String = String.Empty
+    Friend Comment As String = String.Empty
 
     Private Sub LoadList()
         Try
@@ -41,6 +42,7 @@ Public Class editBankExponse
                 .Add(New SqlParameter("@ForYear", RegDate.DateTime.Year))
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
                 .Add(New SqlParameter("@TypeID", cTypes.SelectedValue))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("BankExpenseUpdate", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -64,6 +66,7 @@ Public Class editBankExponse
     Private Sub addCustomer_Load(sender As Object, e As EventArgs) Handles Me.Load
         If BankExpenseID > 0 Then
             txtFee.Text = Fee
+            txtComment.Text = Comment
 
             Dim d As Date = New Date(ForYear, ForMonth, 1)
             RegDate.DateTime = d

@@ -30,6 +30,7 @@ Public Class Salary
                 .Columns("ForMonth").Caption = "Ամիս"
                 .Columns("Employee").Caption = "Աշխատակից"
                 .Columns("IsBonus").Caption = "Հավելավճար"
+                .Columns("Comment").Caption = "Մեկնաբանություն"
 
                 .Columns("Fee").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
                 .Columns("Fee").DisplayFormat.FormatString = "n2"
@@ -79,8 +80,11 @@ Public Class Salary
             Dim Employee As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Employee")
             Dim IsBonus As Boolean = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("IsBonus")
 
+            Dim Comment As String
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")) Then Comment = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")
+
             Dim EE As New editSalary With {.RefForm = DirectCast(Me, Salary), .SalaryID = SalaryID,
-                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .EmployeeID = EmployeeID, .Employee = Employee, .IsBonus = IsBonus}
+                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .EmployeeID = EmployeeID, .Employee = Employee, .IsBonus = IsBonus, .Comment = Comment}
 
             EE.ShowDialog()
             EE.Dispose()

@@ -34,6 +34,8 @@ Partial Class editSalary
         Me.btnNewTaxType = New DevExpress.XtraEditors.SimpleButton()
         Me.btnEditTaxType = New DevExpress.XtraEditors.SimpleButton()
         Me.ckIsBonus = New DevExpress.XtraEditors.CheckEdit()
+        Me.LabelControl4 = New DevExpress.XtraEditors.LabelControl()
+        Me.txtComment = New System.Windows.Forms.TextBox()
         CType(Me.txtFee.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RegDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RegDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -44,11 +46,11 @@ Partial Class editSalary
         '
         Me.btnEdit.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnEdit.Image = CType(resources.GetObject("btnEdit.Image"), System.Drawing.Image)
-        Me.btnEdit.Location = New System.Drawing.Point(208, 156)
+        Me.btnEdit.Location = New System.Drawing.Point(259, 268)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.[False]
         Me.btnEdit.Size = New System.Drawing.Size(170, 42)
-        Me.btnEdit.TabIndex = 4
+        Me.btnEdit.TabIndex = 5
         Me.btnEdit.Text = "Խմբագրել"
         '
         'LabelControl2
@@ -63,7 +65,7 @@ Partial Class editSalary
         'txtFee
         '
         Me.txtFee.EditValue = "0"
-        Me.txtFee.Location = New System.Drawing.Point(97, 29)
+        Me.txtFee.Location = New System.Drawing.Point(148, 29)
         Me.txtFee.Name = "txtFee"
         Me.txtFee.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtFee.Properties.Appearance.Options.UseBackColor = True
@@ -87,7 +89,7 @@ Partial Class editSalary
         'RegDate
         '
         Me.RegDate.EditValue = Nothing
-        Me.RegDate.Location = New System.Drawing.Point(97, 55)
+        Me.RegDate.Location = New System.Drawing.Point(148, 55)
         Me.RegDate.Margin = New System.Windows.Forms.Padding(2)
         Me.RegDate.Name = "RegDate"
         Me.RegDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
@@ -115,14 +117,14 @@ Partial Class editSalary
         Me.cEmployee.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.cEmployee.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cEmployee.FormattingEnabled = True
-        Me.cEmployee.Location = New System.Drawing.Point(97, 83)
+        Me.cEmployee.Location = New System.Drawing.Point(148, 83)
         Me.cEmployee.Name = "cEmployee"
         Me.cEmployee.Size = New System.Drawing.Size(227, 21)
         Me.cEmployee.TabIndex = 2
         '
         'btnNewTaxType
         '
-        Me.btnNewTaxType.Location = New System.Drawing.Point(357, 81)
+        Me.btnNewTaxType.Location = New System.Drawing.Point(408, 81)
         Me.btnNewTaxType.Name = "btnNewTaxType"
         Me.btnNewTaxType.Size = New System.Drawing.Size(21, 23)
         Me.btnNewTaxType.TabIndex = 28
@@ -131,7 +133,7 @@ Partial Class editSalary
         '
         'btnEditTaxType
         '
-        Me.btnEditTaxType.Location = New System.Drawing.Point(330, 81)
+        Me.btnEditTaxType.Location = New System.Drawing.Point(381, 81)
         Me.btnEditTaxType.Name = "btnEditTaxType"
         Me.btnEditTaxType.Size = New System.Drawing.Size(21, 23)
         Me.btnEditTaxType.TabIndex = 29
@@ -140,11 +142,28 @@ Partial Class editSalary
         '
         'ckIsBonus
         '
-        Me.ckIsBonus.Location = New System.Drawing.Point(97, 120)
+        Me.ckIsBonus.Location = New System.Drawing.Point(148, 120)
         Me.ckIsBonus.Name = "ckIsBonus"
         Me.ckIsBonus.Properties.Caption = "Հավելավճար"
         Me.ckIsBonus.Size = New System.Drawing.Size(144, 19)
         Me.ckIsBonus.TabIndex = 3
+        '
+        'LabelControl4
+        '
+        Me.LabelControl4.Location = New System.Drawing.Point(18, 163)
+        Me.LabelControl4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl4.Name = "LabelControl4"
+        Me.LabelControl4.Size = New System.Drawing.Size(94, 13)
+        Me.LabelControl4.TabIndex = 36
+        Me.LabelControl4.Text = "Մեկնաբանություն"
+        '
+        'txtComment
+        '
+        Me.txtComment.Location = New System.Drawing.Point(148, 160)
+        Me.txtComment.Multiline = True
+        Me.txtComment.Name = "txtComment"
+        Me.txtComment.Size = New System.Drawing.Size(281, 82)
+        Me.txtComment.TabIndex = 4
         '
         'editSalary
         '
@@ -152,7 +171,9 @@ Partial Class editSalary
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(411, 217)
+        Me.ClientSize = New System.Drawing.Size(451, 332)
+        Me.Controls.Add(Me.LabelControl4)
+        Me.Controls.Add(Me.txtComment)
         Me.Controls.Add(Me.ckIsBonus)
         Me.Controls.Add(Me.btnEditTaxType)
         Me.Controls.Add(Me.btnNewTaxType)
@@ -169,7 +190,7 @@ Partial Class editSalary
         Me.Name = "editSalary"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Աշխատավարձի Խմբագրում"
+        Me.Text = "(Խմբագրել) Աշխատավարձ"
         CType(Me.txtFee.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RegDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RegDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -190,4 +211,6 @@ Partial Class editSalary
     Friend WithEvents btnNewTaxType As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnEditTaxType As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents ckIsBonus As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents LabelControl4 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents txtComment As System.Windows.Forms.TextBox
 End Class

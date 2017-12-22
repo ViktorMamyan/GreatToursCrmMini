@@ -12,6 +12,7 @@ Public Class editOfficeExp
     Friend ForMonth As Byte = 0
     Friend OfficeExponseTypeID As Integer = 0
     Friend OfficeExpType As String = String.Empty
+    Friend Comment As String = String.Empty
 
     Private Sub LoadList()
         Try
@@ -41,6 +42,7 @@ Public Class editOfficeExp
                 .Add(New SqlParameter("@ForYear", RegDate.DateTime.Year))
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
                 .Add(New SqlParameter("@OfficeExponseTypeID", cTypes.SelectedValue))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("OfficeExponseUpdate", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -64,6 +66,8 @@ Public Class editOfficeExp
     Private Sub addCustomer_Load(sender As Object, e As EventArgs) Handles Me.Load
         If OfficeExponseID > 0 Then
             txtFee.Text = Fee
+
+            txtComment.Text = Comment
 
             Dim d As Date = New Date(ForYear, ForMonth, 1)
             RegDate.DateTime = d

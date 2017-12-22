@@ -35,6 +35,7 @@ Public Class addSalary
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
                 .Add(New SqlParameter("@EmployeeID", cEmployee.SelectedValue))
                 .Add(New SqlParameter("@IsBonus", ckIsBonus.Checked))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("SalaryAdd", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -43,6 +44,7 @@ Public Class addSalary
             txtFee.Text = String.Empty
             ckIsBonus.Checked = False
             RegDate.DateTime = Now
+            txtComment.Text = String.Empty
 
             RefForm.LoadData()
             If SalaryID <> 0 Then

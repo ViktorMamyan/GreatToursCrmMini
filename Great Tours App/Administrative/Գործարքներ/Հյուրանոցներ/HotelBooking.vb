@@ -25,6 +25,7 @@ Public Class HotelBooking
                 .Columns("CustomerID").Visible = False
                 .Columns("FoodTypeID").Visible = False
                 .Columns("OperatorID").Visible = False
+                .Columns("HotelID").Visible = False
 
                 .Columns("CreationDate").Caption = "Ավելացման Ամսաթիվ"
                 .Columns("HotelName").Caption = "Հյուրանոց"
@@ -39,6 +40,7 @@ Public Class HotelBooking
                 .Columns("ChildYearsComment").Caption = "Տարիքր Մեկնաբանություն"
                 .Columns("FoodName").Caption = "Սննդի Տեսակ"
                 .Columns("Transfer").Caption = "Փոխադրում"
+                .Columns("TransferPrice").Caption = "Փոխադրման Արժեք"
                 .Columns("PrePayPrice").Caption = "Կանխավճար"
                 .Columns("NextPayDate").Caption = "Հաջորդ Վճարի Ամսաթիվ"
                 .Columns("OperatorName").Caption = "Օպերատոր"
@@ -53,6 +55,9 @@ Public Class HotelBooking
 
                 .Columns("PrePayPrice").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
                 .Columns("PrePayPrice").DisplayFormat.FormatString = "n2"
+
+                .Columns("TransferPrice").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
+                .Columns("TransferPrice").DisplayFormat.FormatString = "n2"
 
                 For i As Integer = 0 To GridView1.Columns.Count - 1
                     .Columns(i).OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList
@@ -93,6 +98,7 @@ Public Class HotelBooking
 
             Dim HotelBookID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("HotelBookID")
             Dim CustomerID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CustomerID")
+            Dim HotelID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("HotelID")
 
             Dim FoodTypeID As Integer?
             If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("FoodTypeID")) Then FoodTypeID = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("FoodTypeID")
@@ -139,11 +145,15 @@ Public Class HotelBooking
 
             Dim IsTotalyPayed As Boolean = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("IsTotalyPayed")
 
+            Dim TransferPrice As Decimal?
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("TransferPrice")) Then TransferPrice = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("TransferPrice")
+
             Dim EE As New editHotelBooking With {.RefForm = DirectCast(Me, HotelBooking), .HotelBookID = HotelBookID, .CustomerID = CustomerID,
                         .FoodTypeID = FoodTypeID, .OperatorID = OperatorID, .HotelName = HotelName, .StartDate = StartDate, .EndDate = EndDate,
                         .Price = Price, .Cost = Cost, .CustomerName = CustomerName, .AdultCount = AdultCount, .ChildCount = ChildCount,
                         .BabyCount = BabyCount, .ChildYearsComment = ChildYearsComment, .FoodName = FoodName, .Transfer = Transfer, .PrePayPrice = PrePayPrice,
-                        .NextPayDate = NextPayDate, .OperatorName = OperatorName, .PaymaetDeathLine = PaymaetDeathLine, .IsTotalyPayed = IsTotalyPayed}
+                        .NextPayDate = NextPayDate, .OperatorName = OperatorName, .PaymaetDeathLine = PaymaetDeathLine, .IsTotalyPayed = IsTotalyPayed,
+                        .HotelID = HotelID, .TransferPrice = TransferPrice}
 
             EE.ShowDialog()
             EE.Dispose()

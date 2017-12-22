@@ -16,6 +16,8 @@ Public Class editInsurance
     Friend Price As Decimal
     Friend Cost As Nullable(Of Decimal)
     Friend ReturnableDate As Nullable(Of Date)
+    Friend IsMulti As Boolean
+    Friend DaysCount As Short?
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         Try
@@ -43,6 +45,14 @@ Public Class editInsurance
                     .Add(New SqlParameter("@ReturnableDate", DBNull.Value))
                 Else
                     .Add(New SqlParameter("@ReturnableDate", rDate.DateTime))
+                End If
+
+                .Add(New SqlParameter("@IsMulti", ckMulti.Checked))
+
+                If txtMulti.Enabled = True AndAlso txtMulti.EditValue > 0 Then
+                    .Add(New SqlParameter("@DaysCount", txtMulti.EditValue))
+                Else
+                    .Add(New SqlParameter("@DaysCount", DBNull.Value))
                 End If
             End With
             ExecToSql("InsuranceUpdate", CommandType.StoredProcedure, Parameters.ToArray)
@@ -97,7 +107,7 @@ Public Class editInsurance
         End Try
     End Sub
 
-    Private Sub addCustomer_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub editInsurance_Load(sender As Object, e As EventArgs) Handles Me.Load
         If InsuranceID > 0 Then
             txPrice.Text = Price
             sDate.DateTime = StartDate
@@ -105,6 +115,9 @@ Public Class editInsurance
 
             txtCustomer.Tag = ClientID
             txtCustomer.Text = ClientName
+
+            ckMulti.Checked = IsMulti
+            If DaysCount.HasValue Then txtMulti.Text = DaysCount
 
             If Cost.HasValue Then txtCost.Text = Cost
             If ReturnableDate.HasValue Then cRet.Checked = True : rDate.DateTime = ReturnableDate
@@ -118,6 +131,15 @@ Public Class editInsurance
             rDate.Enabled = True
         Else
             rDate.Enabled = False
+        End If
+    End Sub
+
+    Private Sub ckMulti_CheckedChanged(sender As Object, e As EventArgs) Handles ckMulti.CheckedChanged
+        If ckMulti.Checked = True Then
+            txtMulti.Enabled = True
+        Else
+            txtMulti.Text = 0
+            txtMulti.Enabled = False
         End If
     End Sub
 

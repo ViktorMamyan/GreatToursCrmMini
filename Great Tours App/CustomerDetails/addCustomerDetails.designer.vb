@@ -68,84 +68,80 @@ Partial Class addCustomerDetails
         '
         Me.btnAdd.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
-        Me.btnAdd.Location = New System.Drawing.Point(317, 382)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAdd.Location = New System.Drawing.Point(254, 306)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.[False]
-        Me.btnAdd.Size = New System.Drawing.Size(212, 52)
+        Me.btnAdd.Size = New System.Drawing.Size(170, 42)
         Me.btnAdd.TabIndex = 12
         Me.btnAdd.Text = "Ավելացնել"
         '
         'LabelControl2
         '
-        Me.LabelControl2.Location = New System.Drawing.Point(15, 40)
-        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl2.Location = New System.Drawing.Point(12, 32)
+        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl2.Name = "LabelControl2"
-        Me.LabelControl2.Size = New System.Drawing.Size(67, 16)
+        Me.LabelControl2.Size = New System.Drawing.Size(55, 13)
         Me.LabelControl2.TabIndex = 16
         Me.LabelControl2.Text = "Հաճախորդ"
         '
         'txtFirstName
         '
-        Me.txtFirstName.Location = New System.Drawing.Point(158, 66)
-        Me.txtFirstName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtFirstName.Location = New System.Drawing.Point(126, 53)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtFirstName.Properties.Appearance.Options.UseBackColor = True
-        Me.txtFirstName.Size = New System.Drawing.Size(371, 22)
+        Me.txtFirstName.Size = New System.Drawing.Size(297, 20)
         Me.txtFirstName.TabIndex = 1
         '
         'LabelControl1
         '
-        Me.LabelControl1.Location = New System.Drawing.Point(15, 70)
-        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl1.Location = New System.Drawing.Point(12, 56)
+        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl1.Name = "LabelControl1"
-        Me.LabelControl1.Size = New System.Drawing.Size(37, 16)
+        Me.LabelControl1.Size = New System.Drawing.Size(32, 13)
         Me.LabelControl1.TabIndex = 18
         Me.LabelControl1.Text = "Անուն"
         '
         'txtLastName
         '
-        Me.txtLastName.Location = New System.Drawing.Point(158, 96)
-        Me.txtLastName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtLastName.Location = New System.Drawing.Point(126, 77)
         Me.txtLastName.Name = "txtLastName"
         Me.txtLastName.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtLastName.Properties.Appearance.Options.UseBackColor = True
-        Me.txtLastName.Size = New System.Drawing.Size(371, 22)
+        Me.txtLastName.Size = New System.Drawing.Size(297, 20)
         Me.txtLastName.TabIndex = 2
         '
         'LabelControl3
         '
-        Me.LabelControl3.Location = New System.Drawing.Point(15, 100)
-        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl3.Location = New System.Drawing.Point(12, 80)
+        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl3.Name = "LabelControl3"
-        Me.LabelControl3.Size = New System.Drawing.Size(62, 16)
+        Me.LabelControl3.Size = New System.Drawing.Size(52, 13)
         Me.LabelControl3.TabIndex = 20
         Me.LabelControl3.Text = "Ազգանուն"
         '
         'txtPassport
         '
-        Me.txtPassport.Location = New System.Drawing.Point(158, 126)
-        Me.txtPassport.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPassport.Location = New System.Drawing.Point(126, 101)
         Me.txtPassport.Name = "txtPassport"
         Me.txtPassport.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtPassport.Properties.Appearance.Options.UseBackColor = True
-        Me.txtPassport.Size = New System.Drawing.Size(371, 22)
+        Me.txtPassport.Size = New System.Drawing.Size(297, 20)
         Me.txtPassport.TabIndex = 3
         '
         'LabelControl4
         '
-        Me.LabelControl4.Location = New System.Drawing.Point(15, 130)
-        Me.LabelControl4.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl4.Location = New System.Drawing.Point(12, 104)
+        Me.LabelControl4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl4.Name = "LabelControl4"
-        Me.LabelControl4.Size = New System.Drawing.Size(63, 16)
+        Me.LabelControl4.Size = New System.Drawing.Size(53, 13)
         Me.LabelControl4.TabIndex = 22
         Me.LabelControl4.Text = "Անձնագիր"
         '
         'bDate
         '
         Me.bDate.EditValue = Nothing
-        Me.bDate.Location = New System.Drawing.Point(158, 154)
+        Me.bDate.Location = New System.Drawing.Point(126, 123)
         Me.bDate.Margin = New System.Windows.Forms.Padding(2)
         Me.bDate.Name = "bDate"
         Me.bDate.Properties.Appearance.BackColor = System.Drawing.Color.White
@@ -155,129 +151,123 @@ Partial Class addCustomerDetails
         Me.bDate.Properties.Mask.EditMask = "dd.MM.yyyy"
         Me.bDate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
         Me.bDate.Properties.Mask.UseMaskAsDisplayFormat = True
-        Me.bDate.Size = New System.Drawing.Size(371, 22)
+        Me.bDate.Size = New System.Drawing.Size(297, 20)
         Me.bDate.TabIndex = 4
         '
         'LabelControl5
         '
-        Me.LabelControl5.Location = New System.Drawing.Point(15, 157)
-        Me.LabelControl5.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl5.Location = New System.Drawing.Point(12, 126)
+        Me.LabelControl5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl5.Name = "LabelControl5"
-        Me.LabelControl5.Size = New System.Drawing.Size(73, 16)
+        Me.LabelControl5.Size = New System.Drawing.Size(60, 13)
         Me.LabelControl5.TabIndex = 27
         Me.LabelControl5.Text = "Ծ. Տարեթիվ"
         '
         'txtAddress
         '
-        Me.txtAddress.Location = New System.Drawing.Point(158, 182)
-        Me.txtAddress.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtAddress.Location = New System.Drawing.Point(126, 146)
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtAddress.Properties.Appearance.Options.UseBackColor = True
-        Me.txtAddress.Size = New System.Drawing.Size(371, 22)
+        Me.txtAddress.Size = New System.Drawing.Size(297, 20)
         Me.txtAddress.TabIndex = 5
         '
         'LabelControl6
         '
-        Me.LabelControl6.Location = New System.Drawing.Point(15, 186)
-        Me.LabelControl6.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl6.Location = New System.Drawing.Point(12, 149)
+        Me.LabelControl6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl6.Name = "LabelControl6"
-        Me.LabelControl6.Size = New System.Drawing.Size(39, 16)
+        Me.LabelControl6.Size = New System.Drawing.Size(32, 13)
         Me.LabelControl6.TabIndex = 30
         Me.LabelControl6.Text = "Հասցե"
         '
         'txtTel
         '
-        Me.txtTel.Location = New System.Drawing.Point(158, 212)
-        Me.txtTel.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtTel.Location = New System.Drawing.Point(126, 170)
         Me.txtTel.Name = "txtTel"
         Me.txtTel.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtTel.Properties.Appearance.Options.UseBackColor = True
-        Me.txtTel.Size = New System.Drawing.Size(371, 22)
+        Me.txtTel.Size = New System.Drawing.Size(297, 20)
         Me.txtTel.TabIndex = 6
         '
         'LabelControl7
         '
-        Me.LabelControl7.Location = New System.Drawing.Point(15, 216)
-        Me.LabelControl7.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl7.Location = New System.Drawing.Point(12, 173)
+        Me.LabelControl7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl7.Name = "LabelControl7"
-        Me.LabelControl7.Size = New System.Drawing.Size(57, 16)
+        Me.LabelControl7.Size = New System.Drawing.Size(48, 13)
         Me.LabelControl7.TabIndex = 32
         Me.LabelControl7.Text = "Հեռախոս"
         '
         'txtViber
         '
-        Me.txtViber.Location = New System.Drawing.Point(158, 242)
-        Me.txtViber.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtViber.Location = New System.Drawing.Point(126, 194)
         Me.txtViber.Name = "txtViber"
         Me.txtViber.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtViber.Properties.Appearance.Options.UseBackColor = True
-        Me.txtViber.Size = New System.Drawing.Size(371, 22)
+        Me.txtViber.Size = New System.Drawing.Size(297, 20)
         Me.txtViber.TabIndex = 7
         '
         'LabelControl8
         '
-        Me.LabelControl8.Location = New System.Drawing.Point(15, 246)
-        Me.LabelControl8.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl8.Location = New System.Drawing.Point(12, 197)
+        Me.LabelControl8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl8.Name = "LabelControl8"
-        Me.LabelControl8.Size = New System.Drawing.Size(30, 16)
+        Me.LabelControl8.Size = New System.Drawing.Size(24, 13)
         Me.LabelControl8.TabIndex = 34
         Me.LabelControl8.Text = "Viber"
         '
         'txtSkype
         '
-        Me.txtSkype.Location = New System.Drawing.Point(158, 272)
-        Me.txtSkype.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSkype.Location = New System.Drawing.Point(126, 218)
         Me.txtSkype.Name = "txtSkype"
         Me.txtSkype.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtSkype.Properties.Appearance.Options.UseBackColor = True
-        Me.txtSkype.Size = New System.Drawing.Size(371, 22)
+        Me.txtSkype.Size = New System.Drawing.Size(297, 20)
         Me.txtSkype.TabIndex = 8
         '
         'LabelControl9
         '
-        Me.LabelControl9.Location = New System.Drawing.Point(15, 276)
-        Me.LabelControl9.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl9.Location = New System.Drawing.Point(12, 221)
+        Me.LabelControl9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl9.Name = "LabelControl9"
-        Me.LabelControl9.Size = New System.Drawing.Size(34, 16)
+        Me.LabelControl9.Size = New System.Drawing.Size(29, 13)
         Me.LabelControl9.TabIndex = 36
         Me.LabelControl9.Text = "Skype"
         '
         'txtFacebook
         '
-        Me.txtFacebook.Location = New System.Drawing.Point(158, 302)
-        Me.txtFacebook.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtFacebook.Location = New System.Drawing.Point(126, 242)
         Me.txtFacebook.Name = "txtFacebook"
         Me.txtFacebook.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtFacebook.Properties.Appearance.Options.UseBackColor = True
-        Me.txtFacebook.Size = New System.Drawing.Size(371, 22)
+        Me.txtFacebook.Size = New System.Drawing.Size(297, 20)
         Me.txtFacebook.TabIndex = 9
         '
         'LabelControl10
         '
-        Me.LabelControl10.Location = New System.Drawing.Point(15, 306)
-        Me.LabelControl10.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl10.Location = New System.Drawing.Point(12, 245)
+        Me.LabelControl10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl10.Name = "LabelControl10"
-        Me.LabelControl10.Size = New System.Drawing.Size(55, 16)
+        Me.LabelControl10.Size = New System.Drawing.Size(46, 13)
         Me.LabelControl10.TabIndex = 38
         Me.LabelControl10.Text = "Facebook"
         '
         'txtIMG
         '
-        Me.txtIMG.Location = New System.Drawing.Point(158, 332)
-        Me.txtIMG.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtIMG.Location = New System.Drawing.Point(126, 266)
         Me.txtIMG.Name = "txtIMG"
         Me.txtIMG.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtIMG.Properties.Appearance.Options.UseBackColor = True
-        Me.txtIMG.Size = New System.Drawing.Size(282, 22)
+        Me.txtIMG.Size = New System.Drawing.Size(226, 20)
         Me.txtIMG.TabIndex = 10
         '
         'LabelControl11
         '
-        Me.LabelControl11.Location = New System.Drawing.Point(15, 336)
-        Me.LabelControl11.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl11.Location = New System.Drawing.Point(12, 269)
+        Me.LabelControl11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl11.Name = "LabelControl11"
-        Me.LabelControl11.Size = New System.Drawing.Size(34, 16)
+        Me.LabelControl11.Size = New System.Drawing.Size(27, 13)
         Me.LabelControl11.TabIndex = 40
         Me.LabelControl11.Text = "Նկար"
         '
@@ -286,31 +276,32 @@ Partial Class addCustomerDetails
         Me.btnSelectIMG.Appearance.Options.UseTextOptions = True
         Me.btnSelectIMG.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.btnSelectIMG.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center
-        Me.btnSelectIMG.Location = New System.Drawing.Point(454, 332)
+        Me.btnSelectIMG.Location = New System.Drawing.Point(363, 266)
+        Me.btnSelectIMG.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnSelectIMG.Name = "btnSelectIMG"
-        Me.btnSelectIMG.Size = New System.Drawing.Size(75, 23)
+        Me.btnSelectIMG.Size = New System.Drawing.Size(60, 18)
         Me.btnSelectIMG.TabIndex = 11
         Me.btnSelectIMG.Text = "..."
         '
         'txtCustomer
         '
-        Me.txtCustomer.Location = New System.Drawing.Point(158, 34)
+        Me.txtCustomer.Location = New System.Drawing.Point(126, 27)
         Me.txtCustomer.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCustomer.Name = "txtCustomer"
         Me.txtCustomer.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtCustomer.Properties.Appearance.Options.UseBackColor = True
         Me.txtCustomer.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, "Ընտրել", Nothing, Nothing, True), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject2, "Նոր", Nothing, Nothing, True)})
         Me.txtCustomer.Properties.ReadOnly = True
-        Me.txtCustomer.Size = New System.Drawing.Size(371, 22)
+        Me.txtCustomer.Size = New System.Drawing.Size(297, 20)
         Me.txtCustomer.TabIndex = 0
         '
         'addCustomerDetails
         '
         Me.AcceptButton = Me.btnAdd
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(572, 461)
+        Me.ClientSize = New System.Drawing.Size(458, 369)
         Me.Controls.Add(Me.txtCustomer)
         Me.Controls.Add(Me.btnSelectIMG)
         Me.Controls.Add(Me.txtIMG)
@@ -336,13 +327,12 @@ Partial Class addCustomerDetails
         Me.Controls.Add(Me.LabelControl2)
         Me.Controls.Add(Me.btnAdd)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "addCustomerDetails"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Նոր Պարամետր"
+        Me.Text = "(Նոր) Պարամետրեր"
         CType(Me.txtFirstName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtLastName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtPassport.Properties, System.ComponentModel.ISupportInitialize).EndInit()

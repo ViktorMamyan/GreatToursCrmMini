@@ -76,7 +76,7 @@ Partial Class newOtherTypes
         Me.Name = "newOtherTypes"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Ծախսի Նոր Տեսակ"
+        Me.Text = "(Նոր) Ծախսի Տեսակ"
         CType(Me.txtType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

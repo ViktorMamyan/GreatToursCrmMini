@@ -34,6 +34,15 @@ Public Class addInsurance
                 Else
                     .Add(New SqlParameter("@ReturnableDate", rDate.DateTime))
                 End If
+
+                .Add(New SqlParameter("@IsMulti", ckMulti.Checked))
+
+                If txtMulti.Enabled = True AndAlso txtMulti.EditValue > 0 Then
+                    .Add(New SqlParameter("@DaysCount", txtMulti.EditValue))
+                Else
+                    .Add(New SqlParameter("@DaysCount", DBNull.Value))
+                End If
+
             End With
             ExecToSql("InsuranceAdd", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -43,8 +52,12 @@ Public Class addInsurance
             sDate.Text = String.Empty
             eDate.Text = String.Empty
             txtCost.Text = String.Empty
+            txtCustomer.Text = String.Empty
+            txtCustomer.Tag = String.Empty
             rDate.Text = String.Empty
             cRet.Checked = False
+            txtMulti.Text = 0
+            ckMulti.Checked = False
 
             RefForm.LoadData()
             If InsuranceID <> 0 Then
@@ -100,6 +113,15 @@ Public Class addInsurance
             rDate.Enabled = True
         Else
             rDate.Enabled = False
+        End If
+    End Sub
+
+    Private Sub ckMulti_CheckedChanged(sender As Object, e As EventArgs) Handles ckMulti.CheckedChanged
+        If ckMulti.Checked = True Then
+            txtMulti.Enabled = True
+        Else
+            txtMulti.Text = 0
+            txtMulti.Enabled = False
         End If
     End Sub
 

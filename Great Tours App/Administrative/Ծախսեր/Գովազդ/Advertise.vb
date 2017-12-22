@@ -29,6 +29,7 @@ Public Class Advertise
                 .Columns("ForYear").Caption = "Տարի"
                 .Columns("ForMonth").Caption = "Ամիս"
                 .Columns("TypeName").Caption = "Ծախսի ՏԵսակ"
+                .Columns("Comment").Caption = "Մեկնաբանություն"
 
                 .Columns("Fee").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
                 .Columns("Fee").DisplayFormat.FormatString = "n2"
@@ -77,8 +78,11 @@ Public Class Advertise
             Dim TypeID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("TypeID")
             Dim TypeName As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("TypeName")
 
+            Dim Comment As String
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")) Then Comment = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")
+
             Dim EE As New editAdvertise With {.RefForm = DirectCast(Me, Advertise), .AdvertiseID = AdvertiseID,
-                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .TypeID = TypeID, .TypeName = TypeName}
+                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .TypeID = TypeID, .TypeName = TypeName, .Comment = Comment}
 
             EE.ShowDialog()
             EE.Dispose()

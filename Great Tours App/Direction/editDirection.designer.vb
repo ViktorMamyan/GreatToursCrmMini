@@ -110,7 +110,7 @@ Partial Class editDirection
         Me.Name = "editDirection"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Խմբագրել Ուղղությունը"
+        Me.Text = "(Խմբագրել) Ուղղություն"
         CType(Me.txtDirection.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtViza.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ckSingle.Properties, System.ComponentModel.ISupportInitialize).EndInit()

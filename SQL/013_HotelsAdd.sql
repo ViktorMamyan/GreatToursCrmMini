@@ -1,0 +1,17 @@
+USE GT
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE HotelsAdd
+	@HotelName NVARCHAR(255),@CountryID INT,@Region NVARCHAR(255),@Stars TINYINT,@HotelTypeID INT
+AS
+BEGIN
+	SET NOCOUNT ON;
+	INSERT INTO Hotels (HotelName,CountryID,Region,Stars,HotelTypeID)
+	VALUES(@HotelName,@CountryID,@Region,@Stars,@HotelTypeID)
+END
+GO

@@ -16,6 +16,7 @@ Public Class addRentOfPlace
                 .Add(New SqlParameter("@Fee", txtFee.EditValue))
                 .Add(New SqlParameter("@ForYear", RegDate.DateTime.Year))
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("RentOfPlaceAdd", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -23,6 +24,7 @@ Public Class addRentOfPlace
 
             txtFee.Text = String.Empty
             RegDate.DateTime = Now
+            txtComment.Text = String.Empty
 
             RefForm.LoadData()
             If RentID <> 0 Then

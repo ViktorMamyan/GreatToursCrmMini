@@ -76,7 +76,7 @@ Partial Class changeTaxType
         Me.Name = "changeTaxType"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Հարկատեսակի Փոփոխում"
+        Me.Text = "(Խմբագրել) Հարկատեսակ"
         CType(Me.txtTax.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

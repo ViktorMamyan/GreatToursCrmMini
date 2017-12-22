@@ -39,6 +39,8 @@ Partial Class addInsurance
         Me.cRet = New DevExpress.XtraEditors.CheckEdit()
         Me.rDate = New DevExpress.XtraEditors.DateEdit()
         Me.txtCustomer = New DevExpress.XtraEditors.ButtonEdit()
+        Me.ckMulti = New DevExpress.XtraEditors.CheckEdit()
+        Me.txtMulti = New DevExpress.XtraEditors.TextEdit()
         CType(Me.txPrice.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.sDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.sDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,17 +51,19 @@ Partial Class addInsurance
         CType(Me.rDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtCustomer.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ckMulti.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtMulti.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnAdd
         '
         Me.btnAdd.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
-        Me.btnAdd.Location = New System.Drawing.Point(253, 198)
+        Me.btnAdd.Location = New System.Drawing.Point(253, 220)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.[False]
         Me.btnAdd.Size = New System.Drawing.Size(170, 42)
-        Me.btnAdd.TabIndex = 7
+        Me.btnAdd.TabIndex = 9
         Me.btnAdd.Text = "Ավելացնել"
         '
         'LabelControl2
@@ -209,13 +213,39 @@ Partial Class addInsurance
         Me.txtCustomer.Size = New System.Drawing.Size(281, 20)
         Me.txtCustomer.TabIndex = 3
         '
+        'ckMulti
+        '
+        Me.ckMulti.Location = New System.Drawing.Point(12, 181)
+        Me.ckMulti.Name = "ckMulti"
+        Me.ckMulti.Properties.Caption = "Մուլտի"
+        Me.ckMulti.Size = New System.Drawing.Size(101, 19)
+        Me.ckMulti.TabIndex = 7
+        '
+        'txtMulti
+        '
+        Me.txtMulti.EditValue = "0"
+        Me.txtMulti.Enabled = False
+        Me.txtMulti.Location = New System.Drawing.Point(142, 180)
+        Me.txtMulti.Name = "txtMulti"
+        Me.txtMulti.Properties.Appearance.BackColor = System.Drawing.Color.White
+        Me.txtMulti.Properties.Appearance.Options.UseBackColor = True
+        Me.txtMulti.Properties.Appearance.Options.UseTextOptions = True
+        Me.txtMulti.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.txtMulti.Properties.Mask.EditMask = "n0"
+        Me.txtMulti.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
+        Me.txtMulti.Properties.Mask.UseMaskAsDisplayFormat = True
+        Me.txtMulti.Size = New System.Drawing.Size(281, 20)
+        Me.txtMulti.TabIndex = 8
+        '
         'addInsurance
         '
         Me.AcceptButton = Me.btnAdd
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(458, 262)
+        Me.ClientSize = New System.Drawing.Size(458, 288)
+        Me.Controls.Add(Me.ckMulti)
+        Me.Controls.Add(Me.txtMulti)
         Me.Controls.Add(Me.txtCustomer)
         Me.Controls.Add(Me.rDate)
         Me.Controls.Add(Me.cRet)
@@ -235,7 +265,7 @@ Partial Class addInsurance
         Me.Name = "addInsurance"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Նոր Ապահովագրություն"
+        Me.Text = "(Նոր) Ապահովագրություն"
         CType(Me.txPrice.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.sDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.sDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -246,6 +276,8 @@ Partial Class addInsurance
         CType(Me.rDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCustomer.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ckMulti.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtMulti.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -265,4 +297,6 @@ Partial Class addInsurance
     Friend WithEvents cRet As DevExpress.XtraEditors.CheckEdit
     Friend WithEvents rDate As DevExpress.XtraEditors.DateEdit
     Friend WithEvents txtCustomer As DevExpress.XtraEditors.ButtonEdit
+    Friend WithEvents ckMulti As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents txtMulti As DevExpress.XtraEditors.TextEdit
 End Class

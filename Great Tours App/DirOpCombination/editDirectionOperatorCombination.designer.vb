@@ -36,71 +36,70 @@ Partial Class editDirectionOperatorCombination
         '
         Me.btnEdit.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnEdit.Image = CType(resources.GetObject("btnEdit.Image"), System.Drawing.Image)
-        Me.btnEdit.Location = New System.Drawing.Point(284, 201)
-        Me.btnEdit.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnEdit.Location = New System.Drawing.Point(227, 161)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.[False]
-        Me.btnEdit.Size = New System.Drawing.Size(212, 52)
+        Me.btnEdit.Size = New System.Drawing.Size(170, 42)
         Me.btnEdit.TabIndex = 2
         Me.btnEdit.Text = "Խմբագրել"
         '
         'LabelControl2
         '
-        Me.LabelControl2.Location = New System.Drawing.Point(15, 40)
-        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl2.Location = New System.Drawing.Point(12, 32)
+        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl2.Name = "LabelControl2"
-        Me.LabelControl2.Size = New System.Drawing.Size(75, 16)
+        Me.LabelControl2.Size = New System.Drawing.Size(61, 13)
         Me.LabelControl2.TabIndex = 16
         Me.LabelControl2.Text = "Ուղղություն"
         '
         'LabelControl1
         '
-        Me.LabelControl1.Location = New System.Drawing.Point(15, 84)
-        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl1.Location = New System.Drawing.Point(12, 67)
+        Me.LabelControl1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl1.Name = "LabelControl1"
-        Me.LabelControl1.Size = New System.Drawing.Size(70, 16)
+        Me.LabelControl1.Size = New System.Drawing.Size(56, 13)
         Me.LabelControl1.TabIndex = 23
         Me.LabelControl1.Text = "Օպերատոր"
         '
         'cbOperator
         '
         Me.cbOperator.EditValue = ""
-        Me.cbOperator.Location = New System.Drawing.Point(107, 81)
-        Me.cbOperator.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cbOperator.Location = New System.Drawing.Point(86, 65)
+        Me.cbOperator.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cbOperator.Name = "cbOperator"
         Me.cbOperator.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.cbOperator.Size = New System.Drawing.Size(308, 22)
+        Me.cbOperator.Size = New System.Drawing.Size(246, 20)
         Me.cbOperator.TabIndex = 1
         '
         'cbDirection
         '
         Me.cbDirection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbDirection.FormattingEnabled = True
-        Me.cbDirection.Location = New System.Drawing.Point(107, 37)
+        Me.cbDirection.Location = New System.Drawing.Point(86, 30)
+        Me.cbDirection.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cbDirection.Name = "cbDirection"
-        Me.cbDirection.Size = New System.Drawing.Size(308, 24)
+        Me.cbDirection.Size = New System.Drawing.Size(247, 21)
         Me.cbDirection.TabIndex = 0
         '
         'editDirectionOperatorCombination
         '
         Me.AcceptButton = Me.btnEdit
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(509, 280)
+        Me.ClientSize = New System.Drawing.Size(407, 224)
         Me.Controls.Add(Me.cbDirection)
         Me.Controls.Add(Me.cbOperator)
         Me.Controls.Add(Me.LabelControl1)
         Me.Controls.Add(Me.LabelControl2)
         Me.Controls.Add(Me.btnEdit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "editDirectionOperatorCombination"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Խմբագրել Ուղղություն - Օպերատոր Համակցումը"
+        Me.Text = "(Խմբագրել) Ուղղություն - Օպերատոր Համակցում"
         CType(Me.cbOperator.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

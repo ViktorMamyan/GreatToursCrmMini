@@ -29,6 +29,7 @@ Public Class OfficeExp
                 .Columns("ForYear").Caption = "Տարի"
                 .Columns("ForMonth").Caption = "Ամիս"
                 .Columns("OfficeExpType").Caption = "Ծախսի ՏԵսակ"
+                .Columns("Comment").Caption = "Մեկնաբանություն"
 
                 .Columns("Fee").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
                 .Columns("Fee").DisplayFormat.FormatString = "n2"
@@ -77,8 +78,11 @@ Public Class OfficeExp
             Dim OfficeExponseTypeID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("OfficeExponseTypeID")
             Dim OfficeExpType As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("OfficeExpType")
 
+            Dim Comment As String
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")) Then Comment = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")
+
             Dim EE As New editOfficeExp With {.RefForm = DirectCast(Me, OfficeExp), .OfficeExponseID = OfficeExponseID,
-                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .OfficeExponseTypeID = OfficeExponseTypeID, .OfficeExpType = OfficeExpType}
+                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .OfficeExponseTypeID = OfficeExponseTypeID, .OfficeExpType = OfficeExpType, .Comment = Comment}
 
             EE.ShowDialog()
             EE.Dispose()

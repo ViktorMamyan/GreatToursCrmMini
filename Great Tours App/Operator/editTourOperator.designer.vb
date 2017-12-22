@@ -339,7 +339,7 @@ Partial Class editTourOperator
         Me.Name = "editTourOperator"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Խմբագրել Օպերատորին"
+        Me.Text = "(Խմբագրել) Օպերատոր"
         CType(Me.txtOperator.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ckByURL.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCeo.Properties, System.ComponentModel.ISupportInitialize).EndInit()

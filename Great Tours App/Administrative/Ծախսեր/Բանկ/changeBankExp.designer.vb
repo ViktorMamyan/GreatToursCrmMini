@@ -76,7 +76,7 @@ Partial Class changeBankExp
         Me.Name = "changeBankExp"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Ծախսի Տեսակի Փոփոխում"
+        Me.Text = "(Խմբագրել) Բանկային Ծախսի Տեսակ"
         CType(Me.txtType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

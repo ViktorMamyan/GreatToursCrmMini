@@ -76,7 +76,7 @@ Partial Class newUtilityType
         Me.Name = "newUtilityType"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Ծախսի Նոր Տեսակ"
+        Me.Text = "(Նոր) Կոմունալ Ծախսի Տեսակ"
         CType(Me.txtType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

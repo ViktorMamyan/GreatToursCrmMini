@@ -33,6 +33,7 @@ Public Class addTax
                 .Add(New SqlParameter("@ForYear", RegDate.DateTime.Year))
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
                 .Add(New SqlParameter("@TaxTypeID", cTaxType.SelectedValue))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("TaxAdd", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -40,6 +41,7 @@ Public Class addTax
 
             txtFee.Text = String.Empty
             RegDate.DateTime = Now
+            txtComment.Text = String.Empty
 
             RefForm.LoadData()
             If TaxID <> 0 Then

@@ -23,16 +23,17 @@ Partial Class addHotelBooking
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(addHotelBooking))
-        Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
-        Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject2 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject3 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Dim SerializableAppearanceObject4 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject5 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject6 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject7 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
+        Dim SerializableAppearanceObject8 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
         Me.FormAssistant1 = New DevExpress.XtraBars.FormAssistant()
         Me.btnAdd = New DevExpress.XtraEditors.SimpleButton()
         Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
-        Me.txtHotel = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
         Me.sDate = New DevExpress.XtraEditors.DateEdit()
@@ -63,7 +64,9 @@ Partial Class addHotelBooking
         Me.LabelControl14 = New DevExpress.XtraEditors.LabelControl()
         Me.lDate = New DevExpress.XtraEditors.DateEdit()
         Me.LabelControl15 = New DevExpress.XtraEditors.LabelControl()
-        CType(Me.txtHotel.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.txtHotels = New DevExpress.XtraEditors.ButtonEdit()
+        Me.txtTransferPrice = New DevExpress.XtraEditors.TextEdit()
+        Me.LabelControl16 = New DevExpress.XtraEditors.LabelControl()
         CType(Me.sDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.sDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtPrice.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,6 +87,8 @@ Partial Class addHotelBooking
         CType(Me.nDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtHotels.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtTransferPrice.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnAdd
@@ -94,7 +99,7 @@ Partial Class addHotelBooking
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.[False]
         Me.btnAdd.Size = New System.Drawing.Size(170, 42)
-        Me.btnAdd.TabIndex = 17
+        Me.btnAdd.TabIndex = 18
         Me.btnAdd.Text = "Ավելացնել"
         '
         'LabelControl2
@@ -105,15 +110,6 @@ Partial Class addHotelBooking
         Me.LabelControl2.Size = New System.Drawing.Size(53, 13)
         Me.LabelControl2.TabIndex = 16
         Me.LabelControl2.Text = "Հյուրանոց"
-        '
-        'txtHotel
-        '
-        Me.txtHotel.Location = New System.Drawing.Point(126, 30)
-        Me.txtHotel.Name = "txtHotel"
-        Me.txtHotel.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.txtHotel.Properties.Appearance.Options.UseBackColor = True
-        Me.txtHotel.Size = New System.Drawing.Size(297, 20)
-        Me.txtHotel.TabIndex = 0
         '
         'LabelControl1
         '
@@ -224,7 +220,7 @@ Partial Class addHotelBooking
         Me.txtCustomer.Name = "txtCustomer"
         Me.txtCustomer.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtCustomer.Properties.Appearance.Options.UseBackColor = True
-        Me.txtCustomer.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject7, "Ընտրել", Nothing, Nothing, True), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject8, "Նոր", Nothing, Nothing, True)})
+        Me.txtCustomer.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, "Ընտրել", Nothing, Nothing, True), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject2, "Նոր", Nothing, Nothing, True)})
         Me.txtCustomer.Properties.ReadOnly = True
         Me.txtCustomer.Size = New System.Drawing.Size(297, 20)
         Me.txtCustomer.TabIndex = 5
@@ -236,10 +232,10 @@ Partial Class addHotelBooking
         Me.txtOperator.Name = "txtOperator"
         Me.txtOperator.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtOperator.Properties.Appearance.Options.UseBackColor = True
-        Me.txtOperator.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject1, "Ընտրել", Nothing, Nothing, True), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject2, "Նոր", Nothing, Nothing, True)})
+        Me.txtOperator.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject3, "Ընտրել", Nothing, Nothing, True), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject4, "Նոր", Nothing, Nothing, True)})
         Me.txtOperator.Properties.ReadOnly = True
         Me.txtOperator.Size = New System.Drawing.Size(297, 20)
-        Me.txtOperator.TabIndex = 14
+        Me.txtOperator.TabIndex = 15
         '
         'txtCost
         '
@@ -350,7 +346,7 @@ Partial Class addHotelBooking
         Me.txtFood.Name = "txtFood"
         Me.txtFood.Properties.Appearance.BackColor = System.Drawing.Color.White
         Me.txtFood.Properties.Appearance.Options.UseBackColor = True
-        Me.txtFood.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject3, "Ընտրել", Nothing, Nothing, True), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject4, "Նոր", Nothing, Nothing, True)})
+        Me.txtFood.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject5, "Ընտրել", Nothing, Nothing, True), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject6, "Նոր", Nothing, Nothing, True)})
         Me.txtFood.Properties.ReadOnly = True
         Me.txtFood.Size = New System.Drawing.Size(297, 20)
         Me.txtFood.TabIndex = 10
@@ -378,7 +374,7 @@ Partial Class addHotelBooking
         Me.cTotalPayed.Name = "cTotalPayed"
         Me.cTotalPayed.Properties.Caption = "Ամբողջությամբ Վճարված"
         Me.cTotalPayed.Size = New System.Drawing.Size(179, 19)
-        Me.cTotalPayed.TabIndex = 16
+        Me.cTotalPayed.TabIndex = 17
         '
         'LabelControl13
         '
@@ -401,7 +397,7 @@ Partial Class addHotelBooking
         Me.txtPrePay.Properties.Mask.EditMask = "n0"
         Me.txtPrePay.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
         Me.txtPrePay.Size = New System.Drawing.Size(297, 20)
-        Me.txtPrePay.TabIndex = 12
+        Me.txtPrePay.TabIndex = 13
         '
         'nDate
         '
@@ -418,7 +414,7 @@ Partial Class addHotelBooking
         Me.nDate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
         Me.nDate.Properties.Mask.UseMaskAsDisplayFormat = True
         Me.nDate.Size = New System.Drawing.Size(297, 20)
-        Me.nDate.TabIndex = 13
+        Me.nDate.TabIndex = 14
         '
         'LabelControl14
         '
@@ -444,7 +440,7 @@ Partial Class addHotelBooking
         Me.lDate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
         Me.lDate.Properties.Mask.UseMaskAsDisplayFormat = True
         Me.lDate.Size = New System.Drawing.Size(297, 20)
-        Me.lDate.TabIndex = 15
+        Me.lDate.TabIndex = 16
         '
         'LabelControl15
         '
@@ -455,6 +451,42 @@ Partial Class addHotelBooking
         Me.LabelControl15.TabIndex = 52
         Me.LabelControl15.Text = "Վճարման Վերջնաժամ"
         '
+        'txtHotels
+        '
+        Me.txtHotels.Location = New System.Drawing.Point(126, 29)
+        Me.txtHotels.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtHotels.Name = "txtHotels"
+        Me.txtHotels.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txtHotels.Properties.Appearance.Options.UseBackColor = True
+        Me.txtHotels.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject7, "Ընտրել", Nothing, Nothing, True), New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus, "", 20, True, True, False, DevExpress.XtraEditors.ImageLocation.MiddleCenter, Nothing, New DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), SerializableAppearanceObject8, "Նոր", Nothing, Nothing, True)})
+        Me.txtHotels.Properties.ReadOnly = True
+        Me.txtHotels.Size = New System.Drawing.Size(297, 20)
+        Me.txtHotels.TabIndex = 0
+        '
+        'txtTransferPrice
+        '
+        Me.txtTransferPrice.EditValue = "0"
+        Me.txtTransferPrice.Location = New System.Drawing.Point(311, 307)
+        Me.txtTransferPrice.Name = "txtTransferPrice"
+        Me.txtTransferPrice.Properties.Appearance.BackColor = System.Drawing.Color.White
+        Me.txtTransferPrice.Properties.Appearance.Options.UseBackColor = True
+        Me.txtTransferPrice.Properties.Appearance.Options.UseTextOptions = True
+        Me.txtTransferPrice.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.txtTransferPrice.Properties.Mask.EditMask = "n0"
+        Me.txtTransferPrice.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
+        Me.txtTransferPrice.Properties.Mask.UseMaskAsDisplayFormat = True
+        Me.txtTransferPrice.Size = New System.Drawing.Size(112, 20)
+        Me.txtTransferPrice.TabIndex = 12
+        '
+        'LabelControl16
+        '
+        Me.LabelControl16.Location = New System.Drawing.Point(272, 311)
+        Me.LabelControl16.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl16.Name = "LabelControl16"
+        Me.LabelControl16.Size = New System.Drawing.Size(33, 13)
+        Me.LabelControl16.TabIndex = 56
+        Me.LabelControl16.Text = "Արժեք"
+        '
         'addHotelBooking
         '
         Me.AcceptButton = Me.btnAdd
@@ -462,6 +494,9 @@ Partial Class addHotelBooking
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(458, 549)
+        Me.Controls.Add(Me.txtTransferPrice)
+        Me.Controls.Add(Me.LabelControl16)
+        Me.Controls.Add(Me.txtHotels)
         Me.Controls.Add(Me.lDate)
         Me.Controls.Add(Me.LabelControl15)
         Me.Controls.Add(Me.nDate)
@@ -491,7 +526,6 @@ Partial Class addHotelBooking
         Me.Controls.Add(Me.sDate)
         Me.Controls.Add(Me.LabelControl5)
         Me.Controls.Add(Me.LabelControl3)
-        Me.Controls.Add(Me.txtHotel)
         Me.Controls.Add(Me.LabelControl1)
         Me.Controls.Add(Me.LabelControl2)
         Me.Controls.Add(Me.btnAdd)
@@ -501,8 +535,7 @@ Partial Class addHotelBooking
         Me.Name = "addHotelBooking"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Հյուրանոցի Ամրագրում"
-        CType(Me.txtHotel.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "(Նոր) Հյուրանոցի Ամրագրում"
         CType(Me.sDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.sDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtPrice.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -523,6 +556,8 @@ Partial Class addHotelBooking
         CType(Me.nDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtHotels.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtTransferPrice.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -531,7 +566,6 @@ Partial Class addHotelBooking
     Friend WithEvents FormAssistant1 As DevExpress.XtraBars.FormAssistant
     Friend WithEvents btnAdd As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents txtHotel As DevExpress.XtraEditors.TextEdit
     Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl3 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents sDate As DevExpress.XtraEditors.DateEdit
@@ -562,4 +596,7 @@ Partial Class addHotelBooking
     Friend WithEvents LabelControl14 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents lDate As DevExpress.XtraEditors.DateEdit
     Friend WithEvents LabelControl15 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents txtHotels As DevExpress.XtraEditors.ButtonEdit
+    Friend WithEvents txtTransferPrice As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents LabelControl16 As DevExpress.XtraEditors.LabelControl
 End Class

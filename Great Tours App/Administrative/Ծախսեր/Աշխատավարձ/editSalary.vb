@@ -13,6 +13,7 @@ Public Class editSalary
     Friend EmployeeID As Integer = 0
     Friend Employee As String = String.Empty
     Friend IsBonus As Boolean
+    Friend Comment As String = String.Empty
 
     Private Sub LoadEmployee()
         Try
@@ -43,6 +44,7 @@ Public Class editSalary
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
                 .Add(New SqlParameter("@EmployeeID", cEmployee.SelectedValue))
                 .Add(New SqlParameter("@IsBonus", ckIsBonus.Checked))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("SalaryUpdate", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -67,6 +69,7 @@ Public Class editSalary
         If SalaryID > 0 Then
             txtFee.Text = Fee
             ckIsBonus.Checked = IsBonus
+            txtComment.Text = Comment
 
             Dim d As Date = New Date(ForYear, ForMonth, 1)
             RegDate.DateTime = d

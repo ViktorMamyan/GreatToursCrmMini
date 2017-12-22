@@ -38,46 +38,44 @@ Partial Class addCustomer
         '
         Me.btnAdd.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
-        Me.btnAdd.Location = New System.Drawing.Point(317, 153)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAdd.Location = New System.Drawing.Point(254, 122)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.[False]
-        Me.btnAdd.Size = New System.Drawing.Size(212, 52)
+        Me.btnAdd.Size = New System.Drawing.Size(170, 42)
         Me.btnAdd.TabIndex = 9
         Me.btnAdd.Text = "Ավելացնել"
         '
         'LabelControl2
         '
-        Me.LabelControl2.Location = New System.Drawing.Point(15, 40)
-        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl2.Location = New System.Drawing.Point(12, 32)
+        Me.LabelControl2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl2.Name = "LabelControl2"
-        Me.LabelControl2.Size = New System.Drawing.Size(67, 16)
+        Me.LabelControl2.Size = New System.Drawing.Size(55, 13)
         Me.LabelControl2.TabIndex = 16
         Me.LabelControl2.Text = "Հաճախորդ"
         '
         'txtCustomer
         '
-        Me.txtCustomer.Location = New System.Drawing.Point(178, 36)
-        Me.txtCustomer.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtCustomer.Location = New System.Drawing.Point(142, 29)
         Me.txtCustomer.Name = "txtCustomer"
         Me.txtCustomer.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtCustomer.Properties.Appearance.Options.UseBackColor = True
-        Me.txtCustomer.Size = New System.Drawing.Size(351, 22)
+        Me.txtCustomer.Size = New System.Drawing.Size(281, 20)
         Me.txtCustomer.TabIndex = 0
         '
         'LabelControl3
         '
-        Me.LabelControl3.Location = New System.Drawing.Point(15, 72)
-        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(4, 2, 4, 2)
+        Me.LabelControl3.Location = New System.Drawing.Point(12, 58)
+        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.LabelControl3.Name = "LabelControl3"
-        Me.LabelControl3.Size = New System.Drawing.Size(131, 16)
+        Me.LabelControl3.Size = New System.Drawing.Size(105, 13)
         Me.LabelControl3.TabIndex = 25
         Me.LabelControl3.Text = "Գրանցման Ամսաթիվ"
         '
         'RegDate
         '
         Me.RegDate.EditValue = Nothing
-        Me.RegDate.Location = New System.Drawing.Point(178, 69)
+        Me.RegDate.Location = New System.Drawing.Point(142, 55)
         Me.RegDate.Margin = New System.Windows.Forms.Padding(2)
         Me.RegDate.Name = "RegDate"
         Me.RegDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
@@ -88,29 +86,28 @@ Partial Class addCustomer
         Me.RegDate.Properties.Mask.EditMask = "dd.MM.yyyy"
         Me.RegDate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
         Me.RegDate.Properties.Mask.UseMaskAsDisplayFormat = True
-        Me.RegDate.Size = New System.Drawing.Size(351, 22)
+        Me.RegDate.Size = New System.Drawing.Size(281, 20)
         Me.RegDate.TabIndex = 26
         '
         'addCustomer
         '
         Me.AcceptButton = Me.btnAdd
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(572, 237)
+        Me.ClientSize = New System.Drawing.Size(458, 190)
         Me.Controls.Add(Me.RegDate)
         Me.Controls.Add(Me.LabelControl3)
         Me.Controls.Add(Me.txtCustomer)
         Me.Controls.Add(Me.LabelControl2)
         Me.Controls.Add(Me.btnAdd)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "addCustomer"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Նոր Հաճախորդ"
+        Me.Text = "(Նոր) Հաճախորդ"
         CType(Me.txtCustomer.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RegDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RegDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()

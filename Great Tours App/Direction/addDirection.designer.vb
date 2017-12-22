@@ -110,7 +110,7 @@ Partial Class addDirection
         Me.Name = "addDirection"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Նոր Ուղղություն"
+        Me.Text = "(Նոր) Ուղղություն"
         CType(Me.txtDirection.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtViza.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ckSingle.Properties, System.ComponentModel.ISupportInitialize).EndInit()

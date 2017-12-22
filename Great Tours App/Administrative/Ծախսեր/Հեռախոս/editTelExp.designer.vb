@@ -31,6 +31,8 @@ Partial Class editTelExp
         Me.RegDate = New DevExpress.XtraEditors.DateEdit()
         Me.txtTelephone = New DevExpress.XtraEditors.TextEdit()
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
+        Me.LabelControl4 = New DevExpress.XtraEditors.LabelControl()
+        Me.txtComment = New System.Windows.Forms.TextBox()
         CType(Me.txtFee.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RegDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RegDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -41,11 +43,11 @@ Partial Class editTelExp
         '
         Me.btnEdit.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnEdit.Image = CType(resources.GetObject("btnEdit.Image"), System.Drawing.Image)
-        Me.btnEdit.Location = New System.Drawing.Point(254, 122)
+        Me.btnEdit.Location = New System.Drawing.Point(253, 208)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.[False]
         Me.btnEdit.Size = New System.Drawing.Size(170, 42)
-        Me.btnEdit.TabIndex = 3
+        Me.btnEdit.TabIndex = 4
         Me.btnEdit.Text = "Խմբագրել"
         '
         'LabelControl2
@@ -119,13 +121,32 @@ Partial Class editTelExp
         Me.LabelControl1.TabIndex = 27
         Me.LabelControl1.Text = "Հեռախոսահամար"
         '
+        'LabelControl4
+        '
+        Me.LabelControl4.Location = New System.Drawing.Point(12, 109)
+        Me.LabelControl4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl4.Name = "LabelControl4"
+        Me.LabelControl4.Size = New System.Drawing.Size(94, 13)
+        Me.LabelControl4.TabIndex = 36
+        Me.LabelControl4.Text = "Մեկնաբանություն"
+        '
+        'txtComment
+        '
+        Me.txtComment.Location = New System.Drawing.Point(142, 106)
+        Me.txtComment.Multiline = True
+        Me.txtComment.Name = "txtComment"
+        Me.txtComment.Size = New System.Drawing.Size(281, 82)
+        Me.txtComment.TabIndex = 3
+        '
         'editTelExp
         '
         Me.AcceptButton = Me.btnEdit
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(458, 190)
+        Me.ClientSize = New System.Drawing.Size(458, 278)
+        Me.Controls.Add(Me.LabelControl4)
+        Me.Controls.Add(Me.txtComment)
         Me.Controls.Add(Me.txtTelephone)
         Me.Controls.Add(Me.LabelControl1)
         Me.Controls.Add(Me.RegDate)
@@ -139,7 +160,7 @@ Partial Class editTelExp
         Me.Name = "editTelExp"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Հեռախոսավճարի Խմբագրում"
+        Me.Text = "(Խմբագրել) Հեռախոսավճար"
         CType(Me.txtFee.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RegDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RegDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -157,4 +178,6 @@ Partial Class editTelExp
     Friend WithEvents RegDate As DevExpress.XtraEditors.DateEdit
     Friend WithEvents txtTelephone As DevExpress.XtraEditors.TextEdit
     Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents LabelControl4 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents txtComment As System.Windows.Forms.TextBox
 End Class

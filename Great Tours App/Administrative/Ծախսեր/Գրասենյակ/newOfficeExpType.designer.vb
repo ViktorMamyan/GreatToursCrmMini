@@ -76,7 +76,7 @@ Partial Class newOfficeExpType
         Me.Name = "newOfficeExpType"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Ծախսի Նոր Տեսակ"
+        Me.Text = "(Նոր) Գրասենյակային Ծախսի Տեսակ"
         CType(Me.txtType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

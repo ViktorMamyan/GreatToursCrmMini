@@ -12,6 +12,7 @@ Public Class editTax
     Friend ForMonth As Byte = 0
     Friend TaxTypeID As Integer = 0
     Friend TaxType As String = String.Empty
+    Friend Comment As String = String.Empty
 
     Private Sub LoadTaxType()
         Try
@@ -41,6 +42,7 @@ Public Class editTax
                 .Add(New SqlParameter("@ForYear", RegDate.DateTime.Year))
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
                 .Add(New SqlParameter("@TaxTypeID", cTaxType.SelectedValue))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("TaxUpdate", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -66,6 +68,7 @@ Public Class editTax
             Call LoadTaxType()
 
             txtFee.Text = Fee
+            txtComment.Text = Comment
 
             Dim d As Date = New Date(ForYear, ForMonth, 1)
             RegDate.DateTime = d

@@ -76,7 +76,7 @@ Partial Class newAdvType
         Me.Name = "newAdvType"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Ծախսի Նոր Տեսակ"
+        Me.Text = "(Նոր) Գովազդային Ծախսի Տեսակ"
         CType(Me.txtType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

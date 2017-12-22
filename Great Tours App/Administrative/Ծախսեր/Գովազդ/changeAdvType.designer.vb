@@ -76,7 +76,7 @@ Partial Class changeAdvType
         Me.Name = "changeAdvType"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Ծախսի Տեսակի Փոփոխում"
+        Me.Text = "(Խմբագրել) Գովազդային Ծախսի Տեսակ"
         CType(Me.txtType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

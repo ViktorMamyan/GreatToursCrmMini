@@ -316,7 +316,7 @@ Partial Class editAirOperator
         Me.Name = "editAirOperator"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Խմբագրել Ավիա Օպերատորը"
+        Me.Text = "(Խմբագրել) Ավիա Օպերատոր"
         CType(Me.txtOperator.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCountry.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtURL.Properties, System.ComponentModel.ISupportInitialize).EndInit()

@@ -32,6 +32,8 @@ Public Class InsuranceW
                 .Columns("Price").Caption = "Գումար"
                 .Columns("Cost").Caption = "Ինքնարժեք"
                 .Columns("ReturnableDate").Caption = "Վերադարձման Ամսաթիվ"
+                .Columns("IsMulti").Caption = "Մուլտի"
+                .Columns("DaysCount").Caption = "Օրերի Քանակ"
 
                 .Columns("Price").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
                 .Columns("Price").DisplayFormat.FormatString = "n2"
@@ -95,9 +97,16 @@ Public Class InsuranceW
                 ReturnableDate = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("ReturnableDate")
             End If
 
+            Dim IsMulti As Boolean = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("IsMulti")
+
+            Dim DaysCount As Short?
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("DaysCount")) Then
+                DaysCount = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("DaysCount")
+            End If
+
             Dim EE As New editInsurance With {.RefForm = DirectCast(Me, InsuranceW), .InsuranceID = InsuranceID,
                 .ClientID = ClientID, .StartDate = StartDate, .EndDate = EndDate, .Price = Price, .Cost = Cost,
-                .ReturnableDate = ReturnableDate, .ClientName = ClientName}
+                .ReturnableDate = ReturnableDate, .ClientName = ClientName, .IsMulti = IsMulti, .DaysCount = DaysCount}
 
             EE.ShowDialog()
             EE.Dispose()

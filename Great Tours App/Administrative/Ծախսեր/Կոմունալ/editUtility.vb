@@ -12,6 +12,7 @@ Public Class editUtility
     Friend ForMonth As Byte = 0
     Friend UtilityTypeID As Integer = 0
     Friend Utility As String = String.Empty
+    Friend Comment As String = String.Empty
 
     Private Sub LoadList()
         Try
@@ -41,6 +42,7 @@ Public Class editUtility
                 .Add(New SqlParameter("@ForYear", RegDate.DateTime.Year))
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
                 .Add(New SqlParameter("@UtilityTypeID", cTypes.SelectedValue))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("UtilityExpenseUpdate", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -64,6 +66,7 @@ Public Class editUtility
     Private Sub addCustomer_Load(sender As Object, e As EventArgs) Handles Me.Load
         If UtilExpID > 0 Then
             txtFee.Text = Fee
+            txtComment.Text = Comment
 
             Dim d As Date = New Date(ForYear, ForMonth, 1)
             RegDate.DateTime = d

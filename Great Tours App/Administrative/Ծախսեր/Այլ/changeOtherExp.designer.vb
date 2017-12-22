@@ -76,7 +76,7 @@ Partial Class changeOtherExp
         Me.Name = "changeOtherExp"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Ծախսի Տեսակի Փոփոխում"
+        Me.Text = "(Խմբագրել) Ծախսի Տեսակ"
         CType(Me.txtType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

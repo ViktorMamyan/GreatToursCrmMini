@@ -141,6 +141,12 @@
     <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\selectFood.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\selectHotel.designer.vb">
+      <DependentUpon>selectHotel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\selectHotel.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Administrative\Ծախսեր\Այլ\addOtherExpense.designer.vb">
       <DependentUpon>addOtherExpense.vb</DependentUpon>
     </Compile>
@@ -508,6 +514,48 @@
     <Compile Include="DirOpCombination\editDirectionOperatorCombination.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Hotels\addCountry.designer.vb">
+      <DependentUpon>addCountry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hotels\addCountry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotels\addHotel.designer.vb">
+      <DependentUpon>addHotel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hotels\addHotel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotels\addHotelType.designer.vb">
+      <DependentUpon>addHotelType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hotels\addHotelType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotels\editHotel.designer.vb">
+      <DependentUpon>editHotel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hotels\editHotel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotels\HotelsList.designer.vb">
+      <DependentUpon>HotelsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hotels\HotelsList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotels\selectCountry.designer.vb">
+      <DependentUpon>selectCountry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hotels\selectCountry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotels\selectHotelType.designer.vb">
+      <DependentUpon>selectHotelType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hotels\selectHotelType.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Main Menu.Designer.vb">
       <DependentUpon>Main Menu.vb</DependentUpon>
     </Compile>
@@ -624,6 +672,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Գործարքներ\Հյուրանոցներ\selectFood.resx">
       <DependentUpon>selectFood.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Հյուրանոցներ\selectHotel.resx">
+      <DependentUpon>selectHotel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Ծախսեր\Այլ\addOtherExpense.resx">
       <DependentUpon>addOtherExpense.vb</DependentUpon>
@@ -807,6 +858,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DirOpCombination\editDirectionOperatorCombination.resx">
       <DependentUpon>editDirectionOperatorCombination.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotels\addCountry.resx">
+      <DependentUpon>addCountry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotels\addHotel.resx">
+      <DependentUpon>addHotel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotels\addHotelType.resx">
+      <DependentUpon>addHotelType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotels\editHotel.resx">
+      <DependentUpon>editHotel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotels\HotelsList.resx">
+      <DependentUpon>HotelsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotels\selectCountry.resx">
+      <DependentUpon>selectCountry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotels\selectHotelType.resx">
+      <DependentUpon>selectHotelType.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main Menu.resx">
       <DependentUpon>Main Menu.vb</DependentUpon>

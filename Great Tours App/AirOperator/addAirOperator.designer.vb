@@ -316,7 +316,7 @@ Partial Class addAirOperator
         Me.Name = "addAirOperator"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Նոր Ավիա Օպերատոր"
+        Me.Text = "(Նոր) Ավիա Օպերատոր"
         CType(Me.txtOperator.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCountry.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtURL.Properties, System.ComponentModel.ISupportInitialize).EndInit()

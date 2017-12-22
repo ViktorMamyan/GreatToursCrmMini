@@ -8,6 +8,39 @@ Public Class addHotelBooking
 
     Dim HotelBookID As Int32 = 0
 
+    Private Sub txtHotels_ButtonClick(sender As Object, e As ButtonPressedEventArgs) Handles txtHotels.ButtonClick
+        Try
+            Dim Editor As ButtonEdit = CType(sender, ButtonEdit)
+            Dim Button As EditorButton = e.Button
+            Select Case Editor.Properties.Buttons.IndexOf(e.Button).ToString()
+                Case 0
+                    Dim f As New selectHotel
+
+                    f.StartPosition = FormStartPosition.Manual
+                    f.Location = Me.PointToScreen(New Point(txtHotels.Left, txtHotels.Top + txtHotels.Height))
+
+                    f.ShowDialog()
+                    If f.HotelID <> -1 Then
+                        If txtHotels.Text <> f.HotelName Then
+                            txtHotels.Tag = f.HotelID
+                            txtHotels.Text = f.HotelName
+                        End If
+                    End If
+                    f.Dispose()
+                Case 1
+                    Dim f As New addHotel
+
+                    f.StartPosition = FormStartPosition.Manual
+                    f.Location = Me.PointToScreen(New Point(txtHotels.Left, txtHotels.Top + txtHotels.Height))
+
+                    f.ShowDialog()
+                    f.Dispose()
+            End Select
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
+        End Try
+    End Sub
+
     Private Sub txtCustomer_ButtonClick(sender As Object, e As ButtonPressedEventArgs) Handles txtCustomer.ButtonClick
         Try
             Dim Editor As ButtonEdit = CType(sender, ButtonEdit)
@@ -118,7 +151,7 @@ Public Class addHotelBooking
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Try
-            If txtHotel.Text.Trim = String.Empty Then Throw New Exception("Հյուրանոցի անվանումը գրված չէ")
+            If txtHotels.Text.Trim = String.Empty Then Throw New Exception("Հյուրանոցի անվանումը գրված չէ")
             If sDate.Text = String.Empty Then Throw New Exception("Ամսաթիվը նշված չէ")
             If eDate.Text = String.Empty Then Throw New Exception("Ամսաթիվը նշված չէ")
 
@@ -129,7 +162,7 @@ Public Class addHotelBooking
 
             Dim Parameters As New List(Of SqlParameter)
             With Parameters
-                .Add(New SqlParameter("@HotelName", txtHotel.Text.Trim))
+                .Add(New SqlParameter("@HotelID", txtHotels.Tag))
                 .Add(New SqlParameter("@StartDate", sDate.DateTime))
                 .Add(New SqlParameter("@EndDate", eDate.DateTime))
                 .Add(New SqlParameter("@Price", txtPrice.EditValue))
@@ -146,13 +179,15 @@ Public Class addHotelBooking
                 .Add(New SqlParameter("@PrePayPrice", IIf(txtPrePay.EditValue > 0, txtPrePay.EditValue, DBNull.Value)))
                 .Add(New SqlParameter("@NextPayDate", IIf(nDate.Text <> String.Empty, nDate.DateTime, DBNull.Value)))
                 .Add(New SqlParameter("@IsTotalyPayed", cTotalPayed.Checked))
+                .Add(New SqlParameter("@TransferPrice", IIf(txtTransferPrice.EditValue > 0, txtTransferPrice.EditValue, DBNull.Value)))
             End With
 
             ExecToSql("HotelBookingAdd", CommandType.StoredProcedure, Parameters.ToArray)
 
             HotelBookID = Query_Scalar("SELECT dbo.GetHotelBookID()")
 
-            txtHotel.Text = String.Empty
+            txtHotels.Text = String.Empty
+            txtHotels.Tag = String.Empty
             sDate.DateTime = Now
             eDate.DateTime = Now
             txtPrice.Text = 0
@@ -181,7 +216,7 @@ Public Class addHotelBooking
             End If
 
             HotelBookID = 0
-            txtHotel.Select()
+            txtHotels.Select()
 
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)

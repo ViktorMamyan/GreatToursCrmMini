@@ -76,7 +76,7 @@ Partial Class addFoodType
         Me.Name = "addFoodType"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Նոր Սննդի Տեսակ"
+        Me.Text = "(Նոր) Սննդի Տեսակ"
         CType(Me.txtFoodType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

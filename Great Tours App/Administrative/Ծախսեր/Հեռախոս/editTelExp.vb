@@ -11,6 +11,7 @@ Public Class editTelExp
     Friend ForYear As Short = 0
     Friend ForMonth As Byte = 0
     Friend PhoneNumber As String = String.Empty
+    Friend Comment As String = String.Empty
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         Try
@@ -24,6 +25,7 @@ Public Class editTelExp
                 .Add(New SqlParameter("@ForYear", RegDate.DateTime.Year))
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
                 .Add(New SqlParameter("@PhoneNumber", txtTelephone.Text.Trim))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("TelephoneExpenseUpdate", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -48,6 +50,7 @@ Public Class editTelExp
         If TelExpID > 0 Then
             txtFee.Text = Fee
             txtTelephone.Text = PhoneNumber
+            txtComment.Text = Comment
 
             Dim d As Date = New Date(ForYear, ForMonth, 1)
             RegDate.DateTime = d

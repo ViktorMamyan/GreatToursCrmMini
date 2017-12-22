@@ -33,6 +33,8 @@ Partial Class addOfficeExp
         Me.cTypes = New System.Windows.Forms.ComboBox()
         Me.btnNewTaxType = New DevExpress.XtraEditors.SimpleButton()
         Me.btnEditTaxType = New DevExpress.XtraEditors.SimpleButton()
+        Me.LabelControl4 = New DevExpress.XtraEditors.LabelControl()
+        Me.txtComment = New System.Windows.Forms.TextBox()
         CType(Me.txtFee.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RegDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RegDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -42,11 +44,11 @@ Partial Class addOfficeExp
         '
         Me.btnAdd.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
         Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
-        Me.btnAdd.Location = New System.Drawing.Point(253, 136)
+        Me.btnAdd.Location = New System.Drawing.Point(253, 228)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.[False]
         Me.btnAdd.Size = New System.Drawing.Size(170, 42)
-        Me.btnAdd.TabIndex = 3
+        Me.btnAdd.TabIndex = 4
         Me.btnAdd.Text = "Ավելացնել"
         '
         'LabelControl2
@@ -136,13 +138,32 @@ Partial Class addOfficeExp
         Me.btnEditTaxType.TabStop = False
         Me.btnEditTaxType.Text = "..."
         '
+        'LabelControl4
+        '
+        Me.LabelControl4.Location = New System.Drawing.Point(12, 121)
+        Me.LabelControl4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl4.Name = "LabelControl4"
+        Me.LabelControl4.Size = New System.Drawing.Size(94, 13)
+        Me.LabelControl4.TabIndex = 34
+        Me.LabelControl4.Text = "Մեկնաբանություն"
+        '
+        'txtComment
+        '
+        Me.txtComment.Location = New System.Drawing.Point(142, 121)
+        Me.txtComment.Multiline = True
+        Me.txtComment.Name = "txtComment"
+        Me.txtComment.Size = New System.Drawing.Size(281, 82)
+        Me.txtComment.TabIndex = 3
+        '
         'addOfficeExp
         '
         Me.AcceptButton = Me.btnAdd
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(458, 190)
+        Me.ClientSize = New System.Drawing.Size(458, 298)
+        Me.Controls.Add(Me.LabelControl4)
+        Me.Controls.Add(Me.txtComment)
         Me.Controls.Add(Me.btnEditTaxType)
         Me.Controls.Add(Me.btnNewTaxType)
         Me.Controls.Add(Me.cTypes)
@@ -158,7 +179,7 @@ Partial Class addOfficeExp
         Me.Name = "addOfficeExp"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Նոր Գրասենյակային Ծախս"
+        Me.Text = "(Նոր) Գրասենյակային Ծախս"
         CType(Me.txtFee.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RegDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RegDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -177,4 +198,6 @@ Partial Class addOfficeExp
     Friend WithEvents cTypes As System.Windows.Forms.ComboBox
     Friend WithEvents btnNewTaxType As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnEditTaxType As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents LabelControl4 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents txtComment As System.Windows.Forms.TextBox
 End Class

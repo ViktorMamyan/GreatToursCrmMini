@@ -76,7 +76,7 @@ Partial Class changeUtilityType
         Me.Name = "changeUtilityType"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Ծախսի Տեսակի Փոփոխում"
+        Me.Text = "(Խմբագրել) Կոմունալ Ծախսի Տեսակ"
         CType(Me.txtType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -34,6 +34,7 @@ Public Class addUtility
                 .Add(New SqlParameter("@ForYear", RegDate.DateTime.Year))
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
                 .Add(New SqlParameter("@UtilityTypeID", cTypes.SelectedValue))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("UtilityExpenseAdd", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -41,6 +42,7 @@ Public Class addUtility
 
             txtFee.Text = String.Empty
             RegDate.DateTime = Now
+            txtComment.Text = String.Empty
 
             RefForm.LoadData()
             If UtilExpID <> 0 Then

@@ -19,6 +19,7 @@ Public Class addTelExp
                 .Add(New SqlParameter("@ForYear", RegDate.DateTime.Year))
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
                 .Add(New SqlParameter("@PhoneNumber", txtTelephone.Text.Trim))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("TelephoneExpenseAdd", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -27,6 +28,7 @@ Public Class addTelExp
             txtFee.Text = String.Empty
             txtTelephone.Text = String.Empty
             RegDate.DateTime = Now
+            txtComment.Text = String.Empty
 
             RefForm.LoadData()
             If TelExpID <> 0 Then

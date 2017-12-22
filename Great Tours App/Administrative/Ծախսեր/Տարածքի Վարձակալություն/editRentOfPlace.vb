@@ -10,6 +10,7 @@ Public Class editRentOfPlace
     Friend Fee As Decimal
     Friend ForYear As Short = 0
     Friend ForMonth As Byte = 0
+    Friend Comment As String = String.Empty
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         Try
@@ -21,6 +22,7 @@ Public Class editRentOfPlace
                 .Add(New SqlParameter("@Fee", txtFee.EditValue))
                 .Add(New SqlParameter("@ForYear", RegDate.DateTime.Year))
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("RentOfPlaceUpdate", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -44,6 +46,8 @@ Public Class editRentOfPlace
         Try
             If RentID > 0 Then
                 txtFee.Text = Fee
+                txtComment.Text = Comment
+
                 Dim d As Date = New Date(ForYear, ForMonth, 1)
                 RegDate.DateTime = d
             End If

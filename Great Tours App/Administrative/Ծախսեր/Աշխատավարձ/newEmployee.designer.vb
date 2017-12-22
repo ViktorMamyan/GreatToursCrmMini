@@ -100,7 +100,7 @@ Partial Class newEmployee
         Me.Name = "newEmployee"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Նոր Աշխատակից"
+        Me.Text = "(Նոր) Աշխատակից"
         CType(Me.txtName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtLastName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

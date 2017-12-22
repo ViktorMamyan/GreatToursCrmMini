@@ -27,6 +27,7 @@ Public Class PlacePay
                 .Columns("Fee").Caption = "Վարձավճար"
                 .Columns("ForYear").Caption = "Տարի"
                 .Columns("ForMonth").Caption = "Ամիս"
+                .Columns("Comment").Caption = "Մեկնաբանություն"
 
                 .Columns("Fee").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
                 .Columns("Fee").DisplayFormat.FormatString = "n2"
@@ -73,8 +74,11 @@ Public Class PlacePay
             Dim ForYear As Short = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("ForYear")
             Dim ForMonth As Byte = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("ForMonth")
 
+            Dim Comment As String
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")) Then Comment = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")
+
             Dim EE As New editRentOfPlace With {.RefForm = DirectCast(Me, PlacePay), .RentID = RentID,
-                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth}
+                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .Comment = Comment}
 
             EE.ShowDialog()
             EE.Dispose()

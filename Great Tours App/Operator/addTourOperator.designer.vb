@@ -339,7 +339,7 @@ Partial Class addTourOperator
         Me.Name = "addTourOperator"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Նոր Օպերատոր"
+        Me.Text = "(Նոր) Օպերատոր"
         CType(Me.txtOperator.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ckByURL.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.txtCeo.Properties, System.ComponentModel.ISupportInitialize).EndInit()

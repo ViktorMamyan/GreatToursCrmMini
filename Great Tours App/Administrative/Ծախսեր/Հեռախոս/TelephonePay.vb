@@ -28,6 +28,7 @@ Public Class TelephonePay
                 .Columns("ForYear").Caption = "Տարի"
                 .Columns("ForMonth").Caption = "Ամիս"
                 .Columns("PhoneNumber").Caption = "Հեռախոսահամար"
+                .Columns("Comment").Caption = "Մեկնաբանություն"
 
                 .Columns("Fee").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
                 .Columns("Fee").DisplayFormat.FormatString = "n2"
@@ -75,8 +76,11 @@ Public Class TelephonePay
             Dim ForMonth As Byte = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("ForMonth")
             Dim PhoneNumber As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("PhoneNumber")
 
+            Dim Comment As String
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")) Then Comment = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")
+
             Dim EE As New editTelExp With {.RefForm = DirectCast(Me, TelephonePay), .TelExpID = TelExpID,
-                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .PhoneNumber = PhoneNumber}
+                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .PhoneNumber = PhoneNumber, .Comment = Comment}
 
             EE.ShowDialog()
             EE.Dispose()

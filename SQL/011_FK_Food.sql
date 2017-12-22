@@ -1,6 +1,0 @@
-USE GT
-GO
-
-ALTER TABLE HotelBooking
-ADD CONSTRAINT FK_Food FOREIGN KEY (FoodTypeID)     
-    REFERENCES FoodType (FoodTypeID)

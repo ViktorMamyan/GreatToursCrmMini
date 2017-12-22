@@ -29,6 +29,7 @@ Public Class Utility
                 .Columns("ForYear").Caption = "Տարի"
                 .Columns("ForMonth").Caption = "Ամիս"
                 .Columns("Utility").Caption = "Ծախսի Տեսակ"
+                .Columns("Comment").Caption = "Մեկնաբանություն"
 
                 .Columns("Fee").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
                 .Columns("Fee").DisplayFormat.FormatString = "n2"
@@ -77,8 +78,11 @@ Public Class Utility
             Dim UtilityTypeID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("UtilityTypeID")
             Dim Utility As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Utility")
 
+            Dim Comment As String
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")) Then Comment = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")
+
             Dim EE As New editUtility With {.RefForm = DirectCast(Me, Utility), .UtilExpID = UtilExpID,
-                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .UtilityTypeID = UtilityTypeID, .Utility = Utility}
+                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .UtilityTypeID = UtilityTypeID, .Utility = Utility, .Comment = Comment}
 
             EE.ShowDialog()
             EE.Dispose()

@@ -29,6 +29,7 @@ Public Class Taxes
                 .Columns("ForYear").Caption = "Տարի"
                 .Columns("ForMonth").Caption = "Ամիս"
                 .Columns("TaxType").Caption = "Հարկատեսակ"
+                .Columns("Comment").Caption = "Մեկնաբանություն"
 
                 .Columns("Fee").DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric
                 .Columns("Fee").DisplayFormat.FormatString = "n2"
@@ -77,8 +78,11 @@ Public Class Taxes
             Dim TaxTypeID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("TaxTypeID")
             Dim TaxType As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("TaxType")
 
+            Dim Comment As String
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")) Then Comment = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Comment")
+
             Dim EE As New editTax With {.RefForm = DirectCast(Me, Taxes), .TaxID = TaxID,
-                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .TaxTypeID = TaxTypeID, .TaxType = TaxType}
+                .Fee = Fee, .ForYear = ForYear, .ForMonth = ForMonth, .TaxTypeID = TaxTypeID, .TaxType = TaxType, .Comment = Comment}
 
             EE.ShowDialog()
             EE.Dispose()

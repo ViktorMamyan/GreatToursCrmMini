@@ -34,6 +34,7 @@ Public Class addBankExponse
                 .Add(New SqlParameter("@ForYear", RegDate.DateTime.Year))
                 .Add(New SqlParameter("@ForMonth", RegDate.DateTime.Month))
                 .Add(New SqlParameter("@TypeID", cTypes.SelectedValue))
+                .Add(New SqlParameter("@Comment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
             End With
             ExecToSql("BankExpenseAdd", CommandType.StoredProcedure, Parameters.ToArray)
 
@@ -41,6 +42,7 @@ Public Class addBankExponse
 
             txtFee.Text = String.Empty
             RegDate.DateTime = Now
+            txtComment.Text = String.Empty
 
             RefForm.LoadData()
             If BankExpenseID <> 0 Then
