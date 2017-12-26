@@ -147,6 +147,18 @@
     <Compile Include="Administrative\Գործարքներ\Հյուրանոցներ\selectHotel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Administrative\Գործարքներ\Տոմս\addAirport.designer.vb">
+      <DependentUpon>addAirport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Տոմս\addAirport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Տոմս\editTicket.designer.vb">
+      <DependentUpon>editTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Տոմս\editTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Administrative\Ծախսեր\Այլ\addOtherExpense.designer.vb">
       <DependentUpon>addOtherExpense.vb</DependentUpon>
     </Compile>
@@ -391,6 +403,24 @@
       <DependentUpon>PlacePay.vb</DependentUpon>
     </Compile>
     <Compile Include="Administrative\Ծախսեր\Տարածքի Վարձակալություն\PlacePay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Տոմս\addTicket.designer.vb">
+      <DependentUpon>addTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Տոմս\addTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Տոմս\selectFromAirport.designer.vb">
+      <DependentUpon>selectFromAirport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Տոմս\selectFromAirport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Տոմս\Ticket.designer.vb">
+      <DependentUpon>Ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrative\Գործարքներ\Տոմս\Ticket.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AirOperator\addAirOperator.designer.vb">
@@ -676,6 +706,12 @@
     <EmbeddedResource Include="Administrative\Գործարքներ\Հյուրանոցներ\selectHotel.resx">
       <DependentUpon>selectHotel.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Տոմս\addAirport.resx">
+      <DependentUpon>addAirport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Տոմս\editTicket.resx">
+      <DependentUpon>editTicket.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Ծախսեր\Այլ\addOtherExpense.resx">
       <DependentUpon>addOtherExpense.vb</DependentUpon>
     </EmbeddedResource>
@@ -798,6 +834,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Administrative\Ծախսեր\Տարածքի Վարձակալություն\PlacePay.resx">
       <DependentUpon>PlacePay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Տոմս\addTicket.resx">
+      <DependentUpon>addTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Տոմս\selectFromAirport.resx">
+      <DependentUpon>selectFromAirport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrative\Գործարքներ\Տոմս\Ticket.resx">
+      <DependentUpon>Ticket.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AirOperator\addAirOperator.resx">
       <DependentUpon>addAirOperator.vb</DependentUpon>

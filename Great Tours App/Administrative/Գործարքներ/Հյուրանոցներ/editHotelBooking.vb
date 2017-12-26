@@ -124,6 +124,9 @@ Public Class editHotelBooking
 
                     f.ShowDialog()
                     f.Dispose()
+                Case 2
+                    txtOperator.Text = String.Empty
+                    txtOperator.Tag = String.Empty
             End Select
 
         Catch ex As Exception
@@ -159,6 +162,9 @@ Public Class editHotelBooking
 
                     f.ShowDialog()
                     f.Dispose()
+                Case 2
+                    txtFood.Text = String.Empty
+                    txtFood.Tag = String.Empty
             End Select
 
         Catch ex As Exception
@@ -262,6 +268,15 @@ Public Class editHotelBooking
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
         End Try
+    End Sub
+
+    Private Sub cTransfer_CheckedChanged(sender As Object, e As EventArgs) Handles cTransfer.CheckedChanged
+        If cTransfer.Checked = True Then
+            txtTransferPrice.Enabled = True
+        Else
+            txtTransferPrice.Text = 0
+            txtTransferPrice.Enabled = False
+        End If
     End Sub
 
 End Class

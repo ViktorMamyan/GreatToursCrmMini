@@ -37,8 +37,6 @@ Partial Class Administrative
         Me.btnTax = New DevExpress.XtraEditors.SimpleButton()
         Me.btnPlacePayment = New DevExpress.XtraEditors.SimpleButton()
         Me.GroupControl2 = New DevExpress.XtraEditors.GroupControl()
-        Me.btnTours = New DevExpress.XtraEditors.SimpleButton()
-        Me.btnPrePayment = New DevExpress.XtraEditors.SimpleButton()
         Me.btnInsurance = New DevExpress.XtraEditors.SimpleButton()
         Me.btnTickets = New DevExpress.XtraEditors.SimpleButton()
         Me.btnHotels = New DevExpress.XtraEditors.SimpleButton()
@@ -200,8 +198,6 @@ Partial Class Administrative
         '
         'GroupControl2
         '
-        Me.GroupControl2.Controls.Add(Me.btnTours)
-        Me.GroupControl2.Controls.Add(Me.btnPrePayment)
         Me.GroupControl2.Controls.Add(Me.btnInsurance)
         Me.GroupControl2.Controls.Add(Me.btnTickets)
         Me.GroupControl2.Controls.Add(Me.btnHotels)
@@ -210,36 +206,6 @@ Partial Class Administrative
         Me.GroupControl2.Size = New System.Drawing.Size(351, 471)
         Me.GroupControl2.TabIndex = 3
         Me.GroupControl2.Text = "Գործարքներ"
-        '
-        'btnTours
-        '
-        Me.btnTours.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.btnTours.Appearance.Options.UseFont = True
-        Me.btnTours.Appearance.Options.UseTextOptions = True
-        Me.btnTours.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-        Me.btnTours.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
-        Me.btnTours.Enabled = False
-        Me.btnTours.Image = CType(resources.GetObject("btnTours.Image"), System.Drawing.Image)
-        Me.btnTours.Location = New System.Drawing.Point(19, 226)
-        Me.btnTours.Name = "btnTours"
-        Me.btnTours.Size = New System.Drawing.Size(303, 42)
-        Me.btnTours.TabIndex = 4
-        Me.btnTours.Text = "Տուրեր"
-        '
-        'btnPrePayment
-        '
-        Me.btnPrePayment.Appearance.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.btnPrePayment.Appearance.Options.UseFont = True
-        Me.btnPrePayment.Appearance.Options.UseTextOptions = True
-        Me.btnPrePayment.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-        Me.btnPrePayment.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
-        Me.btnPrePayment.Enabled = False
-        Me.btnPrePayment.Image = CType(resources.GetObject("btnPrePayment.Image"), System.Drawing.Image)
-        Me.btnPrePayment.Location = New System.Drawing.Point(19, 178)
-        Me.btnPrePayment.Name = "btnPrePayment"
-        Me.btnPrePayment.Size = New System.Drawing.Size(303, 42)
-        Me.btnPrePayment.TabIndex = 3
-        Me.btnPrePayment.Text = "Կանխավճար"
         '
         'btnInsurance
         '
@@ -262,7 +228,6 @@ Partial Class Administrative
         Me.btnTickets.Appearance.Options.UseTextOptions = True
         Me.btnTickets.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.btnTickets.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
-        Me.btnTickets.Enabled = False
         Me.btnTickets.Image = CType(resources.GetObject("btnTickets.Image"), System.Drawing.Image)
         Me.btnTickets.Location = New System.Drawing.Point(19, 82)
         Me.btnTickets.Name = "btnTickets"
@@ -319,8 +284,6 @@ Partial Class Administrative
     Friend WithEvents btnSalary As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnTax As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents GroupControl2 As DevExpress.XtraEditors.GroupControl
-    Friend WithEvents btnTours As DevExpress.XtraEditors.SimpleButton
-    Friend WithEvents btnPrePayment As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnInsurance As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnTickets As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btnHotels As DevExpress.XtraEditors.SimpleButton

@@ -76,6 +76,12 @@
         Me.Hide()
     End Sub
 
+    Private Sub btnTickets_Click(sender As Object, e As EventArgs) Handles btnTickets.Click
+        Dim f As New Ticket
+        f.Show()
+        Me.Hide()
+    End Sub
+
 #End Region
 
 End Class
