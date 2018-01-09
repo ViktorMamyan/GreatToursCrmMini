@@ -1,6 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports DevExpress.XtraEditors
 Imports DevExpress.XtraEditors.Controls
+Imports Newtonsoft.Json
 
 Public Class editTour
 
@@ -16,8 +17,34 @@ Public Class editTour
     Friend OperatorName As String = String.Empty
     Friend CustomerID As Integer = 0
     Friend Customer As String = String.Empty
-    Friend TotalPrice As Decimal = 0
-    Friend ApproximateIncome As Decimal = 0
+    Friend Price As Decimal = 0
+
+    Friend Cost As Decimal?
+
+    Friend AdultCount As Byte = 0
+    Friend ChildCount As Byte?
+    Friend BabyCount As Byte?
+
+    Friend ChildYearsComment As String = String.Empty
+
+    Friend PaymaetDeathLine As Date?
+    Friend PrePayPrice As Decimal?
+    Friend NextPayDate As Date?
+
+    Friend IsTotalyPayed As Boolean
+
+    Friend Excursion As String = String.Empty
+    Friend VIsa As String = String.Empty
+    Friend Transfer As String = String.Empty
+    Friend TourType As String = String.Empty
+
+    Friend strHotelList As String = String.Empty
+    Friend strTicketList As String = String.Empty
+    Friend strInsList As String = String.Empty
+
+    Dim HotelList As New List(Of LHotel)
+    Dim TicketList As New List(Of LTicket)
+    Dim InsList As New List(Of LIns)
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         Try
@@ -27,8 +54,8 @@ Public Class editTour
             If txtDirection.Text.Trim = String.Empty Then Throw New Exception("Ուղղությունը գրված չէ")
             If txtCustomer.Text.Trim = String.Empty Then Throw New Exception("Հաճախորդը նշված չէ")
             If txtOperator.Text.Trim = String.Empty Then Throw New Exception("Օպերատորը նշված չէ")
-            If txtTotalPrice.Text = String.Empty OrElse txtTotalPrice.Text < 0 Then txtTotalPrice.Text = 0
-            If txtApproximateIncome.Text = String.Empty OrElse txtApproximateIncome.Text < 0 Then txtTotalPrice.Text = 0
+            If txtPrice.Text = String.Empty OrElse txtPrice.Text < 0 Then txtPrice.Text = 0
+            If txtCost.Text = String.Empty OrElse txtCost.Text < 0 Then txtPrice.Text = 0
 
             If ckUseBonusCard.Checked = True Then
                 If txtCard.Text.Trim = String.Empty Then Throw New Exception("Բոնուսային քարտը նշված չէ")
@@ -44,14 +71,31 @@ Public Class editTour
                 .Add(New SqlParameter("@DirectionID", txtDirection.Tag.ToString))
                 .Add(New SqlParameter("@OperatorID", txtOperator.Tag.ToString))
                 .Add(New SqlParameter("@CustomerID", txtCustomer.Tag.ToString))
-                .Add(New SqlParameter("@TotalPrice", txtTotalPrice.Text.Trim))
-                .Add(New SqlParameter("@ApproximateIncome", txtApproximateIncome.Text.Trim))
+                .Add(New SqlParameter("@Price", txtPrice.Text.Trim))
+                .Add(New SqlParameter("@Cost", txtCost.Text.Trim))
 
                 .Add(New SqlParameter("@UseBonusCard", IIf(ckUseBonusCard.Checked = True, True, False)))
                 .Add(New SqlParameter("@AddBouns", IIf(rPlus.Checked = True, True, False)))
                 .Add(New SqlParameter("@Card", IIf(ckUseBonusCard.Checked = True, txtCard.Text.Trim, DBNull.Value)))
                 .Add(New SqlParameter("@Points", IIf(ckUseBonusCard.Checked = True, txtPoint.Text, DBNull.Value)))
                 .Add(New SqlParameter("@ByAnotherCustomer", IIf(ckUseBonusCard.Checked = True AndAlso rMinus.Checked = True, ckMinusByOtherCustomer.Checked, DBNull.Value)))
+
+                .Add(New SqlParameter("@AdultCount", txtAdultCount.Text.Trim))
+                .Add(New SqlParameter("@ChildCount", IIf(txtChildCount.Text = 0, DBNull.Value, txtChildCount.Text.Trim)))
+                .Add(New SqlParameter("@BabyCount", IIf(txtBabyCount.Text = 0, DBNull.Value, txtBabyCount.Text.Trim)))
+                .Add(New SqlParameter("@ChildYearsComment", IIf(txtComment.Text.Trim = String.Empty, DBNull.Value, txtComment.Text.Trim)))
+                .Add(New SqlParameter("@PaymaetDeathLine", IIf(lDate.Text = String.Empty, DBNull.Value, lDate.DateTime)))
+                .Add(New SqlParameter("@PrePayPrice", IIf(txtPrePay.Text = 0, DBNull.Value, txtPrePay.Text.Trim)))
+                .Add(New SqlParameter("@NextPayDate", IIf(nDate.Text = String.Empty, DBNull.Value, nDate.DateTime)))
+                .Add(New SqlParameter("@IsTotalyPayed", cTotalPayed.Checked))
+                .Add(New SqlParameter("@HotelList", IIf(btnHotel.Text = String.Empty, DBNull.Value, ToJson(HotelList))))
+                .Add(New SqlParameter("@TicketList", IIf(btnTicket.Text = String.Empty, DBNull.Value, ToJson(TicketList))))
+                .Add(New SqlParameter("@InsuranceList", IIf(btnInsurance.Text = String.Empty, DBNull.Value, ToJson(InsList))))
+                .Add(New SqlParameter("@Excursion", IIf(txtExcursion.Text = String.Empty, DBNull.Value, txtExcursion.Text.Trim)))
+                .Add(New SqlParameter("@VIsa", IIf(txtVisa.Text = String.Empty, DBNull.Value, txtVisa.Text.Trim)))
+                .Add(New SqlParameter("@Transfer", IIf(txtTransfer.Text = String.Empty, DBNull.Value, txtTransfer.Text.Trim)))
+                .Add(New SqlParameter("@TourType", IIf(txtTourType.Text = String.Empty, DBNull.Value, txtTourType.Text.Trim)))
+
             End With
 
             ExecToSql("TourEdit", CommandType.StoredProcedure, Parameters.ToArray)
@@ -67,6 +111,118 @@ Public Class editTour
             End If
 
             Me.Close()
+
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
+        End Try
+    End Sub
+
+    Private Sub btnHotel_ButtonClick(sender As Object, e As ButtonPressedEventArgs) Handles btnHotel.ButtonClick
+        Try
+            Dim Editor As ButtonEdit = CType(sender, ButtonEdit)
+            Dim Button As EditorButton = e.Button
+
+            Select Case Editor.Properties.Buttons.IndexOf(e.Button).ToString()
+                Case 0
+                    Dim f As New addHList
+                    With f
+
+                        If HotelList.Count > 0 Then
+                            .HotelList = HotelList
+                        End If
+
+                        .StartPosition = FormStartPosition.Manual
+                        .Location = Me.PointToScreen(New Point(btnHotel.Left, btnHotel.Top + btnHotel.Height))
+                        .ShowDialog()
+                        If .HotelList.Count = 0 Then
+                            btnHotel.Text = String.Empty
+                            HotelList.Clear()
+                        Else
+                            HotelList = .HotelList
+                            btnHotel.Text = .HotelList.Item(0).Hotel
+                        End If
+
+                        .Dispose()
+                    End With
+                Case 1
+                    btnHotel.Text = String.Empty
+                    HotelList.Clear()
+            End Select
+
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
+        End Try
+    End Sub
+
+    Private Sub btnTicket_ButtonClick(sender As Object, e As ButtonPressedEventArgs) Handles btnTicket.ButtonClick
+        Try
+            Dim Editor As ButtonEdit = CType(sender, ButtonEdit)
+            Dim Button As EditorButton = e.Button
+
+            Select Case Editor.Properties.Buttons.IndexOf(e.Button).ToString()
+                Case 0
+                    Dim f As New addTList
+                    With f
+
+                        If TicketList.Count > 0 Then
+                            .TicketList = TicketList
+                        End If
+
+                        .StartPosition = FormStartPosition.Manual
+                        .Location = Me.PointToScreen(New Point(btnTicket.Left, btnTicket.Top + btnTicket.Height))
+                        .ShowDialog()
+
+                        If .TicketList.Count = 0 Then
+                            btnTicket.Text = String.Empty
+                            TicketList.Clear()
+                        Else
+                            TicketList = .TicketList
+                            btnTicket.Text = .TicketList.Item(0).Ticket
+                        End If
+
+                        .Dispose()
+                    End With
+                Case 1
+                    btnTicket.Text = String.Empty
+                    TicketList.Clear()
+            End Select
+
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
+        End Try
+    End Sub
+
+    Private Sub btnInsurance_ButtonClick(sender As Object, e As ButtonPressedEventArgs) Handles btnInsurance.ButtonClick
+        Try
+            Dim Editor As ButtonEdit = CType(sender, ButtonEdit)
+            Dim Button As EditorButton = e.Button
+
+            Select Case Editor.Properties.Buttons.IndexOf(e.Button).ToString()
+                Case 0
+                    Dim f As New addIList
+                    With f
+
+                        If InsList.Count > 0 Then
+                            .InsList = InsList
+                        End If
+
+                        .StartPosition = FormStartPosition.Manual
+                        .Location = Me.PointToScreen(New Point(btnInsurance.Left, btnInsurance.Top + btnInsurance.Height))
+                        .ShowDialog()
+                        If .InsList.Count = 0 Then
+                            btnInsurance.Text = String.Empty
+                            InsList.Clear()
+                        Else
+                            InsList = .InsList
+                            btnInsurance.Text = .InsList.Item(0).StartDate.ToShortDateString
+                        End If
+
+                        .Dispose()
+                    End With
+                Case 1
+                    btnInsurance.Text = String.Empty
+                    InsList.Clear()
+            End Select
 
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical, My.Application.Info.Title)
@@ -192,7 +348,7 @@ Public Class editTour
         End If
     End Sub
 
-    Private Sub addTour_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub editTour_Load(sender As Object, e As EventArgs) Handles Me.Load
         If TourID > 0 Then
             txtTour.Text = TourName
             sDate.DateTime = TourStartDate
@@ -203,8 +359,41 @@ Public Class editTour
             txtOperator.Text = OperatorName
             txtCustomer.Tag = CustomerID
             txtCustomer.Text = Customer
-            txtTotalPrice.Text = TotalPrice
-            txtApproximateIncome.Text = ApproximateIncome
+            txtPrice.Text = Price
+
+            If Cost.HasValue Then txtCost.Text = Cost
+            txtAdultCount.Text = AdultCount
+
+            If ChildCount.HasValue Then txtChildCount.Text = ChildCount
+            If BabyCount.HasValue Then txtBabyCount.Text = BabyCount
+
+            If Not String.IsNullOrEmpty(ChildYearsComment) Then txtComment.Text = ChildYearsComment
+
+            If PaymaetDeathLine.HasValue Then lDate.DateTime = PaymaetDeathLine
+            If PrePayPrice.HasValue Then txtPrePay.Text = PrePayPrice
+            If NextPayDate.HasValue Then nDate.DateTime = NextPayDate
+
+            cTotalPayed.Checked = IsTotalyPayed
+
+            txtExcursion.Text = Excursion
+            txtVisa.Text = VIsa
+            txtTransfer.Text = Transfer
+            txtTourType.Text = TourType
+
+            If Not strHotelList = String.Empty Then
+                HotelList = JsonConvert.DeserializeObject(Of List(Of LHotel))(strHotelList)
+                btnHotel.Text = HotelList.Item(0).Hotel
+            End If
+
+            If Not strTicketList = String.Empty Then
+                TicketList = JsonConvert.DeserializeObject(Of List(Of LTicket))(strTicketList)
+                btnTicket.Text = TicketList.Item(0).Ticket
+            End If
+
+            If Not strInsList = String.Empty Then
+                InsList = JsonConvert.DeserializeObject(Of List(Of LIns))(strInsList)
+                btnInsurance.Text = InsList.Item(0).StartDate.ToShortDateString
+            End If
 
             Call GetBonusByTourID()
 

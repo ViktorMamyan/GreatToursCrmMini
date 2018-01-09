@@ -644,6 +644,24 @@
     <Compile Include="TourCustomerDetails\TourCustomer.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Tour\addHList.designer.vb">
+      <DependentUpon>addHList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tour\addHList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour\addIList.designer.vb">
+      <DependentUpon>addIList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tour\addIList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour\addTList.designer.vb">
+      <DependentUpon>addTList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tour\addTList.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Tour\addTour.designer.vb">
       <DependentUpon>addTour.vb</DependentUpon>
     </Compile>
@@ -656,6 +674,9 @@
     <Compile Include="Tour\editTour.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Tour\LHotel.vb" />
+    <Compile Include="Tour\LIns.vb" />
+    <Compile Include="Tour\LTicket.vb" />
     <Compile Include="Tour\selectDirection.designer.vb">
       <DependentUpon>selectDirection.vb</DependentUpon>
     </Compile>
@@ -952,6 +973,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TourCustomerDetails\TourCustomer.resx">
       <DependentUpon>TourCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour\addHList.resx">
+      <DependentUpon>addHList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour\addIList.resx">
+      <DependentUpon>addIList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour\addTList.resx">
+      <DependentUpon>addTList.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tour\addTour.resx">
       <DependentUpon>addTour.vb</DependentUpon>

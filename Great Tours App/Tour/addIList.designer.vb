@@ -1,0 +1,251 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class addIList
+    Inherits DevExpress.XtraEditors.XtraForm
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(addIList))
+        Me.FormAssistant1 = New DevExpress.XtraBars.FormAssistant()
+        Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
+        Me.sDate = New DevExpress.XtraEditors.DateEdit()
+        Me.eDate = New DevExpress.XtraEditors.DateEdit()
+        Me.LabelControl4 = New DevExpress.XtraEditors.LabelControl()
+        Me.cRet = New DevExpress.XtraEditors.CheckEdit()
+        Me.rDate = New DevExpress.XtraEditors.DateEdit()
+        Me.ckMulti = New DevExpress.XtraEditors.CheckEdit()
+        Me.txtMulti = New DevExpress.XtraEditors.TextEdit()
+        Me.btnDelete = New DevExpress.XtraEditors.SimpleButton()
+        Me.GridControl1 = New DevExpress.XtraGrid.GridControl()
+        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.btnAdd = New DevExpress.XtraEditors.SimpleButton()
+        CType(Me.sDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.sDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.eDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.eDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cRet.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.rDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.rDate.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ckMulti.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtMulti.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'LabelControl3
+        '
+        Me.LabelControl3.Location = New System.Drawing.Point(12, 23)
+        Me.LabelControl3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl3.Name = "LabelControl3"
+        Me.LabelControl3.Size = New System.Drawing.Size(31, 13)
+        Me.LabelControl3.TabIndex = 25
+        Me.LabelControl3.Text = "Սկիզբ"
+        '
+        'sDate
+        '
+        Me.sDate.EditValue = Nothing
+        Me.sDate.Location = New System.Drawing.Point(142, 20)
+        Me.sDate.Margin = New System.Windows.Forms.Padding(2)
+        Me.sDate.Name = "sDate"
+        Me.sDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
+        Me.sDate.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.sDate.Properties.Appearance.Options.UseBackColor = True
+        Me.sDate.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.sDate.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.sDate.Properties.Mask.EditMask = "dd.MM.yyyy"
+        Me.sDate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
+        Me.sDate.Properties.Mask.UseMaskAsDisplayFormat = True
+        Me.sDate.Size = New System.Drawing.Size(281, 20)
+        Me.sDate.TabIndex = 1
+        '
+        'eDate
+        '
+        Me.eDate.EditValue = Nothing
+        Me.eDate.Location = New System.Drawing.Point(142, 44)
+        Me.eDate.Margin = New System.Windows.Forms.Padding(2)
+        Me.eDate.Name = "eDate"
+        Me.eDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
+        Me.eDate.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.eDate.Properties.Appearance.Options.UseBackColor = True
+        Me.eDate.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.eDate.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.eDate.Properties.Mask.EditMask = "dd.MM.yyyy"
+        Me.eDate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
+        Me.eDate.Properties.Mask.UseMaskAsDisplayFormat = True
+        Me.eDate.Size = New System.Drawing.Size(281, 20)
+        Me.eDate.TabIndex = 2
+        '
+        'LabelControl4
+        '
+        Me.LabelControl4.Location = New System.Drawing.Point(12, 47)
+        Me.LabelControl4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LabelControl4.Name = "LabelControl4"
+        Me.LabelControl4.Size = New System.Drawing.Size(36, 13)
+        Me.LabelControl4.TabIndex = 31
+        Me.LabelControl4.Text = "Ավարտ"
+        '
+        'cRet
+        '
+        Me.cRet.Location = New System.Drawing.Point(12, 69)
+        Me.cRet.Name = "cRet"
+        Me.cRet.Properties.Caption = "Վերադարձվող"
+        Me.cRet.Size = New System.Drawing.Size(101, 19)
+        Me.cRet.TabIndex = 5
+        '
+        'rDate
+        '
+        Me.rDate.EditValue = Nothing
+        Me.rDate.Enabled = False
+        Me.rDate.Location = New System.Drawing.Point(142, 68)
+        Me.rDate.Margin = New System.Windows.Forms.Padding(2)
+        Me.rDate.Name = "rDate"
+        Me.rDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
+        Me.rDate.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.rDate.Properties.Appearance.Options.UseBackColor = True
+        Me.rDate.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.rDate.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.rDate.Properties.Mask.EditMask = "dd.MM.yyyy"
+        Me.rDate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.DateTimeAdvancingCaret
+        Me.rDate.Properties.Mask.UseMaskAsDisplayFormat = True
+        Me.rDate.Size = New System.Drawing.Size(281, 20)
+        Me.rDate.TabIndex = 6
+        '
+        'ckMulti
+        '
+        Me.ckMulti.Location = New System.Drawing.Point(12, 94)
+        Me.ckMulti.Name = "ckMulti"
+        Me.ckMulti.Properties.Caption = "Մուլտի"
+        Me.ckMulti.Size = New System.Drawing.Size(101, 19)
+        Me.ckMulti.TabIndex = 7
+        '
+        'txtMulti
+        '
+        Me.txtMulti.EditValue = "0"
+        Me.txtMulti.Enabled = False
+        Me.txtMulti.Location = New System.Drawing.Point(142, 93)
+        Me.txtMulti.Name = "txtMulti"
+        Me.txtMulti.Properties.Appearance.BackColor = System.Drawing.Color.White
+        Me.txtMulti.Properties.Appearance.Options.UseBackColor = True
+        Me.txtMulti.Properties.Appearance.Options.UseTextOptions = True
+        Me.txtMulti.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far
+        Me.txtMulti.Properties.Mask.EditMask = "n0"
+        Me.txtMulti.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric
+        Me.txtMulti.Properties.Mask.UseMaskAsDisplayFormat = True
+        Me.txtMulti.Size = New System.Drawing.Size(281, 20)
+        Me.txtMulti.TabIndex = 8
+        '
+        'btnDelete
+        '
+        Me.btnDelete.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
+        Me.btnDelete.Image = CType(resources.GetObject("btnDelete.Image"), System.Drawing.Image)
+        Me.btnDelete.Location = New System.Drawing.Point(187, 129)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.[False]
+        Me.btnDelete.Size = New System.Drawing.Size(170, 42)
+        Me.btnDelete.TabIndex = 34
+        Me.btnDelete.Text = "Ջնջել"
+        '
+        'GridControl1
+        '
+        Me.GridControl1.Location = New System.Drawing.Point(11, 202)
+        Me.GridControl1.MainView = Me.GridView1
+        Me.GridControl1.Name = "GridControl1"
+        Me.GridControl1.Size = New System.Drawing.Size(589, 248)
+        Me.GridControl1.TabIndex = 33
+        Me.GridControl1.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
+        '
+        'GridView1
+        '
+        Me.GridView1.GridControl = Me.GridControl1
+        Me.GridView1.Name = "GridView1"
+        Me.GridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[False]
+        Me.GridView1.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
+        Me.GridView1.OptionsBehavior.Editable = False
+        Me.GridView1.OptionsBehavior.ReadOnly = True
+        Me.GridView1.OptionsSelection.MultiSelect = True
+        Me.GridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect
+        Me.GridView1.OptionsView.EnableAppearanceOddRow = True
+        Me.GridView1.OptionsView.ShowGroupPanel = False
+        '
+        'btnAdd
+        '
+        Me.btnAdd.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat
+        Me.btnAdd.Image = CType(resources.GetObject("btnAdd.Image"), System.Drawing.Image)
+        Me.btnAdd.Location = New System.Drawing.Point(11, 129)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.[False]
+        Me.btnAdd.Size = New System.Drawing.Size(170, 42)
+        Me.btnAdd.TabIndex = 32
+        Me.btnAdd.Text = "Ավելացնել"
+        '
+        'addIList
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.ClientSize = New System.Drawing.Size(613, 456)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.GridControl1)
+        Me.Controls.Add(Me.btnAdd)
+        Me.Controls.Add(Me.ckMulti)
+        Me.Controls.Add(Me.txtMulti)
+        Me.Controls.Add(Me.rDate)
+        Me.Controls.Add(Me.cRet)
+        Me.Controls.Add(Me.eDate)
+        Me.Controls.Add(Me.LabelControl4)
+        Me.Controls.Add(Me.sDate)
+        Me.Controls.Add(Me.LabelControl3)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "addIList"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "(Նոր) Ապահովագրություն"
+        CType(Me.sDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.sDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.eDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.eDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cRet.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.rDate.Properties.CalendarTimeProperties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.rDate.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ckMulti.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtMulti.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridControl1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+
+    Friend WithEvents FormAssistant1 As DevExpress.XtraBars.FormAssistant
+    Friend WithEvents LabelControl3 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents sDate As DevExpress.XtraEditors.DateEdit
+    Friend WithEvents eDate As DevExpress.XtraEditors.DateEdit
+    Friend WithEvents LabelControl4 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents cRet As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents rDate As DevExpress.XtraEditors.DateEdit
+    Friend WithEvents ckMulti As DevExpress.XtraEditors.CheckEdit
+    Friend WithEvents txtMulti As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents btnDelete As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents GridControl1 As DevExpress.XtraGrid.GridControl
+    Friend WithEvents GridView1 As DevExpress.XtraGrid.Views.Grid.GridView
+    Friend WithEvents btnAdd As DevExpress.XtraEditors.SimpleButton
+End Class

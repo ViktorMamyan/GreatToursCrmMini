@@ -25,15 +25,30 @@ Public Class Tour
                 .Columns("DirectionID").Visible = False
                 .Columns("OperatorID").Visible = False
                 .Columns("CustomerID").Visible = False
+                .Columns("HotelList").Visible = False
+                .Columns("TicketList").Visible = False
+                .Columns("InsuranceList").Visible = False
 
                 .Columns("TourName").Caption = "Տուր"
                 .Columns("TourStartDate").Caption = "Սկիզբ"
                 .Columns("TourEndDate").Caption = "Ավարտ"
-                .Columns("DirectionName").Caption = "Ուղղություն"
+                .Columns("Price").Caption = "Գումար"
+                .Columns("Cost").Caption = "Ինքնարժեք"
                 .Columns("CustomerName").Caption = "Հաճախորդ"
+                .Columns("AdultCount").Caption = "Մեծահասակներ"
+                .Columns("ChildCount").Caption = "Երեխաներ"
+                .Columns("BabyCount").Caption = "Նորածիններ"
+                .Columns("ChildYearsComment").Caption = "Տարիքի Մեկն"
+                .Columns("DirectionName").Caption = "Ուղղություն"
                 .Columns("OperatorName").Caption = "Օպերատոր"
-                .Columns("TotalPrice").Caption = "Ընդհանուր Գումար"
-                .Columns("ApproximateIncome").Caption = "Մոտավոր Եկամուտ"
+                .Columns("PaymaetDeathLine").Caption = "Վճարման Վերջնաժամկետ"
+                .Columns("PrePayPrice").Caption = "Կանխավճար"
+                .Columns("NextPayDate").Caption = "Հաջորդ Վճար"
+                .Columns("IsTotalyPayed").Caption = "Ամբողջությամբ Վճարված"
+                .Columns("Excursion").Caption = "Էքսկուրսիա"
+                .Columns("VIsa").Caption = "Վիզա"
+                .Columns("Transfer").Caption = "Տեղափոխում"
+                .Columns("TourType").Caption = "Տուրի Տեսակ"
 
                 For i As Integer = 0 To GridView1.Columns.Count - 1
                     .Columns(i).OptionsFilter.FilterPopupMode = DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList
@@ -82,14 +97,60 @@ Public Class Tour
             Dim OperatorName As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("OperatorName")
             Dim CustomerID As Integer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CustomerID")
             Dim CustomerName As String = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("CustomerName")
-            Dim TotalPrice As Decimal = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("TotalPrice")
-            Dim ApproximateIncome As Decimal = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("ApproximateIncome")
+            Dim Price As Decimal = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Price")
+            Dim AdultCount As Byte = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("AdultCount")
+            Dim IsTotalyPayed As Boolean = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("IsTotalyPayed")
+
+            Dim Cost As Decimal?
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Cost")) Then Cost = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Cost")
+
+            Dim ChildCount As Byte?
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("ChildCount")) Then ChildCount = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("ChildCount")
+
+            Dim BabyCount As Byte?
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BabyCount")) Then BabyCount = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("BabyCount")
+
+            Dim ChildYearsComment As String = String.Empty
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("ChildYearsComment")) Then ChildYearsComment = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("ChildYearsComment")
+
+            Dim PaymaetDeathLine As Date?
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("PaymaetDeathLine")) Then PaymaetDeathLine = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("PaymaetDeathLine")
+
+            Dim PrePayPrice As Decimal?
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("PrePayPrice")) Then PrePayPrice = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("PrePayPrice")
+
+            Dim NextPayDate As Date?
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("NextPayDate")) Then NextPayDate = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("NextPayDate")
+
+            Dim Excursion As String = String.Empty
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Excursion")) Then Excursion = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Excursion")
+
+            Dim VIsa As String = String.Empty
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("VIsa")) Then VIsa = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("VIsa")
+
+            Dim Transfer As String = String.Empty
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Transfer")) Then Transfer = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("Transfer")
+
+            Dim TourType As String = String.Empty
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("TourType")) Then TourType = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("TourType")
+
+            Dim strHotelList As String = String.Empty
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("HotelList")) Then strHotelList = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("HotelList")
+
+            Dim strTicketList As String = String.Empty
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("TicketList")) Then strTicketList = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("TicketList")
+
+            Dim strInsList As String = String.Empty
+            If Not IsDBNull(GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("InsuranceList")) Then strInsList = GridView1.GetDataRow(GridView1.GetSelectedRows()(0)).Item("InsuranceList")
 
             Dim EE As New editTour With {.RefForm = DirectCast(Me, Tour), .TourID = TourID,
                             .TourName = TourName, .TourStartDate = TourStartDate, .TourEndDate = TourEndDate,
                             .DirectionID = DirectionID, .DirectionName = DirectionName, .OperatorID = OperatorID,
                             .OperatorName = OperatorName, .CustomerID = CustomerID, .Customer = CustomerName,
-                            .TotalPrice = TotalPrice, .ApproximateIncome = ApproximateIncome}
+                            .Price = Price, .Cost = Cost, .AdultCount = AdultCount, .ChildCount = ChildCount, .BabyCount = BabyCount,
+                            .ChildYearsComment = ChildYearsComment, .PaymaetDeathLine = PaymaetDeathLine, .PrePayPrice = PrePayPrice,
+                            .NextPayDate = NextPayDate, .IsTotalyPayed = IsTotalyPayed, .Excursion = Excursion, .VIsa = VIsa,
+                            .Transfer = Transfer, .TourType = TourType, .strHotelList = strHotelList, .strTicketList = strTicketList, .strInsList = strInsList}
 
             EE.ShowDialog()
             EE.Dispose()

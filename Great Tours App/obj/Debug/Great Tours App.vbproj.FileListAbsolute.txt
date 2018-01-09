@@ -236,6 +236,9 @@ C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.TourO
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addTourCustomer.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editTourCustomer.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.TourCustomer.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addHList.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addIList.resources
+C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addTList.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.addTour.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.editTour.resources
 C:\Vitya\Projects\CP\Great Tours\Great Tours App\obj\Debug\Great_Tours_App.selectDirection.resources
